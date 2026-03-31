@@ -1,0 +1,4 @@
+class,ymin,lower,middle,upper,ymax,outlier
+1,50,62,68,78,102,128
+2,-10,18,28,42,65,82
+3,-8,12,22,32,65,NA

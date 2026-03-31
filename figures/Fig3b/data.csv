@@ -1,0 +1,87 @@
+model,one_minus_specificity,sensitivity
+MetRS + covariates,0.00,0.00
+MetRS + covariates,0.00,0.13
+MetRS + covariates,0.02,0.13
+MetRS + covariates,0.02,0.30
+MetRS + covariates,0.04,0.30
+MetRS + covariates,0.04,0.32
+MetRS + covariates,0.05,0.32
+MetRS + covariates,0.05,0.35
+MetRS + covariates,0.07,0.35
+MetRS + covariates,0.07,0.52
+MetRS + covariates,0.09,0.52
+MetRS + covariates,0.09,0.55
+MetRS + covariates,0.11,0.55
+MetRS + covariates,0.11,0.60
+MetRS + covariates,0.13,0.60
+MetRS + covariates,0.13,0.63
+MetRS + covariates,0.16,0.63
+MetRS + covariates,0.16,0.67
+MetRS + covariates,0.18,0.67
+MetRS + covariates,0.18,0.70
+MetRS + covariates,0.20,0.70
+MetRS + covariates,0.20,0.72
+MetRS + covariates,0.23,0.72
+MetRS + covariates,0.23,0.75
+MetRS + covariates,0.25,0.75
+MetRS + covariates,0.25,0.78
+MetRS + covariates,0.27,0.78
+MetRS + covariates,0.27,0.80
+MetRS + covariates,0.30,0.80
+MetRS + covariates,0.30,0.82
+MetRS + covariates,0.33,0.82
+MetRS + covariates,0.33,0.85
+MetRS + covariates,0.38,0.85
+MetRS + covariates,0.38,0.87
+MetRS + covariates,0.42,0.87
+MetRS + covariates,0.42,0.90
+MetRS + covariates,0.47,0.90
+MetRS + covariates,0.47,0.93
+MetRS + covariates,0.54,0.93
+MetRS + covariates,0.54,0.95
+MetRS + covariates,0.60,0.95
+MetRS + covariates,0.60,0.97
+MetRS + covariates,0.70,0.97
+MetRS + covariates,0.70,0.98
+MetRS + covariates,0.80,0.98
+MetRS + covariates,0.80,1.00
+MetRS + covariates,1.00,1.00
+Covariates only,0.00,0.00
+Covariates only,0.00,0.12
+Covariates only,0.02,0.12
+Covariates only,0.02,0.25
+Covariates only,0.05,0.25
+Covariates only,0.05,0.35
+Covariates only,0.09,0.35
+Covariates only,0.09,0.37
+Covariates only,0.12,0.37
+Covariates only,0.12,0.45
+Covariates only,0.16,0.45
+Covariates only,0.16,0.50
+Covariates only,0.20,0.50
+Covariates only,0.20,0.55
+Covariates only,0.25,0.55
+Covariates only,0.25,0.60
+Covariates only,0.29,0.60
+Covariates only,0.29,0.65
+Covariates only,0.33,0.65
+Covariates only,0.33,0.73
+Covariates only,0.38,0.73
+Covariates only,0.38,0.75
+Covariates only,0.44,0.75
+Covariates only,0.44,0.80
+Covariates only,0.50,0.80
+Covariates only,0.50,0.83
+Covariates only,0.57,0.83
+Covariates only,0.57,0.87
+Covariates only,0.64,0.87
+Covariates only,0.64,0.90
+Covariates only,0.70,0.90
+Covariates only,0.70,0.93
+Covariates only,0.78,0.93
+Covariates only,0.78,0.97
+Covariates only,0.87,0.97
+Covariates only,0.87,0.99
+Covariates only,0.93,0.99
+Covariates only,0.93,1.00
+Covariates only,1.00,1.00

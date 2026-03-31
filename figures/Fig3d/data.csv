@@ -1,0 +1,11 @@
+model,variable,estimate,ci_low,ci_high
+Model1,Age,1.00,0.85,1.10
+Model1,Baseline EBW,1.20,1.05,1.35
+Model1,Sex,1.10,0.45,2.65
+Model2,MetRS (per SD),2.80,1.70,4.20
+Model3,Baseline EBW,1.00,0.90,1.10
+Model3,MetRS (per SD),2.60,1.55,3.80
+Model4,Age,1.00,0.85,1.10
+Model4,Baseline EBW,1.10,1.00,1.25
+Model4,Sex,1.55,0.45,3.30
+Model4,MetRS (per SD),2.75,1.55,4.30

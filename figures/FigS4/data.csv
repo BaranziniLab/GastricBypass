@@ -1,0 +1,13 @@
+description,value
+color_scale_min,-1
+color_scale_max,1
+color_scale_midpoint,0
+color_low,blue
+color_mid,white
+color_high,orange
+n_metabolites,541
+clustering,hierarchical
+major_cluster_1_pattern,strong positive block (bottom-left corner)
+major_cluster_2_pattern,strong positive block (upper-right area)
+major_cluster_3_pattern,strong negative block (upper-left / lower-right off-diagonal)
+diagonal,self-correlation = 1.0
