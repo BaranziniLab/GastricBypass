@@ -1,10 +1,8 @@
 library(ggplot2)
+library(svglite)
 
-# Read pairwise correlation data
 df = read.csv("data.csv", stringsAsFactors = FALSE)
 
-# Define the ordered list of 54 metabolites as they appear in the figure
-# (bottom-to-top on y-axis, left-to-right on x-axis)
 metabolite_order = c(
   "serine", "histidine", "lysine", "leucine", "tryptophan", "proline",
   "hydroxyproline", "gaba", "x2_aminoisobutyric_acid", "histamine",
@@ -22,39 +20,28 @@ metabolite_order = c(
   "phenyllactate"
 )
 
-# Mirror the lower-triangle: keep only var1 index <= var2 index (lower triangle)
 df$var1 = factor(df$var1, levels = metabolite_order)
 df$var2 = factor(df$var2, levels = metabolite_order)
-
-# Keep only lower-triangle entries (var1 index >= var2 index)
 df = df[as.integer(df$var1) >= as.integer(df$var2), ]
 
-# Humanize labels for axis display
 humanize = function(x) {
   x = gsub("_", " ", x)
-  x = gsub("^x(\\d)", "\\1", x)  # remove leading x from numeric names
+  x = gsub("^x(\\d)", "\\1", x)
   x
 }
-
-df$var1_label = humanize(as.character(df$var1))
-df$var2_label = humanize(as.character(df$var2))
-
 label_map = setNames(humanize(metabolite_order), metabolite_order)
 
 p = ggplot(df, aes(x = var2, y = var1, fill = correlation)) +
   geom_tile(color = "grey90", linewidth = 0.15) +
-  scale_fill_gradientn(
-    colours = c("#2166AC", "#92C5DE", "#F7F7F7", "#F4A582", "#B2182B"),
-    limits  = c(-1, 1),
-    name    = "Pearson\nCorrelation",
-    breaks  = c(-1.0, -0.5, 0.0, 0.5, 1.0)
+  scale_fill_gradient2(
+    low = "#0072B2", mid = "white", high = "#D55E00",
+    midpoint = 0, limits = c(-1, 1),
+    name = "Pearson\nCorrelation",
+    breaks = c(-1.0, -0.5, 0.0, 0.5, 1.0)
   ) +
   scale_x_discrete(labels = label_map, position = "bottom") +
   scale_y_discrete(labels = label_map) +
-  labs(
-    x = NULL,
-    y = NULL
-  ) +
+  labs(x = NULL, y = NULL) +
   coord_fixed() +
   theme_minimal(base_size = 14) +
   theme(
@@ -62,8 +49,7 @@ p = ggplot(df, aes(x = var2, y = var1, fill = correlation)) +
     axis.text.y  = element_text(size = 5),
     panel.grid   = element_blank(),
     legend.title = element_text(size = 10),
-    legend.text  = element_text(size = 9),
-    plot.margin  = margin(5, 5, 5, 5)
+    legend.text  = element_text(size = 9)
   )
 
-ggsave("plot.png", p, width = 5, height = 4, dpi = 800)
+ggsave("figs5a.svg", p, width = 5, height = 4)

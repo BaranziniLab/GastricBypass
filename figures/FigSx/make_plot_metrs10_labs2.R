@@ -1,44 +1,26 @@
 library(ggplot2)
-
-# Boxplot summary statistics for MetRS-10 in the LABS-2 discovery cohort
-# Groups: SWL (Sustained Weight Loss) vs RGN (Regain)
-# p-value from Wilcoxon test: 8.1e-05
+library(svglite)
 
 df = read.csv("data_metrs10_labs2.csv")
 df$group = factor(df$group, levels = c("SWL", "RGN"))
 
-# Colors matching figure: SWL = steel blue, RGN = sandy yellow
-group_colors = c("SWL" = "#6BAED6", "RGN" = "#F4C97A")
+fill_cols = c("SWL" = "#0072B2", "RGN" = "#E69F00")
 
-# Significance annotation coordinates
-sig_df = data.frame(
-  x    = c(1, 1, 2, 2),
-  y    = c(3.1, 3.3, 3.3, 3.1),
-  group = "SWL"
-)
+sig_df = data.frame(x = c(1, 1, 2, 2), y = c(3.1, 3.3, 3.3, 3.1), group = "SWL")
 
 p = ggplot(df, aes(x = group, ymin = ymin, lower = lower, middle = middle,
                    upper = upper, ymax = ymax, fill = group)) +
   geom_boxplot(stat = "identity", width = 0.55, color = "black", linewidth = 0.8) +
   geom_line(data = sig_df, aes(x = x, y = y), inherit.aes = FALSE, linewidth = 0.7) +
-  annotate("text", x = 1.5, y = 3.45, label = "8.1e\u221205", size = 4.5) +
-  scale_fill_manual(values = group_colors, guide = "none") +
-  scale_y_continuous(
-    limits = c(-3, 4),
-    breaks = seq(-2, 4, by = 2)
+  annotate("text", x = 1.5, y = 3.5, label = "p = 8.1\u00d710\u207b\u2075", size = 4.5) +
+  scale_fill_manual(values = fill_cols, guide = "none") +
+  scale_x_discrete(
+    limits = c("SWL", "RGN"),
+    labels = c("SWL" = "Sustained Weight Loss", "RGN" = "Weight Regain")
   ) +
-  labs(
-    title = "Discovery (LABS-2)",
-    x = NULL,
-    y = "MetRS-10"
-  ) +
-  theme_minimal(base_size = 14) +
-  theme(
-    plot.title = element_text(face = "bold", hjust = 0.5, size = 15),
-    panel.grid.major.x = element_blank(),
-    panel.grid.minor = element_blank(),
-    axis.text = element_text(size = 13),
-    axis.title.y = element_text(size = 14)
-  )
+  scale_y_continuous(limits = c(-3, 4), breaks = seq(-2, 4, by = 2)) +
+  labs(x = NULL, y = "Metabolite Risk Score (MetRS-10)") +
+  theme_classic(base_size = 14) +
+  theme(axis.line = element_line(linewidth = 0.8))
 
-ggsave("plot_metrs10_labs2.png", p, width = 5, height = 4, dpi = 800)
+ggsave("figsx_metrs10_labs2.svg", p, width = 5, height = 4)

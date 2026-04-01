@@ -1,0 +1,5 @@
+interface:
+  display_name: "Plot To Data"
+  short_description: "Recover structured data from figures"
+  default_prompt: "Use $plot-to-data to reconstruct a data table from this figure and verify it against the original panel."
+

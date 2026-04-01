@@ -1,0 +1,5 @@
+interface:
+  display_name: "Color Reference"
+  short_description: "Project palette and color semantics"
+  default_prompt: "Use $color-reference to apply the GastricBypass project color conventions to this figure or plot."
+

@@ -72,22 +72,6 @@
 
 ---
 
-### Fig2 (Supplemental) — Correlation Plot of 13 MetRS Metabolites (ggcorrplot)
-
-**What it shows:** Pairwise Pearson correlations among the 13 metabolites included in the MetRS.
-
-- **Layout:** Upper-triangle matrix; each cell shows two metabolites' correlation
-- **Color scale:** Diverging RdBu (Red–White–Blue)
-  - **Red:** Positive correlation (metabolites rise and fall together)
-  - **Blue:** Negative correlation (one rises when the other falls)
-  - **White/pale:** Near-zero correlation
-- **Numbers in cells:** Correlation coefficient (range −1 to +1)
-- **Rows/Columns:** The 13 MetRS metabolites (e.g., BAIBA, kynurenine, 3-methyladipate, glucuronate, etc.)
-
-**Context:** Low inter-metabolite correlations confirm that the 13 metabolites capture independent signals. DMGV was excluded from MetRS because it correlated too strongly with BAIBA (r = −0.56).
-
----
-
 ### Fig2b — Corrplot of MetRS Metabolites (Circle Style)
 
 **What it shows:** Same 13-metabolite pairwise correlation matrix as Fig2, but displayed in the classic corrplot circle style.
@@ -396,7 +380,7 @@
 
 ---
 
-### FigS5 — Correlation Plot of 62 Nominally Significant Metabolites
+### FigS5a — Correlation Plot of 62 Nominally Significant Metabolites
 
 **What it shows:** Pairwise correlations among the 62 metabolites that were nominally associated with %EBW5 (p < 0.05), used to identify highly correlated pairs for exclusion from the stepwise model.
 
@@ -405,7 +389,23 @@
 - **Axes:** Metabolite names, rotated 90° on x-axis
 - **Color scale bar:** −1 to +1
 
-**Context:** This plot directly motivated the exclusion of DMGV from the final MetRS due to its strong negative correlation with BAIBA (r = −0.56). Other visible clusters (e.g., lysophosphatidylcholines grouping together) reflect the shared biosynthetic origins of related lipid species.
+**Context:** Together with FigS5b below, this completes the metabolite funnel: 541 (FigS4) → 62 (FigS5a) → 13 (FigS5b). This plot directly motivated the exclusion of DMGV from the final MetRS due to its strong negative correlation with BAIBA (r = −0.56).
+
+---
+
+### FigS5b — Correlation Plot of 13 MetRS Metabolites (ggcorrplot)
+
+**What it shows:** Pairwise Pearson correlations among the 13 metabolites included in the MetRS.
+
+- **Layout:** Upper-triangle matrix; each cell shows two metabolites' correlation
+- **Color scale:** Diverging RdBu (Red–White–Blue)
+  - **Red:** Positive correlation (metabolites rise and fall together)
+  - **Blue:** Negative correlation (one rises when the other falls)
+  - **White/pale:** Near-zero correlation
+- **Numbers in cells:** Correlation coefficient (range −1 to +1)
+- **Rows/Columns:** The 13 MetRS metabolites (e.g., BAIBA, kynurenine, 3-methyladipate, glucuronate, etc.)
+
+**Context:** Low inter-metabolite correlations confirm that the 13 metabolites capture independent signals. DMGV was excluded from MetRS because it correlated too strongly with BAIBA (r = −0.56).
 
 ---
 

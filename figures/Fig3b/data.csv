@@ -1,87 +1,323 @@
-model,one_minus_specificity,sensitivity
-MetRS + covariates,0.00,0.00
-MetRS + covariates,0.00,0.13
-MetRS + covariates,0.02,0.13
-MetRS + covariates,0.02,0.30
-MetRS + covariates,0.04,0.30
-MetRS + covariates,0.04,0.32
-MetRS + covariates,0.05,0.32
-MetRS + covariates,0.05,0.35
-MetRS + covariates,0.07,0.35
-MetRS + covariates,0.07,0.52
-MetRS + covariates,0.09,0.52
-MetRS + covariates,0.09,0.55
-MetRS + covariates,0.11,0.55
-MetRS + covariates,0.11,0.60
-MetRS + covariates,0.13,0.60
-MetRS + covariates,0.13,0.63
-MetRS + covariates,0.16,0.63
-MetRS + covariates,0.16,0.67
-MetRS + covariates,0.18,0.67
-MetRS + covariates,0.18,0.70
-MetRS + covariates,0.20,0.70
-MetRS + covariates,0.20,0.72
-MetRS + covariates,0.23,0.72
-MetRS + covariates,0.23,0.75
-MetRS + covariates,0.25,0.75
-MetRS + covariates,0.25,0.78
-MetRS + covariates,0.27,0.78
-MetRS + covariates,0.27,0.80
-MetRS + covariates,0.30,0.80
-MetRS + covariates,0.30,0.82
-MetRS + covariates,0.33,0.82
-MetRS + covariates,0.33,0.85
-MetRS + covariates,0.38,0.85
-MetRS + covariates,0.38,0.87
-MetRS + covariates,0.42,0.87
-MetRS + covariates,0.42,0.90
-MetRS + covariates,0.47,0.90
-MetRS + covariates,0.47,0.93
-MetRS + covariates,0.54,0.93
-MetRS + covariates,0.54,0.95
-MetRS + covariates,0.60,0.95
-MetRS + covariates,0.60,0.97
-MetRS + covariates,0.70,0.97
-MetRS + covariates,0.70,0.98
-MetRS + covariates,0.80,0.98
-MetRS + covariates,0.80,1.00
-MetRS + covariates,1.00,1.00
-Covariates only,0.00,0.00
-Covariates only,0.00,0.12
-Covariates only,0.02,0.12
-Covariates only,0.02,0.25
-Covariates only,0.05,0.25
-Covariates only,0.05,0.35
-Covariates only,0.09,0.35
-Covariates only,0.09,0.37
-Covariates only,0.12,0.37
-Covariates only,0.12,0.45
-Covariates only,0.16,0.45
-Covariates only,0.16,0.50
-Covariates only,0.20,0.50
-Covariates only,0.20,0.55
-Covariates only,0.25,0.55
-Covariates only,0.25,0.60
-Covariates only,0.29,0.60
-Covariates only,0.29,0.65
-Covariates only,0.33,0.65
-Covariates only,0.33,0.73
-Covariates only,0.38,0.73
-Covariates only,0.38,0.75
-Covariates only,0.44,0.75
-Covariates only,0.44,0.80
-Covariates only,0.50,0.80
-Covariates only,0.50,0.83
-Covariates only,0.57,0.83
-Covariates only,0.57,0.87
-Covariates only,0.64,0.87
-Covariates only,0.64,0.90
-Covariates only,0.70,0.90
-Covariates only,0.70,0.93
-Covariates only,0.78,0.93
-Covariates only,0.78,0.97
-Covariates only,0.87,0.97
-Covariates only,0.87,0.99
-Covariates only,0.93,0.99
-Covariates only,0.93,1.00
-Covariates only,1.00,1.00
+"model","one_minus_specificity","sensitivity"
+"Covariates only",0,1
+"Covariates only",0.01,0.98
+"Covariates only",0.01,0.98
+"Covariates only",0.01,0.98
+"Covariates only",0.02,0.98
+"Covariates only",0.04,0.98
+"Covariates only",0.05,0.96
+"Covariates only",0.05,0.96
+"Covariates only",0.06,0.96
+"Covariates only",0.08,0.96
+"Covariates only",0.09,0.96
+"Covariates only",0.1,0.92
+"Covariates only",0.1,0.92
+"Covariates only",0.1,0.92
+"Covariates only",0.1,0.92
+"Covariates only",0.11,0.92
+"Covariates only",0.12,0.91
+"Covariates only",0.12,0.91
+"Covariates only",0.14,0.91
+"Covariates only",0.15,0.9
+"Covariates only",0.15,0.9
+"Covariates only",0.16,0.85
+"Covariates only",0.16,0.85
+"Covariates only",0.16,0.85
+"Covariates only",0.16,0.85
+"Covariates only",0.16,0.85
+"Covariates only",0.17,0.84
+"Covariates only",0.17,0.84
+"Covariates only",0.19,0.84
+"Covariates only",0.2,0.81
+"Covariates only",0.2,0.81
+"Covariates only",0.2,0.81
+"Covariates only",0.21,0.8
+"Covariates only",0.21,0.8
+"Covariates only",0.23,0.8
+"Covariates only",0.24,0.76
+"Covariates only",0.24,0.76
+"Covariates only",0.24,0.76
+"Covariates only",0.24,0.76
+"Covariates only",0.25,0.76
+"Covariates only",0.26,0.76
+"Covariates only",0.27,0.76
+"Covariates only",0.29,0.75
+"Covariates only",0.29,0.75
+"Covariates only",0.3,0.75
+"Covariates only",0.31,0.75
+"Covariates only",0.32,0.74
+"Covariates only",0.32,0.74
+"Covariates only",0.34,0.74
+"Covariates only",0.35,0.74
+"Covariates only",0.36,0.73
+"Covariates only",0.36,0.73
+"Covariates only",0.38,0.73
+"Covariates only",0.39,0.73
+"Covariates only",0.4,0.73
+"Covariates only",0.41,0.66
+"Covariates only",0.41,0.66
+"Covariates only",0.41,0.66
+"Covariates only",0.41,0.66
+"Covariates only",0.41,0.66
+"Covariates only",0.41,0.66
+"Covariates only",0.42,0.66
+"Covariates only",0.44,0.66
+"Covariates only",0.45,0.65
+"Covariates only",0.45,0.65
+"Covariates only",0.46,0.65
+"Covariates only",0.47,0.64
+"Covariates only",0.47,0.64
+"Covariates only",0.49,0.64
+"Covariates only",0.5,0.64
+"Covariates only",0.51,0.61
+"Covariates only",0.51,0.61
+"Covariates only",0.51,0.61
+"Covariates only",0.53,0.61
+"Covariates only",0.54,0.59
+"Covariates only",0.54,0.59
+"Covariates only",0.54,0.59
+"Covariates only",0.55,0.59
+"Covariates only",0.56,0.58
+"Covariates only",0.56,0.58
+"Covariates only",0.58,0.58
+"Covariates only",0.59,0.58
+"Covariates only",0.6,0.56
+"Covariates only",0.6,0.56
+"Covariates only",0.61,0.53
+"Covariates only",0.61,0.53
+"Covariates only",0.61,0.53
+"Covariates only",0.61,0.53
+"Covariates only",0.62,0.53
+"Covariates only",0.64,0.51
+"Covariates only",0.64,0.51
+"Covariates only",0.65,0.5
+"Covariates only",0.65,0.5
+"Covariates only",0.66,0.47
+"Covariates only",0.66,0.47
+"Covariates only",0.66,0.47
+"Covariates only",0.68,0.47
+"Covariates only",0.69,0.42
+"Covariates only",0.69,0.42
+"Covariates only",0.69,0.42
+"Covariates only",0.69,0.42
+"Covariates only",0.69,0.42
+"Covariates only",0.7,0.39
+"Covariates only",0.7,0.39
+"Covariates only",0.7,0.39
+"Covariates only",0.7,0.39
+"Covariates only",0.71,0.38
+"Covariates only",0.71,0.38
+"Covariates only",0.73,0.38
+"Covariates only",0.74,0.36
+"Covariates only",0.74,0.36
+"Covariates only",0.75,0.36
+"Covariates only",0.76,0.36
+"Covariates only",0.77,0.36
+"Covariates only",0.79,0.36
+"Covariates only",0.8,0.35
+"Covariates only",0.8,0.35
+"Covariates only",0.81,0.35
+"Covariates only",0.83,0.35
+"Covariates only",0.84,0.3
+"Covariates only",0.84,0.3
+"Covariates only",0.84,0.3
+"Covariates only",0.84,0.3
+"Covariates only",0.84,0.3
+"Covariates only",0.85,0.29
+"Covariates only",0.85,0.29
+"Covariates only",0.86,0.26
+"Covariates only",0.86,0.26
+"Covariates only",0.86,0.26
+"Covariates only",0.88,0.26
+"Covariates only",0.89,0.25
+"Covariates only",0.89,0.25
+"Covariates only",0.9,0.25
+"Covariates only",0.91,0.25
+"Covariates only",0.92,0.25
+"Covariates only",0.94,0.2
+"Covariates only",0.94,0.2
+"Covariates only",0.94,0.2
+"Covariates only",0.94,0.2
+"Covariates only",0.94,0.2
+"Covariates only",0.95,0.2
+"Covariates only",0.96,0.17
+"Covariates only",0.96,0.17
+"Covariates only",0.96,0.17
+"Covariates only",0.98,0.14
+"Covariates only",0.98,0.14
+"Covariates only",0.98,0.14
+"Covariates only",0.98,0.14
+"Covariates only",0.99,0.12
+"Covariates only",0.99,0.12
+"Covariates only",1,0
+"Covariates only",1,0
+"Covariates only",1,0
+"Covariates only",1,0
+"Covariates only",1,0
+"Covariates only",1,0
+"Covariates only",1,0
+"Covariates only",1,0
+"Covariates only",1,0
+"Covariates only",1,0
+"Covariates only",1,0
+"MetRS + covariates",0,1
+"MetRS + covariates",0.01,1
+"MetRS + covariates",0.02,1
+"MetRS + covariates",0.04,0.99
+"MetRS + covariates",0.04,0.99
+"MetRS + covariates",0.05,0.99
+"MetRS + covariates",0.06,0.99
+"MetRS + covariates",0.08,0.99
+"MetRS + covariates",0.09,0.98
+"MetRS + covariates",0.09,0.98
+"MetRS + covariates",0.1,0.96
+"MetRS + covariates",0.1,0.96
+"MetRS + covariates",0.11,0.96
+"MetRS + covariates",0.12,0.96
+"MetRS + covariates",0.14,0.96
+"MetRS + covariates",0.15,0.96
+"MetRS + covariates",0.16,0.94
+"MetRS + covariates",0.16,0.94
+"MetRS + covariates",0.16,0.94
+"MetRS + covariates",0.17,0.94
+"MetRS + covariates",0.19,0.94
+"MetRS + covariates",0.2,0.92
+"MetRS + covariates",0.2,0.92
+"MetRS + covariates",0.21,0.92
+"MetRS + covariates",0.23,0.92
+"MetRS + covariates",0.24,0.92
+"MetRS + covariates",0.25,0.92
+"MetRS + covariates",0.26,0.9
+"MetRS + covariates",0.26,0.9
+"MetRS + covariates",0.26,0.9
+"MetRS + covariates",0.27,0.89
+"MetRS + covariates",0.27,0.89
+"MetRS + covariates",0.29,0.88
+"MetRS + covariates",0.29,0.88
+"MetRS + covariates",0.3,0.84
+"MetRS + covariates",0.3,0.84
+"MetRS + covariates",0.3,0.84
+"MetRS + covariates",0.3,0.84
+"MetRS + covariates",0.31,0.83
+"MetRS + covariates",0.31,0.83
+"MetRS + covariates",0.32,0.83
+"MetRS + covariates",0.34,0.83
+"MetRS + covariates",0.35,0.83
+"MetRS + covariates",0.36,0.81
+"MetRS + covariates",0.36,0.81
+"MetRS + covariates",0.38,0.81
+"MetRS + covariates",0.39,0.8
+"MetRS + covariates",0.39,0.8
+"MetRS + covariates",0.4,0.8
+"MetRS + covariates",0.41,0.8
+"MetRS + covariates",0.42,0.8
+"MetRS + covariates",0.44,0.8
+"MetRS + covariates",0.45,0.8
+"MetRS + covariates",0.46,0.8
+"MetRS + covariates",0.47,0.79
+"MetRS + covariates",0.47,0.79
+"MetRS + covariates",0.49,0.79
+"MetRS + covariates",0.5,0.77
+"MetRS + covariates",0.5,0.77
+"MetRS + covariates",0.51,0.75
+"MetRS + covariates",0.51,0.75
+"MetRS + covariates",0.51,0.75
+"MetRS + covariates",0.53,0.75
+"MetRS + covariates",0.54,0.75
+"MetRS + covariates",0.55,0.75
+"MetRS + covariates",0.56,0.74
+"MetRS + covariates",0.56,0.74
+"MetRS + covariates",0.58,0.74
+"MetRS + covariates",0.59,0.73
+"MetRS + covariates",0.59,0.73
+"MetRS + covariates",0.6,0.73
+"MetRS + covariates",0.61,0.73
+"MetRS + covariates",0.62,0.71
+"MetRS + covariates",0.62,0.71
+"MetRS + covariates",0.64,0.7
+"MetRS + covariates",0.64,0.7
+"MetRS + covariates",0.65,0.7
+"MetRS + covariates",0.66,0.7
+"MetRS + covariates",0.68,0.68
+"MetRS + covariates",0.68,0.68
+"MetRS + covariates",0.68,0.68
+"MetRS + covariates",0.69,0.66
+"MetRS + covariates",0.69,0.66
+"MetRS + covariates",0.7,0.66
+"MetRS + covariates",0.71,0.65
+"MetRS + covariates",0.71,0.65
+"MetRS + covariates",0.73,0.61
+"MetRS + covariates",0.73,0.61
+"MetRS + covariates",0.73,0.61
+"MetRS + covariates",0.73,0.61
+"MetRS + covariates",0.74,0.61
+"MetRS + covariates",0.75,0.6
+"MetRS + covariates",0.75,0.6
+"MetRS + covariates",0.76,0.6
+"MetRS + covariates",0.77,0.59
+"MetRS + covariates",0.77,0.59
+"MetRS + covariates",0.79,0.58
+"MetRS + covariates",0.79,0.58
+"MetRS + covariates",0.8,0.58
+"MetRS + covariates",0.81,0.58
+"MetRS + covariates",0.83,0.58
+"MetRS + covariates",0.84,0.58
+"MetRS + covariates",0.85,0.58
+"MetRS + covariates",0.86,0.55
+"MetRS + covariates",0.86,0.55
+"MetRS + covariates",0.86,0.55
+"MetRS + covariates",0.88,0.54
+"MetRS + covariates",0.88,0.54
+"MetRS + covariates",0.89,0.54
+"MetRS + covariates",0.9,0.53
+"MetRS + covariates",0.9,0.53
+"MetRS + covariates",0.91,0.45
+"MetRS + covariates",0.91,0.45
+"MetRS + covariates",0.91,0.45
+"MetRS + covariates",0.91,0.45
+"MetRS + covariates",0.91,0.45
+"MetRS + covariates",0.91,0.45
+"MetRS + covariates",0.91,0.45
+"MetRS + covariates",0.92,0.38
+"MetRS + covariates",0.92,0.38
+"MetRS + covariates",0.92,0.38
+"MetRS + covariates",0.92,0.38
+"MetRS + covariates",0.92,0.38
+"MetRS + covariates",0.92,0.38
+"MetRS + covariates",0.92,0.38
+"MetRS + covariates",0.94,0.32
+"MetRS + covariates",0.94,0.32
+"MetRS + covariates",0.94,0.32
+"MetRS + covariates",0.94,0.32
+"MetRS + covariates",0.94,0.32
+"MetRS + covariates",0.95,0.32
+"MetRS + covariates",0.96,0.32
+"MetRS + covariates",0.98,0.3
+"MetRS + covariates",0.98,0.3
+"MetRS + covariates",0.98,0.3
+"MetRS + covariates",0.99,0.14
+"MetRS + covariates",0.99,0.14
+"MetRS + covariates",0.99,0.14
+"MetRS + covariates",0.99,0.14
+"MetRS + covariates",0.99,0.14
+"MetRS + covariates",0.99,0.14
+"MetRS + covariates",0.99,0.14
+"MetRS + covariates",0.99,0.14
+"MetRS + covariates",0.99,0.14
+"MetRS + covariates",0.99,0.14
+"MetRS + covariates",0.99,0.14
+"MetRS + covariates",0.99,0.14
+"MetRS + covariates",0.99,0.14
+"MetRS + covariates",0.99,0.14
+"MetRS + covariates",1,0
+"MetRS + covariates",1,0
+"MetRS + covariates",1,0
+"MetRS + covariates",1,0
+"MetRS + covariates",1,0
+"MetRS + covariates",1,0
+"MetRS + covariates",1,0
+"MetRS + covariates",1,0
+"MetRS + covariates",1,0
+"MetRS + covariates",1,0
+"MetRS + covariates",1,0
+"MetRS + covariates",1,0
