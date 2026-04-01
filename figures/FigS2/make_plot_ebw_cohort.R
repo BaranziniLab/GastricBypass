@@ -14,21 +14,29 @@ df$class = as.character(df$class)
 df$time_f = factor(df$time)
 colors = c("1" = "#E69F00", "2" = "#0072B2")
 
-p = ggplot(df, aes(x = time_f, color = class, group = interaction(time_f, class))) +
+# Manually compute dodged x positions for outliers to guarantee alignment
+dodge_width = 0.8
+x_levels = levels(df$time_f)
+offsets = c("1" = -dodge_width / 4, "2" = dodge_width / 4)
+outlier_rows$x_pos = as.numeric(factor(as.character(outlier_rows$time), levels = x_levels)) +
+  offsets[as.character(outlier_rows$class)]
+outlier_rows$fill_col = colors[as.character(outlier_rows$class)]
+
+p = ggplot(df, aes(x = time_f, fill = class, group = interaction(time_f, class))) +
   geom_boxplot(
     aes(ymin = ymin, lower = lower, middle = middle, upper = upper, ymax = ymax),
     stat = "identity",
-    position = position_dodge(width = 0.8),
-    width = 0.35, linewidth = 0.8, fill = "white", outlier.shape = NA
+    position = position_dodge(width = dodge_width),
+    width = 0.35, linewidth = 0.8, color = "black", outlier.shape = NA
   ) +
   geom_point(
     data = outlier_rows,
-    aes(x = factor(time), y = value, color = class, group = interaction(factor(time), class)),
-    position = position_dodge(width = 0.8),
-    size = 2.5, alpha = 0.8, inherit.aes = FALSE
+    aes(x = x_pos, y = value),
+    fill = outlier_rows$fill_col,
+    size = 1.5, alpha = 0.8, shape = 21, color = "black", inherit.aes = FALSE
   ) +
-  scale_color_manual(values = colors, name = "Trajectory Class",
-                     labels = c("1" = "Regain", "2" = "Sustained Loss")) +
+  scale_fill_manual(values = colors, name = "Trajectory Class",
+                    labels = c("1" = "Regain", "2" = "Sustained Loss")) +
   scale_x_discrete(labels = c("3" = "Year 3", "4" = "Year 4", "5" = "Year 5")) +
   scale_y_continuous(breaks = c(0, 50, 100)) +
   labs(
