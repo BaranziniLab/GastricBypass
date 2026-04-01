@@ -21,7 +21,7 @@ p = ggplot(df, aes(x = group, fill = group)) +
     labels = c("SWL" = "Sustained Weight Loss", "RGN" = "Weight Regain")
   ) +
   scale_y_continuous(breaks = c(-2, 0, 2)) +
-  labs(x = NULL, y = "Metabolite Risk Score (MetRS-10)") +
+  labs(x = NULL, y = "MetRS") +
   theme_classic(base_size = 14) +
   theme(legend.position = "none", axis.line = element_line(linewidth = 0.8))
 

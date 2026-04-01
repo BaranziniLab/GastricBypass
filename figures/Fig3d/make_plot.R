@@ -1,113 +1,61 @@
-###########################
-# Author: Wanjun Gu
-# Email: wanjun.gu@ucsf.edu
-# Date: 2026-03-31
-###########################
+library(ggplot2)
+library(dplyr)
 
-library(grid)
-library(forestploter)
+df = read.csv("data.csv")
 
-# Build display table with model-group header rows
-dt = data.frame(
-  Variable = c(
-    "Model 1",
-    "   Age", "   Baseline EBW", "   Sex",
-    "Model 2",
-    "   MetRS (per SD)",
-    "Model 3",
-    "   Baseline EBW", "   MetRS (per SD)",
-    "Model 4",
-    "   Age", "   Baseline EBW", "   Sex", "   MetRS (per SD)"
-  ),
-  est = c(
-    NA,
-    1.00, 1.20, 1.10,
-    NA,
-    2.80,
-    NA,
-    1.00, 2.60,
-    NA,
-    1.00, 1.10, 1.55, 2.75
-  ),
-  lo = c(
-    NA,
-    0.85, 1.05, 0.45,
-    NA,
-    1.70,
-    NA,
-    0.90, 1.55,
-    NA,
-    0.85, 1.00, 0.45, 1.55
-  ),
-  hi = c(
-    NA,
-    1.10, 1.35, 2.65,
-    NA,
-    4.20,
-    NA,
-    1.10, 3.80,
-    NA,
-    1.10, 1.25, 3.30, 4.30
-  ),
-  is_header = c(
-    TRUE,
-    FALSE, FALSE, FALSE,
-    TRUE,
-    FALSE,
-    TRUE,
-    FALSE, FALSE,
-    TRUE,
-    FALSE, FALSE, FALSE, FALSE
-  ),
-  stringsAsFactors = FALSE
+all_vars   = c("Age", "Baseline EBW", "Sex", "MetRS (per SD)")
+all_models = c("Model1", "Model2", "Model3", "Model4")
+
+# Expand to full grid so every panel has all y-axis rows (missing = NA)
+full_grid = expand.grid(model = all_models, variable = all_vars,
+                        stringsAsFactors = FALSE)
+df = left_join(full_grid, df, by = c("model", "variable"))
+
+df$variable = factor(df$variable, levels = rev(all_vars))
+df$model    = factor(df$model,    levels = all_models)
+
+# Alternating row bands (applied as background rectangles)
+row_bands = data.frame(
+  variable = rev(all_vars),
+  ymin     = seq_along(all_vars) - 0.5,
+  ymax     = seq_along(all_vars) + 0.5,
+  fill     = ifelse(seq_along(all_vars) %% 2 == 0, "#F0F0F0", "white")
 )
 
-# CI text column (blank for header rows)
-dt$`OR (95% CI)` = ifelse(
-  dt$is_header, "",
-  sprintf("%.2f (%.2f to %.2f)", dt$est, dt$lo, dt$hi)
-)
+p = ggplot(df, aes(x = estimate, y = variable)) +
+  # Alternating row backgrounds
+  geom_rect(data = row_bands,
+            aes(ymin = ymin, ymax = ymax, fill = fill),
+            xmin = -Inf, xmax = Inf, inherit.aes = FALSE, show.legend = FALSE) +
+  scale_fill_identity() +
+  geom_vline(xintercept = 1, linetype = "dashed",
+             color = "grey50", linewidth = 0.8) +
+  geom_errorbar(aes(xmin = ci_low, xmax = ci_high),
+                width = 0.22, linewidth = 0.8, color = "black",
+                orientation = "y", na.rm = TRUE) +
+  geom_point(size = 3.2, shape = 21, fill = "grey60",
+             color = "black", stroke = 0.5, na.rm = TRUE) +
+  facet_wrap(~ model, ncol = 4) +
+  scale_x_log10(
+    limits = c(0.25, 6),
+    breaks = c(0.5, 1, 2, 4),
+    labels = c("0.5", "1", "2", "4")
+  ) +
+  scale_y_discrete(expand = c(0, 0)) +
+  labs(x = "Odds Ratio (log scale)", y = NULL) +
+  theme_minimal(base_size = 11) +
+  theme(
+    panel.grid.major.y = element_blank(),
+    panel.grid.minor   = element_blank(),
+    panel.grid.major.x = element_line(color = "#DEDEDE", linewidth = 0.5),
+    strip.background   = element_rect(fill = "grey88", color = NA),
+    strip.text         = element_text(face = "bold", size = 10.5, color = "#1A1A1A"),
+    axis.text.y        = element_text(size = 10, color = "#4D4D4D",
+                                      margin = margin(r = 4)),
+    axis.text.x        = element_text(size = 9,  color = "#4D4D4D"),
+    axis.title.x       = element_text(size = 11, margin = margin(t = 6)),
+    panel.spacing      = unit(0.5, "lines"),
+    plot.margin        = margin(6, 10, 6, 6)
+  )
 
-# Blank column: wider spacing gives more room for CI bars
-dt$` ` = paste(rep(" ", 22), collapse = " ")
-
-tm = forest_theme(
-  base_size      = 11,
-  ci_pch         = 15,
-  ci_col         = "#0072B2",
-  ci_fill        = "#0072B2",
-  ci_alpha       = 0.9,
-  ci_lwd         = 1.8,
-  ci_Theight     = 0.2,
-  refline_gp     = gpar(lwd = 1, lty = "dashed", col = "grey50"),
-  summary_fill   = "#222222",
-  summary_col    = "#222222",
-  core = list(padding = unit(c(3, 4), "mm"))
-)
-
-p = forest(
-  dt[, c("Variable", "OR (95% CI)", " ")],
-  est        = dt$est,
-  lower      = dt$lo,
-  upper      = dt$hi,
-  sizes      = 0.45,
-  ci_column  = 3,
-  ref_line   = 1,
-  x_trans    = "log",
-  xlim       = c(0.25, 6),
-  ticks_at   = c(0.5, 1, 2, 4),
-  xlab       = "Odds Ratio (log scale)",
-  is_summary = dt$is_header,
-  theme      = tm
-)
-
-# Auto-size output to avoid clipping
-p_wh = get_wh(plot = p, unit = "in")
-
-png("fig3d.png", res = 300, width = max(p_wh[1], 7), height = max(p_wh[2], 5), units = "in")
-plot(p)
-dev.off()
-
-pdf("Fig3d_forest_plot.pdf", width = max(p_wh[1], 7), height = max(p_wh[2], 5))
-plot(p)
-dev.off()
+ggsave("fig3d.svg", p, width = 9, height = 2.2)

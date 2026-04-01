@@ -2,10 +2,11 @@ library(ggplot2)
 library(svglite)
 
 df = read.csv("data.csv")
-df$patient_id = factor(df$panel_id, levels = c("10365", "11473", "12471", "13744", "14382", "14492"))
-df$series = factor(ifelse(df$group == "Fitted", "B-Spline Fit", "Observed"),
-                   levels = c("B-Spline Fit", "Observed"))
-df$ebw = df$EBW_kg
+df$patient_id = factor(df$Subject, levels = c("10365", "11473", "12471", "13744", "14382", "14492"))
+df$series = factor(ifelse(df$Modality == "Predicted", "B-Spline Fit", "Observed"),
+                   levels = c("Observed", "B-Spline Fit"))
+df$ebw = df$EBW
+df$time_months = df$Time
 
 p = ggplot(df, aes(x = time_months)) +
   geom_line(aes(y = ebw, color = series, group = series), linewidth = 0.9) +

@@ -42,7 +42,7 @@ p = ggplot() +
   labs(x = NULL, y = NULL) +
   theme_void(base_size = 12) +
   theme(
-    axis.text.y = element_text(size = 10, colour = "black"),
+    axis.text.y = element_text(size = 10, colour = "black", hjust = 1, margin = margin(r = 6)),
     axis.text.x = element_blank(),
     axis.ticks = element_blank(),
     legend.position = "bottom",

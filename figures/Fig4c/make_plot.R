@@ -17,7 +17,7 @@ p = ggplot(df, aes(x = MetRS, y = pct_regain, color = group)) +
   scale_x_continuous(breaks = c(-40, -20, 0, 20, 40, 60), limits = c(-45, 65)) +
   scale_y_continuous(breaks = c(0, 25, 50), limits = c(-25, 70)) +
   labs(
-    x = "Metabolite Risk Score",
+    x = "MetRS",
     y = "Weight Regain (%)"
   ) +
   theme_classic(base_size = 14) +

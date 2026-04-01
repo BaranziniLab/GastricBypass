@@ -13,9 +13,8 @@ class_colors = c(
 p = ggplot(df, aes(x = year, y = ebw_mean, color = class, fill = class)) +
   geom_ribbon(aes(ymin = ebw_lower, ymax = ebw_upper), alpha = 0.15, color = NA) +
   geom_line(linewidth = 1.1) +
-  geom_point(size = 2.5, alpha = 0.8) +
-  scale_color_manual(values = class_colors, name = "Trajectory Class") +
-  scale_fill_manual(values = class_colors, name = "Trajectory Class") +
+  scale_color_manual(values = class_colors, name = NULL) +
+  scale_fill_manual(values = class_colors, name = NULL) +
   scale_x_continuous(breaks = c(0.5, 1, 2, 3, 4, 5, 6), limits = c(0.2, 6.7)) +
   scale_y_continuous(breaks = c(25, 50, 75, 100), limits = c(0, 115)) +
   labs(
@@ -24,10 +23,9 @@ p = ggplot(df, aes(x = year, y = ebw_mean, color = class, fill = class)) +
   ) +
   theme_classic(base_size = 14) +
   theme(
-    legend.position = c(0.82, 0.82),
-    legend.background = element_rect(color = "grey80", fill = "white"),
+    legend.position = "right", 
     legend.key.width = unit(1.2, "cm"),
     axis.line = element_line(linewidth = 0.8)
   )
 
-ggsave("fig1a.svg", p, width = 5, height = 4)
+ggsave("fig1a.svg", p, width = 8, height = 4)

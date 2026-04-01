@@ -17,7 +17,7 @@ p = ggplot(df, aes(x = group, fill = group)) +
   annotate("text", x = 1.5, y = 3.5, label = "p = 0.011", size = 4.5) +
   scale_fill_manual(values = fill_cols) +
   scale_y_continuous(breaks = c(-2, 0, 2, 4)) +
-  labs(x = NULL, y = "Metabolite Risk Score (MetRS-8)") +
+  labs(x = NULL, y = "MetRS") +
   theme_classic(base_size = 14) +
   theme(legend.position = "none", axis.line = element_line(linewidth = 0.8))
 
