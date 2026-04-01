@@ -1,31 +1,113 @@
-library(ggplot2)
-library(svglite)
+###########################
+# Author: Wanjun Gu
+# Email: wanjun.gu@ucsf.edu
+# Date: 2026-03-31
+###########################
 
-d = read.csv("data.csv")
-var_order = c("MetRS (per SD)", "Sex", "Baseline EBW", "Age")
-d$variable = factor(d$variable, levels = var_order)
-d$model    = factor(d$model,    levels = c("Model1", "Model2", "Model3", "Model4"))
+library(grid)
+library(forestploter)
 
-p = ggplot(d, aes(x = estimate, y = variable)) +
-  geom_vline(xintercept = 1, linetype = "dashed", colour = "grey50", linewidth = 0.7) +
-  geom_errorbarh(
-    aes(xmin = ci_low, xmax = ci_high),
-    height = 0.2, linewidth = 0.9, colour = "#0072B2"
-  ) +
-  geom_point(size = 3, colour = "#0072B2", alpha = 0.9) +
-  scale_x_continuous(
-    breaks = c(0, 1, 2, 3, 5),
-    trans  = "log",
-    limits = c(0.3, 6)
-  ) +
-  facet_wrap(~ model, nrow = 1) +
-  labs(x = "Odds Ratio (Log Scale)", y = NULL) +
-  theme_minimal(base_size = 13) +
-  theme(
-    panel.grid.minor   = element_blank(),
-    panel.grid.major.y = element_blank(),
-    strip.text         = element_text(face = "bold"),
-    panel.spacing      = unit(1, "lines")
-  )
+# Build display table with model-group header rows
+dt = data.frame(
+  Variable = c(
+    "Model 1",
+    "   Age", "   Baseline EBW", "   Sex",
+    "Model 2",
+    "   MetRS (per SD)",
+    "Model 3",
+    "   Baseline EBW", "   MetRS (per SD)",
+    "Model 4",
+    "   Age", "   Baseline EBW", "   Sex", "   MetRS (per SD)"
+  ),
+  est = c(
+    NA,
+    1.00, 1.20, 1.10,
+    NA,
+    2.80,
+    NA,
+    1.00, 2.60,
+    NA,
+    1.00, 1.10, 1.55, 2.75
+  ),
+  lo = c(
+    NA,
+    0.85, 1.05, 0.45,
+    NA,
+    1.70,
+    NA,
+    0.90, 1.55,
+    NA,
+    0.85, 1.00, 0.45, 1.55
+  ),
+  hi = c(
+    NA,
+    1.10, 1.35, 2.65,
+    NA,
+    4.20,
+    NA,
+    1.10, 3.80,
+    NA,
+    1.10, 1.25, 3.30, 4.30
+  ),
+  is_header = c(
+    TRUE,
+    FALSE, FALSE, FALSE,
+    TRUE,
+    FALSE,
+    TRUE,
+    FALSE, FALSE,
+    TRUE,
+    FALSE, FALSE, FALSE, FALSE
+  ),
+  stringsAsFactors = FALSE
+)
 
-ggsave("fig3d.svg", p, width = 9, height = 3.5)
+# CI text column (blank for header rows)
+dt$`OR (95% CI)` = ifelse(
+  dt$is_header, "",
+  sprintf("%.2f (%.2f to %.2f)", dt$est, dt$lo, dt$hi)
+)
+
+# Blank column: wider spacing gives more room for CI bars
+dt$` ` = paste(rep(" ", 22), collapse = " ")
+
+tm = forest_theme(
+  base_size      = 11,
+  ci_pch         = 15,
+  ci_col         = "#0072B2",
+  ci_fill        = "#0072B2",
+  ci_alpha       = 0.9,
+  ci_lwd         = 1.8,
+  ci_Theight     = 0.2,
+  refline_gp     = gpar(lwd = 1, lty = "dashed", col = "grey50"),
+  summary_fill   = "#222222",
+  summary_col    = "#222222",
+  core = list(padding = unit(c(3, 4), "mm"))
+)
+
+p = forest(
+  dt[, c("Variable", "OR (95% CI)", " ")],
+  est        = dt$est,
+  lower      = dt$lo,
+  upper      = dt$hi,
+  sizes      = 0.45,
+  ci_column  = 3,
+  ref_line   = 1,
+  x_trans    = "log",
+  xlim       = c(0.25, 6),
+  ticks_at   = c(0.5, 1, 2, 4),
+  xlab       = "Odds Ratio (log scale)",
+  is_summary = dt$is_header,
+  theme      = tm
+)
+
+# Auto-size output to avoid clipping
+p_wh = get_wh(plot = p, unit = "in")
+
+png("fig3d.png", res = 300, width = max(p_wh[1], 7), height = max(p_wh[2], 5), units = "in")
+plot(p)
+dev.off()
+
+pdf("Fig3d_forest_plot.pdf", width = max(p_wh[1], 7), height = max(p_wh[2], 5))
+plot(p)
+dev.off()

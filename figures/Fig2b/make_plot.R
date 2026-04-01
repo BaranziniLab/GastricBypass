@@ -1,49 +1,64 @@
 library(ggplot2)
 library(svglite)
+library(grid)
 
 data = read.csv("data.csv", stringsAsFactors = FALSE)
 
-var_levels = c(
-  "Homoarginine", "2-Aminoisobutyric acid", "13-HODE", "C34:2 PC",
-  "Kynurenine", "Hydroxyproline", "4-Hydroxyhippurate",
+all_levels = c(
+  "Malonate", "Homoarginine", "2-Aminoisobutyric acid", "13-HODE",
+  "C34:2 PC", "Kynurenine", "Hydroxyproline", "4-Hydroxyhippurate",
   "3-Methyladipate/pimelate", "Glucuronate", "N-Acetylserine",
   "1-Methylguanosine", "N-Carbamoyl-beta-alanine"
 )
 
-data$var1 = factor(data$var1, levels = var_levels)
-data$var2 = factor(data$var2, levels = var_levels)
-sig_data = data[data$significant == 1, ]
+row_levels = all_levels[-1]
+col_levels = all_levels[-length(all_levels)]
+
+data$var1 = factor(data$var1, levels = rev(row_levels))
+data$var2 = factor(data$var2, levels = col_levels)
 
 p = ggplot() +
   geom_tile(
     data = data,
     aes(x = var2, y = var1),
-    fill = NA, color = "gray75", linewidth = 0.3
+    fill = "white", color = "gray75", linewidth = 0.3
   ) +
   geom_point(
-    data = sig_data,
-    aes(x = var2, y = var1, fill = value, size = abs(value)),
-    shape = 21, color = NA, alpha = 0.9
+    data = data,
+    aes(x = var2, y = var1, color = value, size = abs(value)),
+    shape = 16
   ) +
-  scale_fill_gradient2(
+  scale_color_gradient2(
     low = "#0072B2", mid = "white", high = "#D55E00",
     midpoint = 0, limits = c(-1, 1),
-    name = "Correlation"
+    name = NULL,
+    breaks = seq(-1, 1, by = 0.2),
+    labels = function(x) format(x, trim = TRUE, scientific = FALSE)
   ) +
-  scale_size_continuous(range = c(3, 10), guide = "none") +
-  scale_x_discrete(position = "bottom") +
+  scale_size_area(max_size = 7.4, guide = "none") +
+  scale_x_discrete(expand = c(0, 0), labels = rep("", length(col_levels))) +
+  scale_y_discrete(expand = c(0, 0)) +
+  coord_fixed() +
   labs(x = NULL, y = NULL) +
-  theme_minimal(base_size = 14) +
+  theme_void(base_size = 12) +
   theme(
-    axis.text.x = element_text(angle = 45, hjust = 1, size = 9),
-    axis.text.y = element_text(size = 9),
-    panel.grid = element_blank(),
+    axis.text.y = element_text(size = 10, colour = "black"),
+    axis.text.x = element_blank(),
+    axis.ticks = element_blank(),
     legend.position = "bottom",
-    legend.key.width = unit(1.5, "cm"),
-    legend.title = element_text(size = 11)
+    legend.key.width = unit(6.8, "cm"),
+    legend.key.height = unit(0.45, "cm"),
+    legend.text = element_text(size = 9),
+    legend.background = element_rect(fill = "white", colour = NA),
+    legend.box.background = element_rect(fill = "white", colour = NA),
+    panel.background = element_rect(fill = "white", colour = NA),
+    plot.background = element_rect(fill = "white", colour = NA),
+    plot.margin = margin(8, 8, 8, 8)
   ) +
-  guides(fill = guide_colorbar(title.position = "top", title.hjust = 0.5,
-                                barwidth = 10, barheight = 0.7)) +
-  coord_fixed()
+  guides(color = guide_colorbar(
+    title.position = "top",
+    barwidth = unit(10, "cm"),
+    barheight = unit(0.5, "cm")
+  ))
 
 ggsave("fig2b.svg", p, width = 7, height = 7)

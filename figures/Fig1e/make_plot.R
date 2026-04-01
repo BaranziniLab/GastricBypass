@@ -9,8 +9,8 @@ p = ggplot(df, aes(x = ebw_observed, y = ebw_predicted)) +
   scale_x_continuous(breaks = c(0, 50, 100), limits = c(-20, 135)) +
   scale_y_continuous(breaks = c(0, 20, 40, 60, 80, 100, 120), limits = c(-20, 135)) +
   labs(
-    x = "Observed Excess Body Weight (kg)",
-    y = "Predicted Excess Body Weight (kg)"
+    x = "EBW observed (kg)",
+    y = "EBW predicted (kg)"
   ) +
   theme_classic(base_size = 14) +
   theme(
