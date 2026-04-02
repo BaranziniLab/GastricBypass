@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/wgu/Desktop/gutlivertrf/Manuscript/Figures/figure1/**)",
+      "Read(//Users/wgu/Desktop/GutLiverTRF/Manuscript/Figures/figure1/**)",
+      "Read(//Users/wgu/Desktop/gutlivertrf/Manuscript/Figures/figure2/**)",
+      "Read(//Users/wgu/Desktop/GutLiverTRF/Manuscript/Figures/figure2/**)",
+      "Read(//Users/wgu/Desktop/gutlivertrf/Manuscript/Figures/figure3/**)",
+      "Read(//Users/wgu/Desktop/GutLiverTRF/Manuscript/Figures/figure3/**)",
+      "Read(//Users/wgu/Desktop/gutlivertrf/Manuscript/Figures/figure4/**)",
+      "Read(//Users/wgu/Desktop/GutLiverTRF/Manuscript/Figures/figure4/**)",
+      "Read(//Users/wgu/Desktop/gutlivertrf/Manuscript/Figures/figure5/**)",
+      "Read(//Users/wgu/Desktop/GutLiverTRF/Manuscript/Figures/figure5/**)",
+      "Read(//Users/wgu/Desktop/gutlivertrf/Manuscript/Figures/figure6/**)",
+      "Read(//Users/wgu/Desktop/GutLiverTRF/Manuscript/Figures/figure6/**)",
+      "Read(//Users/wgu/Desktop/gutlivertrf/Manuscript/Figures/sup1/**)",
+      "Read(//Users/wgu/Desktop/GutLiverTRF/Manuscript/Figures/sup1/**)"
+    ]
+  }
+}
