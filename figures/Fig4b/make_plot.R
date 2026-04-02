@@ -13,9 +13,9 @@ p = ggplot(df, aes(x = group, fill = group)) +
   annotate("segment", x = 1, xend = 2, y = 3.3, yend = 3.3, linewidth = 0.8) +
   annotate("segment", x = 1, xend = 1, y = 3.3, yend = 3.1, linewidth = 0.8) +
   annotate("segment", x = 2, xend = 2, y = 3.3, yend = 3.1, linewidth = 0.8) +
-  annotate("text", x = 1.5, y = 3.5, label = "p = 0.011", size = 5) +
+  annotate("text", x = 1.5, y = 3.6, label = "p = 0.011", size = 5) +
   scale_fill_manual(values = fill_cols) +
-  scale_y_continuous(breaks = c(-2, 0, 2, 4)) +
+  scale_y_continuous(breaks = c(-2, 0, 2, 4), limits = c(NA, 4.0)) +
   labs(x = NULL, y = "MetRS") +
   theme_classic(base_size = 15) +
   theme(legend.position = "none", axis.line = element_line(linewidth = 0.8))

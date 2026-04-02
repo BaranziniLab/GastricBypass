@@ -39,7 +39,7 @@ p = ggplot(df, aes(x = estimate, y = variable)) +
     labels = c("0.5", "1", "2", "4")
   ) +
   scale_y_discrete(expand = c(0, 0)) +
-  labs(x = "Odds Ratio (log scale)", y = NULL) +
+  labs(x = "Odds Ratio", y = NULL) +
   theme_minimal(base_size = 15) +
   theme(
     panel.grid.major.y = element_blank(),

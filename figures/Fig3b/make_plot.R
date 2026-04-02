@@ -30,9 +30,9 @@ p = ggplot(d, aes(x = one_minus_specificity, y = sensitivity, colour = model, gr
   labs(x = "1 \u2013 Specificity", y = "Sensitivity", colour = NULL) +
   theme_linedraw(base_size = 15) +
   theme(
-    legend.position   = c(0.95, 0.02),
+    legend.position   = c(1.0, 0.02),
     legend.justification = c(1, 0),
-    legend.background = element_rect(fill = "white", colour = NA),
+    legend.background = element_rect(fill = "transparent", colour = NA),
     legend.key.width  = unit(1.2, "cm"),
     panel.grid.minor  = element_blank()
   )

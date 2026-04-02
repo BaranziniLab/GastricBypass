@@ -30,7 +30,7 @@ p = ggplot(df, aes(x = time, fill = class, group = interaction(time, class))) +
     data = outlier_rows,
     aes(x = x_pos, y = value),
     fill = outlier_rows$fill_col,
-    size = 3, alpha = 0.8, shape = 21, color = "black", inherit.aes = FALSE
+    size = 1.5, alpha = 0.8, shape = 21, color = "black", inherit.aes = FALSE
   ) +
   scale_fill_manual(values = colors, name = "Trajectory Class",
                     labels = c("1" = "Regain", "2" = "Sustained Loss")) +

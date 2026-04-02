@@ -13,7 +13,7 @@ p = ggplot(box_df, aes(x = class, fill = class)) +
     stat = "identity", color = "black", linewidth = 0.8, width = 0.5, outlier.shape = NA
   ) +
   geom_point(data = outlier_df, aes(x = class, y = outlier, fill = class),
-             size = 3, alpha = 0.8, shape = 21, color = "black") +
+             size = 1.5, alpha = 0.8, shape = 21, color = "black") +
   scale_fill_manual(values = class_colors) +
   scale_x_discrete(labels = c("1" = "Regain", "2" = "Sustained Loss", "3" = "Low Baseline")) +
   scale_y_continuous(breaks = c(0, 30, 60, 90), limits = c(NA, 98)) +

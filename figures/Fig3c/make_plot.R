@@ -16,12 +16,12 @@ p = ggplot(d, aes(x = error_type)) +
   geom_point(
     data = outliers,
     aes(x = error_type, y = value),
-    shape = 21, fill = "grey60", colour = "black", size = 3, alpha = 0.8
+    shape = 21, fill = "grey60", colour = "black", size = 1.5, alpha = 0.8
   ) +
   scale_x_discrete(limits = c("MAE", "RMSE")) +
   scale_y_continuous(breaks = c(15, 18, 21, 24)) +
   labs(
-    x = "Error Metric",
+    x = NULL,
     y = "Prediction Error (kg)"
   ) +
   theme_classic(base_size = 15) +
