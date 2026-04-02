@@ -60,7 +60,7 @@ theme(
 )
 ```
 
-### PCoA / ordination scatter plot
+### PCoA / PCA / ordination scatter plot
 ```r
 theme_linedraw(base_size = 15) +
 theme(
@@ -134,57 +134,15 @@ geom_bar(stat = "identity", position = "stack", color = "black", linewidth = 0.2
 
 ---
 
-## 7. Group Color Palette
+## 7. Saving Figures
 
-| Group | Color |
-|-------|-------|
-| CON / Control | `"#1f78b4"` |
-| CON+ABX | `"#33a02c"` |
-| T2D / T2DM | `"#f66c6c"` |
-| T2D+TRF / T2DM+TRF | `"#cab2d6"` |
-| T2D+PD | `"#FFA500"` |
-| T2D+UDCA | `"#71D3D4"` |
-| N-T2DM | `"lightblue"` |
-| AAV-CYP8B1 | `"#e31a1c"` |
-| AAV-CYP8B1+TRF | `"#6a3d9a"` |
-| Con+AAV | `"#33a02c"` |
-
-Patient-level colors (for connected lines): `"#f78fb3"`, `"#fdbf6f"`, `"#f66c6c"`, `"#cab2d6"`, `"#FF7F50"`
-
----
-
-## 8. Statistical Comparisons
-
-Always use Wilcoxon test with consistent significance symbols:
-
-```r
-stat_compare_means(
-  method = "wilcox.test",
-  comparisons = list(...),
-  symnum.args = list(
-    cutpoints = c(0, 0.0001, 0.001, 0.01, 0.05, Inf),
-    symbols   = c("****", "***", "**", "*", "NS")
-  ),
-  size = 5
-)
-```
-
----
-
-## 9. Saving Figures
-
-```r
-ggsave(filename = "plot.png", plot = p, device = "png",
-       width = 5, height = 4, bg = "white", dpi = 800)
-```
-
-- Always `dpi = 800`
+- Always `dpi = 800` if applicable
 - Always `bg = "white"`
-- Use `.png` format
+- Use `.svg` format if possible, otherwise use `.png` format
 
 ---
 
-## 10. Miscellaneous
+## 8. Miscellaneous
 
 - `base_size = 15` in all theme calls
 - `text = element_text(size = 15)` can be omitted when `base_size = 15` is set

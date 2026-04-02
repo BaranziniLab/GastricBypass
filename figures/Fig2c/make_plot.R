@@ -1,5 +1,4 @@
 library(ggplot2)
-library(svglite)
 
 data = read.csv("data.csv", stringsAsFactors = FALSE)
 
@@ -26,14 +25,14 @@ p = ggplot(data, aes(x = var2, y = var1, fill = value)) +
     name = "Correlation"
   ) +
   labs(x = NULL, y = NULL) +
-  theme_minimal(base_size = 14) +
+  theme_minimal(base_size = 15) +
   theme(
-    axis.text.x = element_text(angle = 45, hjust = 1, size = 9),
-    axis.text.y = element_text(size = 9),
+    axis.text.x = element_text(angle = 45, hjust = 1, size = 11),
+    axis.text.y = element_text(size = 11),
     panel.grid = element_blank(),
-    legend.title = element_text(size = 11),
+    legend.title = element_text(size = 12),
     legend.key.height = unit(1.2, "cm")
   ) +
   coord_fixed()
 
-ggsave("fig2c.svg", p, width = 7, height = 6)
+ggsave("fig2c.png", p, width = 7, height = 6, dpi = 800, bg = "white")

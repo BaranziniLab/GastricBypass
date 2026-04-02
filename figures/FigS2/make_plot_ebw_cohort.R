@@ -1,5 +1,4 @@
 library(ggplot2)
-library(svglite)
 
 df = read.csv("data_ebw_cohort.csv", stringsAsFactors = FALSE)
 
@@ -14,7 +13,6 @@ df$class = as.character(df$class)
 df$time_f = factor(df$time)
 colors = c("1" = "#E69F00", "2" = "#0072B2")
 
-# Manually compute dodged x positions for outliers to guarantee alignment
 dodge_width = 0.8
 x_levels = levels(df$time_f)
 offsets = c("1" = -dodge_width / 4, "2" = dodge_width / 4)
@@ -33,7 +31,7 @@ p = ggplot(df, aes(x = time_f, fill = class, group = interaction(time_f, class))
     data = outlier_rows,
     aes(x = x_pos, y = value),
     fill = outlier_rows$fill_col,
-    size = 1.5, alpha = 0.8, shape = 21, color = "black", inherit.aes = FALSE
+    size = 3, alpha = 0.8, shape = 21, color = "black", inherit.aes = FALSE
   ) +
   scale_fill_manual(values = colors, name = "Trajectory Class",
                     labels = c("1" = "Regain", "2" = "Sustained Loss")) +
@@ -43,10 +41,10 @@ p = ggplot(df, aes(x = time_f, fill = class, group = interaction(time_f, class))
     x = "Follow-Up Time",
     y = "Excess Body Weight (kg)"
   ) +
-  theme_classic(base_size = 14) +
+  theme_classic(base_size = 15) +
   theme(
     legend.position = "top",
     axis.line = element_line(linewidth = 0.8)
   )
 
-ggsave("figs2_ebw_cohort.svg", p, width = 5, height = 4)
+ggsave("figs2_ebw_cohort.png", p, width = 5, height = 4, dpi = 800, bg = "white")

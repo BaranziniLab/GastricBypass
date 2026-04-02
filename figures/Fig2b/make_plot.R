@@ -1,5 +1,4 @@
 library(ggplot2)
-library(svglite)
 library(grid)
 
 data = read.csv("data.csv", stringsAsFactors = FALSE)
@@ -40,15 +39,15 @@ p = ggplot() +
   scale_y_discrete(expand = c(0, 0)) +
   coord_fixed() +
   labs(x = NULL, y = NULL) +
-  theme_void(base_size = 12) +
+  theme_void(base_size = 15) +
   theme(
-    axis.text.y = element_text(size = 10, colour = "black", hjust = 1, margin = margin(r = 6)),
+    axis.text.y = element_text(size = 11, colour = "black", hjust = 1, margin = margin(r = 6)),
     axis.text.x = element_blank(),
     axis.ticks = element_blank(),
     legend.position = "bottom",
     legend.key.width = unit(6.8, "cm"),
     legend.key.height = unit(0.45, "cm"),
-    legend.text = element_text(size = 9),
+    legend.text = element_text(size = 10),
     legend.background = element_rect(fill = "white", colour = NA),
     legend.box.background = element_rect(fill = "white", colour = NA),
     panel.background = element_rect(fill = "white", colour = NA),
@@ -61,4 +60,4 @@ p = ggplot() +
     barheight = unit(0.5, "cm")
   ))
 
-ggsave("fig2b.svg", p, width = 7, height = 7)
+ggsave("fig2b.png", p, width = 7, height = 7, dpi = 800, bg = "white")

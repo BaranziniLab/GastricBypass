@@ -1,5 +1,4 @@
 library(ggplot2)
-library(svglite)
 
 d = read.csv("data.csv")
 
@@ -17,7 +16,7 @@ p = ggplot(d, aes(x = error_type)) +
   geom_point(
     data = outliers,
     aes(x = error_type, y = value),
-    colour = "grey40", size = 2.5, alpha = 0.8
+    shape = 21, fill = "grey60", colour = "black", size = 3, alpha = 0.8
   ) +
   scale_x_discrete(limits = c("MAE", "RMSE")) +
   scale_y_continuous(breaks = c(15, 18, 21, 24)) +
@@ -25,7 +24,7 @@ p = ggplot(d, aes(x = error_type)) +
     x = "Error Metric",
     y = "Prediction Error (kg)"
   ) +
-  theme_classic(base_size = 14) +
+  theme_classic(base_size = 15) +
   theme(axis.line = element_line(linewidth = 0.8))
 
-ggsave("fig3c.svg", p, width = 5, height = 4)
+ggsave("fig3c.png", p, width = 5, height = 4, dpi = 800, bg = "white")

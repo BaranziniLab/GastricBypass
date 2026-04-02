@@ -1,5 +1,4 @@
 library(ggplot2)
-library(svglite)
 
 df = read.csv("data_bootstrap_stability.csv", stringsAsFactors = FALSE)
 df$metabolite = factor(df$metabolite, levels = df$metabolite[order(df$selection_freq)])
@@ -20,13 +19,14 @@ p = ggplot(df, aes(x = selection_freq, y = metabolite, fill = in_metrs)) +
     x = "Bootstrap Selection Frequency",
     y = NULL
   ) +
-  theme_minimal(base_size = 13) +
+  theme_minimal(base_size = 15) +
   theme(
-    axis.text.y = element_text(size = 7),
+    axis.text.y = element_text(size = 8),
     legend.position = c(0.80, 0.15),
     legend.background = element_rect(fill = "white", color = NA),
     panel.grid.major.y = element_blank(),
-    panel.grid.minor = element_blank()
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_line(color = "gray90")
   )
 
-ggsave("figs_bootstrap_stability.svg", p, width = 8, height = 10)
+ggsave("figs_bootstrap_stability.png", p, width = 8, height = 10, dpi = 800, bg = "white")

@@ -1,5 +1,4 @@
 library(ggplot2)
-library(svglite)
 
 df = read.csv("data.csv")
 df$class = factor(df$class, levels = c("Class 1", "Class 2", "Class 3"))
@@ -12,7 +11,7 @@ class_colors = c(
 
 p = ggplot(df, aes(x = year, y = ebw_mean, color = class, fill = class)) +
   geom_ribbon(aes(ymin = ebw_lower, ymax = ebw_upper), alpha = 0.15, color = NA) +
-  geom_line(linewidth = 1.1) +
+  geom_line(linewidth = 0.8) +
   scale_color_manual(values = class_colors, name = NULL) +
   scale_fill_manual(values = class_colors, name = NULL) +
   scale_x_continuous(breaks = c(0.5, 1, 2, 3, 4, 5, 6), limits = c(0.2, 6.7)) +
@@ -21,11 +20,11 @@ p = ggplot(df, aes(x = year, y = ebw_mean, color = class, fill = class)) +
     x = "Years After Surgery",
     y = "Excess Body Weight (kg)"
   ) +
-  theme_classic(base_size = 14) +
+  theme_linedraw(base_size = 15) +
   theme(
-    legend.position = "right", 
+    legend.position = "right",
     legend.key.width = unit(1.2, "cm"),
-    axis.line = element_line(linewidth = 0.8)
+    panel.grid.minor = element_blank()
   )
 
-ggsave("fig1a.svg", p, width = 8, height = 4)
+ggsave("fig1a.png", p, width = 8, height = 4, dpi = 800, bg = "white")
