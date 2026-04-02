@@ -1,4 +1,6 @@
 library(ggplot2)
+library(here)
+setwd(here::here("figures/FigS2"))
 
 df = read.csv("data_delta_ebw.csv", stringsAsFactors = FALSE)
 

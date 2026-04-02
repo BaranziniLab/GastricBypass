@@ -1,4 +1,6 @@
 library(ggplot2)
+library(here)
+setwd(here::here("figures/Fig1a"))
 
 df = read.csv("data.csv")
 df$class = factor(df$class, levels = c("Class 1", "Class 2", "Class 3"))
@@ -27,4 +29,4 @@ p = ggplot(df, aes(x = year, y = ebw_mean, color = class, fill = class)) +
     panel.grid.minor = element_blank()
   )
 
-ggsave("fig1a.png", p, width = 8, height = 4, dpi = 800, bg = "white")
+ggsave("fig1a.png", p, width = 7, height = 4, dpi = 800, bg = "white")

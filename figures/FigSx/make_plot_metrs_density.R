@@ -1,4 +1,6 @@
 library(ggplot2)
+library(here)
+setwd(here::here("figures/FigSx"))
 
 set.seed(42)
 swl_scores = rnorm(200, mean = 0.35, sd = 0.85)
@@ -29,7 +31,7 @@ p = ggplot(df, aes(x = score, fill = group, color = group)) +
   theme_classic(base_size = 15) +
   theme(
     legend.position = c(0.80, 0.82),
-    legend.background = element_rect(fill = "white", color = "grey80", linewidth = 0.4),
+    legend.background = element_rect(fill = "white", color = NA),
     axis.line = element_line(linewidth = 0.8)
   )
 

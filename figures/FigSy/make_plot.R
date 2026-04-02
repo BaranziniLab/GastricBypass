@@ -1,5 +1,7 @@
 library(ggplot2)
 library(dplyr)
+library(here)
+setwd(here::here("figures/FigSy"))
 
 df = read.csv("data.csv", stringsAsFactors = FALSE)
 df$group = factor(df$group, levels = c("SWL", "RGN"))

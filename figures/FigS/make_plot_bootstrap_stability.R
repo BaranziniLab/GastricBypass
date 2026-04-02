@@ -1,4 +1,6 @@
 library(ggplot2)
+library(here)
+setwd(here::here("figures/FigS"))
 
 df = read.csv("data_bootstrap_stability.csv", stringsAsFactors = FALSE)
 df$metabolite = factor(df$metabolite, levels = df$metabolite[order(df$selection_freq)])

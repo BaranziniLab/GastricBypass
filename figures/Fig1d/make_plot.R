@@ -1,4 +1,6 @@
 library(ggplot2)
+library(here)
+setwd(here::here("figures/Fig1d"))
 
 df = read.csv("data.csv")
 df$patient_id = factor(df$Subject, levels = c("10365", "11473", "12471", "13744", "14382", "14492"))

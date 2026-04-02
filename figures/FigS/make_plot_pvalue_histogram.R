@@ -1,4 +1,6 @@
 library(ggplot2)
+library(here)
+setwd(here::here("figures/FigS"))
 
 df = read.csv("data_pvalue_histogram.csv", stringsAsFactors = FALSE)
 expected_count = 541 / 50

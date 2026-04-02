@@ -1,4 +1,6 @@
 library(ggplot2)
+library(here)
+setwd(here::here("figures/FigS6b"))
 
 df = read.csv("data.csv", stringsAsFactors = FALSE)
 df$group = factor(df$group, levels = c("Lean", "Obese"))
@@ -21,4 +23,4 @@ p = ggplot(df, aes(x = xvar1, y = xvar2)) +
     legend.position = "right"
   )
 
-ggsave("figs6b.png", p, width = 5, height = 4, dpi = 800, bg = "white")
+ggsave("figs6b.png", p, width = 5.5, height = 4, dpi = 800, bg = "white")

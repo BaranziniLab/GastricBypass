@@ -1,4 +1,6 @@
 library(ggplot2)
+library(here)
+setwd(here::here("figures/Fig3c"))
 
 d = read.csv("data.csv")
 

@@ -1,4 +1,6 @@
 library(ggplot2)
+library(here)
+setwd(here::here("figures/Fig4a"))
 
 df = read.csv("data.csv")
 df$group = factor(df$group, levels = c("SWL", "RGN"))
@@ -13,7 +15,7 @@ p = ggplot(df, aes(x = group, fill = group)) +
   annotate("segment", x = 1, xend = 2, y = 2.7, yend = 2.7, linewidth = 0.8) +
   annotate("segment", x = 1, xend = 1, y = 2.7, yend = 2.5, linewidth = 0.8) +
   annotate("segment", x = 2, xend = 2, y = 2.7, yend = 2.5, linewidth = 0.8) +
-  annotate("text", x = 1.5, y = 2.95, label = "p = 0.028", size = 5) +
+  annotate("text", x = 1.5, y = 2.95, label = "p == 0.028", parse = TRUE, size = 5) +
   scale_fill_manual(values = fill_cols) +
   scale_x_discrete(limits = c("SWL", "RGN")) +
   scale_y_continuous(breaks = c(-2, 0, 2)) +

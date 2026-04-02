@@ -1,5 +1,7 @@
 library(ggplot2)
 library(dplyr)
+library(here)
+setwd(here::here("figures/Fig3b"))
 
 d = read.csv("data.csv") |>
   arrange(model, one_minus_specificity) |>

@@ -1,4 +1,6 @@
 library(ggplot2)
+library(here)
+setwd(here::here("figures/FigS7b"))
 
 df = read.csv("data.csv", stringsAsFactors = FALSE)
 df$group = factor(df$group, levels = c("swl", "rgn"))
@@ -11,12 +13,12 @@ p = ggplot(df, aes(x = xvar1, y = xvar2)) +
   scale_fill_manual(
     values = group_colors,
     labels = c("swl" = "SWL", "rgn" = "RGN"),
-    name = "Outcome Group"
+    name = ""
   ) +
   scale_color_manual(values = group_colors, guide = "none") +
   labs(
-    x = "PLS-DA Component 1 (7% Variance Explained)",
-    y = "PLS-DA Component 2 (20% Variance Explained)"
+    x = "PLS-DA Component 1",
+    y = "PLS-DA Component 2"
   ) +
   theme_linedraw(base_size = 15) +
   theme(
@@ -25,4 +27,4 @@ p = ggplot(df, aes(x = xvar1, y = xvar2)) +
     legend.position = "right"
   )
 
-ggsave("figs7b.png", p, width = 5, height = 4, dpi = 800, bg = "white")
+ggsave("figs7b.png", p, width = 5.5, height = 4, dpi = 800, bg = "white")

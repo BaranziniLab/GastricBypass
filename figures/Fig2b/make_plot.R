@@ -1,5 +1,7 @@
 library(ggplot2)
 library(grid)
+library(here)
+setwd(here::here("figures/Fig2b"))
 
 data = read.csv("data.csv", stringsAsFactors = FALSE)
 

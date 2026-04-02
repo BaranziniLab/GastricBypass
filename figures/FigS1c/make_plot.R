@@ -1,5 +1,7 @@
 library(ggplot2)
 library(dplyr)
+library(here)
+setwd(here::here("figures/FigS1c"))
 
 df = read.csv("data.csv")
 box_df = df |> group_by(class) |> slice(1) |> ungroup() |> mutate(class = factor(class))

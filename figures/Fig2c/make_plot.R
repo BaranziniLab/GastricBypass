@@ -1,4 +1,8 @@
 library(ggplot2)
+library(ggdendro)
+library(patchwork)
+library(here)
+setwd(here::here("figures/Fig2c"))
 
 data = read.csv("data.csv", stringsAsFactors = FALSE)
 
@@ -14,10 +18,23 @@ hc_col = hclust(as.dist(1 - t(mat)), method = "complete")
 row_order = hc_row$labels[hc_row$order]
 col_order = hc_col$labels[hc_col$order]
 
+n = length(col_order)
+
 data$var1 = factor(data$var1, levels = row_order)
 data$var2 = factor(data$var2, levels = col_order)
 
-p = ggplot(data, aes(x = var2, y = var1, fill = value)) +
+# Column dendrogram (top)
+dendro_col = dendro_data(as.dendrogram(hc_col), type = "rectangle")
+
+p_dendro = ggplot(segment(dendro_col)) +
+  geom_segment(aes(x = x, y = y, xend = xend, yend = yend), linewidth = 0.4) +
+  scale_x_continuous(limits = c(0.5, n + 0.5), expand = c(0, 0)) +
+  scale_y_continuous(expand = expansion(mult = c(0, 0.05))) +
+  theme_void() +
+  theme(plot.margin = margin(4, 8, -8, 8))
+
+# Heatmap
+p_heat = ggplot(data, aes(x = var2, y = var1, fill = value)) +
   geom_tile(color = "white", linewidth = 0.3) +
   scale_fill_gradient2(
     low = "#0072B2", mid = "white", high = "#D55E00",
@@ -35,4 +52,6 @@ p = ggplot(data, aes(x = var2, y = var1, fill = value)) +
   ) +
   coord_fixed()
 
-ggsave("fig2c.png", p, width = 7, height = 6, dpi = 800, bg = "white")
+combined = p_dendro / p_heat + plot_layout(heights = c(0.1, 1))
+
+ggsave("fig2c.png", combined, width = 7, height = 8, dpi = 800, bg = "white")

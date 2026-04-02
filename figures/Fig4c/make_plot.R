@@ -1,4 +1,6 @@
 library(ggplot2)
+library(here)
+setwd(here::here("figures/Fig4c"))
 
 df = read.csv("data.csv")
 df$group = factor(df$group, levels = c("PreSx", "PostSx"))
