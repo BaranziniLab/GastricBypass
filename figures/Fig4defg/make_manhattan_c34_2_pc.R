@@ -37,8 +37,9 @@ p = ggplot(dt, aes(x = bp_cum, y = log10p, color = dot_color)) +
     expand = c(0.01, 0)
   ) +
   scale_y_continuous(
-    expand = expansion(mult = c(0, 0.08)),
-    limits = c(0, NA)
+    breaks = seq(0, 12, by = 2),
+    limits = c(0, 12.5),
+    expand = expansion(mult = c(0, 0))
   ) +
   labs(
     x = "Chromosomal Position",
