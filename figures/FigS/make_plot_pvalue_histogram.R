@@ -6,11 +6,11 @@ df = read.csv("data_pvalue_histogram.csv", stringsAsFactors = FALSE)
 expected_count = 541 / 50
 
 p = ggplot(df, aes(x = bin_mid, y = count)) +
-  geom_col(width = 0.02, fill = "#0072B2", color = NA, alpha = 0.85) +
+  geom_col(width = 0.02, fill = "darkgray", color = NA, alpha = 0.85) +
   geom_hline(yintercept = expected_count, linetype = "dashed",
-             color = "gray50", linewidth = 0.8) +
+             color = "black", linewidth = 0.8) +
   annotate("text", x = 0.72, y = expected_count + 1.3,
-           label = "Expected under null", color = "gray50",
+           label = "Expected under null", color = "black",
            fontface = "italic", size = 4.5) +
   scale_x_continuous(
     breaks = c(0.00, 0.25, 0.50, 0.75, 1.00),

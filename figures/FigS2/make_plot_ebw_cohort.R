@@ -35,15 +35,15 @@ p = ggplot(df, aes(x = time_f, fill = class, group = interaction(time_f, class))
     fill = outlier_rows$fill_col,
     size = 1.5, alpha = 0.8, shape = 21, color = "black", inherit.aes = FALSE
   ) +
-  scale_fill_manual(values = colors, name = "Trajectory Class",
-                    labels = c("1" = "Regain", "2" = "Sustained Loss")) +
+  scale_fill_manual(values = colors, name = NULL,
+                    labels = c("1" = "RGN", "2" = "SWL")) +
   scale_x_discrete(labels = c("3" = "Year 3", "4" = "Year 4", "5" = "Year 5")) +
   scale_y_continuous(breaks = c(0, 50, 100)) +
   labs(
     x = "Follow-Up Time",
-    y = "Excess Body Weight (kg)"
+    y = "EBW (kg)"
   ) +
-  theme_classic(base_size = 15) +
+  theme_classic(base_size = 16) +
   theme(
     legend.position = "top",
     axis.line = element_line(linewidth = 0.8)

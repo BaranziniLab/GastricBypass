@@ -26,7 +26,7 @@ p = ggplot(d, aes(x = error_type)) +
     x = NULL,
     y = "Prediction Error (kg)"
   ) +
-  theme_classic(base_size = 15) +
+  theme_classic(base_size = 18) +
   theme(axis.line = element_line(linewidth = 0.8))
 
 ggsave("fig3c.png", p, width = 5, height = 4, dpi = 800, bg = "white")

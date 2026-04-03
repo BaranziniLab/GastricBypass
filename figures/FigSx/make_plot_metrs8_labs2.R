@@ -19,7 +19,7 @@ p = ggplot(df, aes(x = group, ymin = ymin, lower = lower, middle = middle,
   scale_x_discrete(limits = c("SWL", "RGN")) +
   scale_y_continuous(limits = c(-3, 4), breaks = seq(-2, 4, by = 2)) +
   labs(x = NULL, y = "MetRS-8") +
-  theme_classic(base_size = 15) +
+  theme_classic(base_size = 18) +
   theme(axis.line = element_line(linewidth = 0.8))
 
 ggsave("figsx_metrs8_labs2.png", p, width = 5, height = 4, dpi = 800, bg = "white")

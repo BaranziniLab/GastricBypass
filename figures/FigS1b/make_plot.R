@@ -17,10 +17,10 @@ p = ggplot(box_df, aes(x = class, fill = class)) +
   geom_point(data = outlier_df, aes(x = class, y = outlier, fill = class),
              size = 1.5, alpha = 0.8, shape = 21, color = "black") +
   scale_fill_manual(values = class_colors) +
-  scale_x_discrete(labels = c("1" = "Regain", "2" = "Sustained Loss", "3" = "Low Baseline")) +
+  scale_x_discrete(labels = c("1" = "Class 1", "2" = "Class 2", "3" = "Class 3")) +
   scale_y_continuous(breaks = c(0, 30, 60, 90), limits = c(NA, 98)) +
-  labs(x = "Trajectory Class", y = "Excess Body Weight at 1 Year (kg)") +
-  theme_classic(base_size = 15) +
+  labs(x = NULL, y = "EBW at 1 Year (kg)") +
+  theme_classic(base_size = 18) +
   theme(legend.position = "none", axis.line = element_line(linewidth = 0.8))
 
 ggsave("figs1b.png", p, width = 5, height = 4, dpi = 800, bg = "white")

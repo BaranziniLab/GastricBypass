@@ -5,7 +5,7 @@ setwd(here::here("figures/Fig4b"))
 df = read.csv("data.csv")
 df$group = factor(df$group, levels = c("Lean", "Obese"))
 
-fill_cols = c("Lean" = "#0072B2", "Obese" = "#E69F00")
+fill_cols = c("Lean" = "#56B4E9", "Obese" = "#D55E00")
 
 p = ggplot(df, aes(x = group, fill = group)) +
   geom_boxplot(
@@ -19,7 +19,7 @@ p = ggplot(df, aes(x = group, fill = group)) +
   scale_fill_manual(values = fill_cols) +
   scale_y_continuous(breaks = c(-2, 0, 2, 4), limits = c(NA, 4.0)) +
   labs(x = NULL, y = "MetRS") +
-  theme_classic(base_size = 15) +
+  theme_classic(base_size = 18) +
   theme(legend.position = "none", axis.line = element_line(linewidth = 0.8))
 
 ggsave("fig4b.png", p, width = 5, height = 4, dpi = 800, bg = "white")

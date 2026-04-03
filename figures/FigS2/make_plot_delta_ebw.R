@@ -34,13 +34,14 @@ p = ggplot(df, aes(x = time, fill = class, group = interaction(time, class))) +
     fill = outlier_rows$fill_col,
     size = 1.5, alpha = 0.8, shape = 21, color = "black", inherit.aes = FALSE
   ) +
-  scale_fill_manual(values = colors, name = "Trajectory Class",
-                    labels = c("1" = "Regain", "2" = "Sustained Loss")) +
+  scale_x_discrete(labels = c("d.36" = "Year 3", "d.48" = "Year 4", "d.60" = "Year 5")) +
+  scale_fill_manual(values = colors, name = NULL,
+                    labels = c("1" = "RGN", "2" = "SWL")) +
   labs(
-    x = "Time Since Surgery (Months)",
-    y = "Change in Excess Body Weight (kg)"
+    x = "Follow-Up Time",
+    y = "Change in EBW (kg)"
   ) +
-  theme_classic(base_size = 15) +
+  theme_classic(base_size = 16) +
   theme(
     legend.position = "top",
     axis.line = element_line(linewidth = 0.8)

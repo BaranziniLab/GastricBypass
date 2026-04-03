@@ -20,7 +20,7 @@ p = ggplot(df, aes(x = group, fill = group)) +
   scale_x_discrete(limits = c("SWL", "RGN")) +
   scale_y_continuous(breaks = c(-2, 0, 2)) +
   labs(x = NULL, y = "MetRS") +
-  theme_classic(base_size = 15) +
+  theme_classic(base_size = 18) +
   theme(legend.position = "none", axis.line = element_line(linewidth = 0.8))
 
 ggsave("fig4a.png", p, width = 5, height = 4, dpi = 800, bg = "white")

@@ -35,4 +35,4 @@ p = ggplot(df, aes(x = score, fill = group, color = group)) +
     axis.line = element_line(linewidth = 0.8)
   )
 
-ggsave("figsx_metrs_density.png", p, width = 5, height = 4, dpi = 800, bg = "white")
+ggsave("figsx_metrs_density.png", p, width = 5, height = 3.5, dpi = 800, bg = "white")
