@@ -56,4 +56,4 @@ p = ggplot(df, aes(x = estimate, y = variable)) +
     plot.margin        = margin(6, 10, 6, 6)
   )
 
-ggsave("fig3d.png", p, width = 9, height = 2.5, dpi = 800, bg = "white")
+ggsave("fig3d.png", p, width = 12, height = 2.5, dpi = 800, bg = "white")
