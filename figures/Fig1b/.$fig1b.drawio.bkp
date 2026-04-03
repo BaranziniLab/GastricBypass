@@ -4,11 +4,8 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="u9gr4eGKiYQJDlouQnf4-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;" value="" vertex="1">
-          <mxGeometry height="440" width="430" x="212" y="85" as="geometry" />
-        </mxCell>
         <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;fontStyle=1;fontFamily=Arial;fontColor=#1a1a2e;" value="Subject Selection" vertex="1">
-          <mxGeometry height="30" width="140" x="355" y="86" as="geometry" />
+          <mxGeometry height="30" width="140" x="355" y="80" as="geometry" />
         </mxCell>
         <mxCell id="box1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#f5f5f5;strokeColor=none;strokeWidth=2;shadow=0;fontSize=15;fontFamily=Arial;verticalAlign=middle;spacingTop=4;spacingBottom=4;spacingLeft=10;spacingRight=10;fontColor=#333333;" value="&lt;b&gt;Longitudinal Assessment of&lt;br&gt;Bariatric Surgery (LABS-2)&lt;/b&gt;&lt;br&gt;&lt;hr style=&quot;border:0;border-top:1px solid #b0b0b0;margin:6px 0;&quot;&gt;&lt;span style=&quot;color: rgb(68, 68, 68);&quot;&gt;Multicenter, prospective&lt;br&gt;observational study&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-weight: bold; color: rgb(26, 26, 46);&quot;&gt;n = 2,458 adults&lt;/span&gt;" vertex="1">
           <mxGeometry height="110" width="370" x="240" y="120" as="geometry" />
