@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>MetRS Network Analysis</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+
+kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb
+}
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+  body {
+    padding: 2cm; 
+  }
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h1 id="toc_0">MetRS Metabolites in SPOKE: A Network Biology Deep-Dive into Weight Loss and Regain After RYGB Surgery</h1>
+
+<h2 id="toc_1">Executive Summary</h2>
+
+<p>This report presents a systematic network traversal of the SPOKE biomedical knowledge graph to identify biological pathways and molecular mechanisms linking 14 metabolites from a Metabolite Risk Score (MetRS) — associated with weight trajectories after Roux-en-Y gastric bypass (RYGB) — to plausible mechanistic themes. The analysis recovered <strong>166 unique nodes</strong> (compounds, genes, biological processes, pathways, diseases, protein domains) and <strong>188 edges</strong> connecting them across seven major pathway themes plus several emergent biology areas.</p>
+
+<p>The network reveals that the MetRS is not a random collection of metabolites; rather, it captures a coordinated snapshot of at least seven interlocking biological systems that are reshaped by bariatric surgery and whose dysregulation may predict weight regain.</p>
+
+<h2 id="toc_2">1. Network Architecture Overview</h2>
+
+<p>The 14 MetRS metabolites connect to the broader SPOKE graph through the following pathway themes:</p>
+
+<table>
+<thead>
+<tr>
+<th>Theme</th>
+<th>Key MetRS Metabolites</th>
+<th>Central Hub Genes</th>
+<th>Key Pathways</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Fatty acid oxidation / Energy sensing</td>
+<td>Malonate, BAIBA</td>
+<td>CPT1A, ACACA/B, PRKAA1/2, SDHA-D</td>
+<td>FA beta-oxidation, TCA cycle, AMPK signaling</td>
+</tr>
+<tr>
+<td>Bile acid / Enterohepatic / GLP-1</td>
+<td>Glucuronate</td>
+<td>CYP7A1, NR1H4 (FXR), FGF19, GCG, GLP1R</td>
+<td>Bile acid synthesis, GLP-1 signaling, Hunger &amp; satiety</td>
+</tr>
+<tr>
+<td>One-carbon metabolism / Antioxidant defense</td>
+<td>Hydroxyproline, 1-Methylguanosine</td>
+<td>PRODH, ALDH4A1, EGLN1, SIRT1</td>
+<td>Proline metabolism, HIF oxygen sensing, NAD metabolism</td>
+</tr>
+<tr>
+<td>Mitochondrial integrity / Redox</td>
+<td>Malonate, BAIBA</td>
+<td>SDHA-D, UCP2, GPX4</td>
+<td>ETC Complex II, Ferroptosis, Thermogenesis</td>
+</tr>
+<tr>
+<td>Inflammation (Kynurenine pathway)</td>
+<td>L-Kynurenine</td>
+<td>IDO1/2, TDO2, KMO, KYNU, AFMID</td>
+<td>Tryptophan metabolism, IDO pathway, NAD biosynthesis</td>
+</tr>
+<tr>
+<td>Vascular tone (NO via homoarginine)</td>
+<td>L-Homoarginine, DMGV</td>
+<td>NOS1/2/3, GATM, GAMT</td>
+<td>Effects of NO, Leptin signaling, Creatine pathway</td>
+</tr>
+<tr>
+<td>Gut-microbiome interactions</td>
+<td>4-Hydroxyhippuric acid, 3-Ureidopropionic acid</td>
+<td>SLC22A6, DPYD, UPB1</td>
+<td>Pyrimidine catabolism, OAT transport</td>
+</tr>
+<tr>
+<td>Lipid handling / PPAR signaling</td>
+<td>13-HODE, PC 34:2, 3-Methyladipic acid</td>
+<td>ALOX15, PPARG, PPARA, SREBF1</td>
+<td>PPAR signaling, Eicosanoid/LOX metabolism, Adipogenesis</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="toc_3">2. Detailed Pathway Narratives</h2>
+
+<h3 id="toc_4">2.1 Fatty Acid Oxidation and Hypothalamic Energy Sensing</h3>
+
+<p><strong>Key MetRS metabolites:</strong> Malonate, 2-Aminoisobutyric acid (BAIBA)</p>
+
+<p>Malonate occupies a unique position in metabolic regulation. In SPOKE, it binds 442 protein domains and directly inhibits succinate dehydrogenase (SDH/Complex II: SDHA, SDHB, SDHC, SDHD), positioning it as a sentinel of mitochondrial TCA cycle flux. More critically, malonate is the free-acid form of malonyl-CoA, the master regulator of the CPT1A/CPT1B fatty acid oxidation gateway. The malonyl-CoA axis — controlled by acetyl-CoA carboxylases ACACA and ACACB — is the primary mechanism by which hypothalamic energy sensing regulates systemic fat burning vs. storage. When malonyl-CoA rises (signaling energy surplus), CPT1A is inhibited and fatty acid oxidation shuts down; when it falls (energy deficit), fat burning resumes.</p>
+
+<p>After RYGB, the dramatic caloric restriction and gut hormone changes fundamentally reset this axis. Malonate levels in the MetRS may reflect the capacity of the malonyl-CoA/AMPK/CPT1A circuit to maintain the &quot;fat-burning&quot; state. SPOKE confirms that PRKAA1 and PRKAA2 (AMPK subunits) directly participate in insulin signaling (WP481), energy metabolism (WP1541), lipid metabolism (WP3965), and nonalcoholic fatty liver disease (WP4396) — all pathways remodeled by bariatric surgery.</p>
+
+<p>BAIBA (2-aminoisobutyric acid) extends this story. Known as an exercise-mimicking myokine, BAIBA activates PPARA-mediated fat oxidation and upregulates UCP2 (uncoupling protein 2), promoting brown-fat-like thermogenesis. In the SPOKE network, these connect through PPAR signaling (WP3942), differentiation of white and brown adipocyte (WP2895), and energy metabolism (WP1541). BAIBA&#39;s inclusion in the MetRS likely captures the extent to which post-surgical physiology maintains an &quot;exercised&quot; metabolic state.</p>
+
+<h3 id="toc_5">2.2 Bile Acid / Enterohepatic Metabolism and the GLP-1 Link</h3>
+
+<p><strong>Key MetRS metabolite:</strong> D-Glucuronic acid</p>
+
+<p>Glucuronate&#39;s network connections in SPOKE reveal a deep link to bile acid metabolism and, through it, to the GLP-1/incretin axis that is fundamentally altered by RYGB. Glucuronate is the substrate/product of UDP-glucuronosyltransferases (UGT1A1, UGT1A3, and &gt;20 other UGT family members) that conjugate bile acids, bilirubin, and xenobiotics for excretion. UGT1A3 specifically conjugates bile acids, directly tying glucuronate to the enterohepatic cycle.</p>
+
+<p>SPOKE reveals that the bile acid master regulators — CYP7A1 (rate-limiting enzyme of bile acid synthesis), NR1H4/FXR (bile acid receptor), and FGF19 (enterohepatic feedback signal) — are all directly associated with obesity (DOID:9970) and type 2 diabetes (DOID:9352). NR1H4/FXR is further associated with MASLD, MASH, cholestasis, and metabolic dysfunction. RYGB profoundly alters bile acid pools by rerouting bile flow, and the resulting FXR/FGF19 activation is thought to be a key mechanism by which surgery improves metabolism beyond simple caloric restriction.</p>
+
+<p>Crucially, bile acid signaling through FXR and TGR5 (GPBAR1) stimulates GLP-1 secretion from L-cells. SPOKE confirms that GCG (proglucagon, the GLP-1 precursor) participates in GLP-1 glucose homeostasis (WP5452), hunger and satiety (WP5445), thermogenesis (WP4321), and SCFA/skeletal muscle metabolism (WP4030). GLP1R connects to these same pathways. Glucuronate levels in the MetRS may therefore serve as a proxy for the capacity of the bile acid/UGT conjugation system — and by extension, the strength of the bile acid → FXR → GLP-1 signaling cascade that sustains weight loss after RYGB.</p>
+
+<h3 id="toc_6">2.3 One-Carbon Metabolism, Antioxidant Defense, and Collagen Turnover</h3>
+
+<p><strong>Key MetRS metabolites:</strong> Hydroxyproline, 1-Methylguanosine</p>
+
+<p>Hydroxyproline is primarily a collagen degradation marker. SPOKE connects it to PRODH, ALDH4A1, HOGA1, and GOT2 through 4-hydroxyproline catabolic and metabolic processes. These enzymes feed hydroxyproline carbon into the TCA cycle, connecting collagen turnover directly to energy metabolism. P4HA1 (prolyl-4-hydroxylase) and EGLN1 (HIF prolyl-hydroxylase) provide a bridge to oxygen sensing — EGLN1 hydroxylates HIF-1α to mark it for degradation, and this reaction depends on the same 2-oxoglutarate/Fe²⁺/ascorbate cofactors as collagen hydroxylation.</p>
+
+<p>After massive weight loss, extensive tissue remodeling and collagen turnover occur. The MetRS likely captures this remodeling activity. Hydroxyproline also has a Phase 1.5 clinical trial for primary hyperoxaluria, reflecting its catabolism to oxalate (via HOGA1) — a known risk after RYGB.</p>
+
+<p>1-Methylguanosine is a modified nucleoside released during RNA turnover. It connects to SIRT1 (a NAD-dependent deacetylase) through the broader NAD metabolism network. SIRT1 is directly associated with obesity and type 2 diabetes in SPOKE, and participates in NAFLD (WP4396). Post-surgical improvements in NAD+ metabolism and sirtuin activity are part of the metabolic reset that sustains weight loss.</p>
+
+<h3 id="toc_7">2.4 Mitochondrial Integrity and Redox Status</h3>
+
+<p><strong>Key MetRS metabolites:</strong> Malonate, BAIBA, Hydroxyproline</p>
+
+<p>The mitochondrial theme emerges from the convergence of multiple MetRS compounds. Malonate&#39;s inhibition of SDH/Complex II (confirmed by SPOKE domain bindings to all four SDH subunits) directly impairs the electron transport chain. All four SDH genes (SDHA-D) participate in TCA cycle (WP78), ETC/OXPHOS (WP111), and mitochondrial complex II assembly (WP4920) — and importantly, also in nonalcoholic fatty liver disease (WP4396), connecting mitochondrial dysfunction to hepatic steatosis.</p>
+
+<p>BAIBA&#39;s activation of UCP2 introduces a thermogenic/uncoupling component. GPX4 (glutathione peroxidase 4), identified through the lipoxygenase pathway that produces 13-HODE, participates in ferroptosis (WP4313) — iron-dependent cell death driven by lipid peroxidation. The 13-HODE/ALOX15/GPX4 axis therefore connects oxidized lipid metabolism to cell survival decisions, relevant to the oxidative stress that accompanies rapid weight change.</p>
+
+<h3 id="toc_8">2.5 Inflammation: The Tryptophan/Kynurenine Pathway</h3>
+
+<p><strong>Key MetRS metabolite:</strong> L-Kynurenine</p>
+
+<p>L-Kynurenine is the most biologically connected MetRS metabolite in terms of pathway complexity. SPOKE identifies 11 genes in kynurenine metabolism: IDO1, IDO2, TDO2 (the initiating enzymes converting tryptophan → kynurenine), KMO, KYNU, KYAT1, KYAT3, AADAT, AFMID, ALDH8A1, and GOT2. These genes collectively participate in tryptophan metabolism (WP465), the kynurenine/senescence pathway (WP5044), IDO metabolic pathway (WP5414), NAD biosynthesis from tryptophan (WP2485), and tryptophan catabolism to NAD (WP4210).</p>
+
+<p>The immunometabolic significance is profound. IDO1 is the rate-limiting enzyme for kynurenine production under inflammatory conditions, and SPOKE shows it is associated with immune system disease, autoimmune disease, and multiple cancers. After RYGB, the dramatic reduction in adipose-tissue-driven inflammation should suppress IDO1 activity, lowering kynurenine. Patients who fail to suppress kynurenine may have persistent inflammatory drive — explaining its predictive value for weight regain.</p>
+
+<p>Moreover, the kynurenine pathway competes with serotonin synthesis for tryptophan, linking inflammation to mood and appetite regulation. TDO2 connects to monoamine transport (WP727), while the broader pathway links to NAD biosynthesis — connecting inflammatory tryptophan diversion to cellular energy currency.</p>
+
+<p>L-kynurenine is the only MetRS metabolite with a clinical max phase (Phase 1), reflecting active drug development around this pathway for immunotherapy.</p>
+
+<h3 id="toc_9">2.6 Vascular Tone: Nitric Oxide via Homoarginine</h3>
+
+<p><strong>Key MetRS metabolites:</strong> L-Homoarginine, DMGV</p>
+
+<p>L-Homoarginine&#39;s binding to the NOS oxygenase domain (PF02898) in SPOKE directly confirms its role as an alternative NOS substrate. NOS3 (endothelial NOS) is directly associated with obesity (DOID:9970) and type 2 diabetes (DOID:9352) in SPOKE, and participates in leptin signaling (WP2034), PI3K-Akt signaling (WP4172), effects of NO (WP1995), and the VEGFA-VEGFR2 pathway. NOS3 is therefore a convergence point for metabolic, vascular, and adipokine signaling.</p>
+
+<p>Homoarginine is produced by GATM (glycine amidinotransferase / AGAT), which in SPOKE participates in the creatine pathway (WP5190) and urea cycle (WP497). GATM is the same enzyme that initiates creatine biosynthesis, linking homoarginine to the creatine/phosphocreatine energy buffer system. Low homoarginine = low GATM activity = impaired creatine synthesis + impaired NO production — a double hit on cardiovascular health and energy metabolism.</p>
+
+<p>DMGV (2-oxo-5-(3,3-dimethylguanidine-1-yl)pentanoic acid) extends this axis. It derives from asymmetric dimethylarginine (ADMA) metabolism and the GATM pathway. ADMA is an endogenous NOS inhibitor, and DMGV levels reflect the balance between methylarginine production and clearance — a direct readout of vascular NO availability and cardiovascular risk.</p>
+
+<h3 id="toc_10">2.7 Gut-Microbiome Interactions</h3>
+
+<p><strong>Key MetRS metabolites:</strong> 4-Hydroxyhippuric acid, 3-Ureidopropionic acid (N-Carbamoyl-beta-alanine)</p>
+
+<p>4-Hydroxyhippuric acid is a classic gut-microbial co-metabolite. Dietary polyphenols are metabolized by gut bacteria to produce 4-hydroxybenzoic acid, which is then conjugated with glycine in the liver to form 4-hydroxyhippuric acid. SPOKE confirms its transport by SLC22A6 (OAT1), the organic anion transporter in the kidney — establishing the gut → liver → kidney elimination axis. Changes in 4-hydroxyhippuric acid after RYGB reflect altered gut microbiome composition and function, which is dramatically restructured by the surgical re-routing of the GI tract.</p>
+
+<p>3-Ureidopropionic acid (N-carbamoyl-beta-alanine) is an intermediate of pyrimidine catabolism, produced by DPYD (dihydropyrimidine dehydrogenase) and DPYS, and metabolized by UPB1 to beta-alanine. Both host liver enzymes and gut bacteria contribute to pyrimidine catabolism. Beta-alanine itself has connections to carnosine synthesis and exercise physiology, providing another link to the energy/exercise theme.</p>
+
+<h3 id="toc_11">2.8 Lipid Handling: PPAR Signaling and Membrane Composition</h3>
+
+<p><strong>Key MetRS metabolites:</strong> 13-HODE, PC 34:2, 3-Methyladipic acid/Pimelic acid</p>
+
+<p>13-HODE (13-hydroxy-9,11-octadecadienoic acid) is produced by ALOX15 (15-lipoxygenase) from linoleic acid. SPOKE places ALOX15 in eicosanoid/LOX metabolism (WP4721), eicosanoid synthesis (WP167), and ferroptosis (WP4313). Critically, 13-HODE is an endogenous PPARG ligand — SPOKE confirms PPARG&#39;s participation in PPAR signaling (WP3942), adipocyte differentiation (WP2895), nuclear receptors in lipid metabolism (WP299), and energy metabolism (WP1541). PPARG is associated with both obesity and T2DM.</p>
+
+<p>After RYGB, changes in 13-HODE reflect altered linoleic acid handling and oxidized lipid signaling. Since PPARG drives adipocyte differentiation and lipid storage, 13-HODE levels may indicate whether the post-surgical state favors fat mobilization vs. renewed fat accumulation.</p>
+
+<p>PC 34:2 (phosphatidylcholine 34:2) represents membrane phospholipid remodeling. As the major phospholipid in cell membranes and lipoproteins, PC species reflect the balance between phospholipid synthesis (Kennedy pathway) and remodeling (Lands cycle). Changes in PC 34:2 after RYGB may indicate altered hepatic lipid secretion (VLDL composition), bile composition, or cellular membrane turnover.</p>
+
+<p>3-Methyladipic acid and pimelic acid are medium-chain dicarboxylic acids that arise from branched-chain and odd-chain fatty acid oxidation. Their presence in the MetRS captures the efficiency of peroxisomal and mitochondrial fatty acid oxidation pathways.</p>
+
+<h2 id="toc_12">3. Convergence Points: Where Pathways Meet</h2>
+
+<p>Several genes and pathways emerge as critical convergence hubs where multiple MetRS metabolites interact:</p>
+
+<p><strong>GOT2 (Glutamic-oxaloacetic transaminase 2):</strong> Participates in both kynurenine metabolism AND hydroxyproline catabolism, while also operating in the malate-aspartate shuttle (mitochondrial redox), amino acid metabolism, and glycolysis/gluconeogenesis. GOT2 is a true metabolic integrator connecting inflammation, collagen turnover, and energy metabolism.</p>
+
+<p><strong>NOS3:</strong> Associated with obesity and T2DM, participating in leptin signaling and PI3K-Akt — it is the convergence point for homoarginine/DMGV (vascular) and adipokine signaling (metabolic).</p>
+
+<p><strong>NR1H4/FXR:</strong> Associated with obesity, T2DM, MASLD, MASH, and cholestasis — it bridges bile acid metabolism (glucuronate) to GLP-1 signaling (GCG/GLP1R) and hepatic lipid handling.</p>
+
+<p><strong>PPARA/PPARG:</strong> Connected to BAIBA (FAO activation), 13-HODE (PPARG ligand), fatty acid oxidation, adipogenesis, and insulin signaling. The balance between PPARA (fat burning) and PPARG (fat storage) may be central to weight trajectory.</p>
+
+<p><strong>SIRT1:</strong> Associated with obesity and T2DM, connects NAD metabolism (1-methylguanosine link), bile acid regulation, and NAFLD to the broader metabolic reset.</p>
+
+<h2 id="toc_13">4. Disease Network</h2>
+
+<p>SPOKE disease associations confirm the clinical relevance of the MetRS network:</p>
+
+<table>
+<thead>
+<tr>
+<th>Disease</th>
+<th># Pathway Genes Associated</th>
+<th>Key Genes</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Obesity</td>
+<td>18</td>
+<td>NOS3, LEP, SIRT1, NPY, SREBF1, IRS1, PPARG, PPARA, CYP7A1, NR1H4, ADIPOQ, GCG, UCP2, CNR1, CEBPA, SCD, APOA1, APOB</td>
+</tr>
+<tr>
+<td>Type 2 Diabetes</td>
+<td>10</td>
+<td>NOS3, LEP, SIRT1, IRS1, PPARG, PPARA, NR1H4, ADIPOQ, GCG, UCP2</td>
+</tr>
+<tr>
+<td>Steatotic Liver Disease</td>
+<td>9</td>
+<td>PPARA, CPT1A, CYP7A1, SREBF1, ADIPOQ, SIRT1, LEP, NR1H4, PPARG</td>
+</tr>
+<tr>
+<td>Cardiovascular Disease</td>
+<td>Multiple</td>
+<td>NOS3, CYP7A1, NR1H4</td>
+</tr>
+<tr>
+<td>Atherosclerosis</td>
+<td>Multiple</td>
+<td>CYP7A1</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="toc_14">5. Network Statistics</h2>
+
+<ul>
+<li><strong>Total unique nodes:</strong> 166 (15 MetRS compounds, 65 genes, 22 biological processes, 43 pathways, 15 diseases, 6 protein domains)</li>
+<li><strong>Total edges:</strong> 188</li>
+<li><strong>MetRS compounds with gene-level connections:</strong> 14/14 (100%)</li>
+<li><strong>Pathway themes covered:</strong> 8 major themes</li>
+<li><strong>Genes associated with obesity in SPOKE:</strong> 18 out of 65 network genes</li>
+<li><strong>Genes associated with T2DM:</strong> 10 out of 65 network genes</li>
+</ul>
+
+<h2 id="toc_15">6. Implications for Weight Regain Prediction</h2>
+
+<p>The MetRS network suggests that weight regain after RYGB is not driven by a single mechanism but by the failure to sustain a coordinated multi-system metabolic reset. The MetRS captures:</p>
+
+<ol>
+<li><strong>Energy flux</strong> (malonate/malonyl-CoA → CPT1A → FAO) — is the patient burning fat?</li>
+<li><strong>Inflammatory tone</strong> (kynurenine/IDO1) — has adipose inflammation resolved?</li>
+<li><strong>Vascular health</strong> (homoarginine/NOS3/DMGV) — is endothelial function improving?</li>
+<li><strong>Gut remodeling</strong> (4-hydroxyhippuric acid) — has the microbiome adapted to new anatomy?</li>
+<li><strong>Bile acid signaling</strong> (glucuronate/UGT → FXR → GLP-1) — is the enterohepatic axis supporting satiety?</li>
+<li><strong>Thermogenic capacity</strong> (BAIBA/UCP2) — is the patient maintaining energy expenditure?</li>
+<li><strong>Tissue remodeling</strong> (hydroxyproline) — is post-surgical healing and adaptation proceeding normally?</li>
+<li><strong>Lipid handling</strong> (13-HODE/PPARG, PC 34:2) — is the balance shifting toward fat mobilization vs. storage?</li>
+</ol>
+
+<p>Patients whose MetRS indicates failure in multiple axes simultaneously may be at highest risk for weight regain.</p>
+
+
+
+
+</body>
+
+</html>

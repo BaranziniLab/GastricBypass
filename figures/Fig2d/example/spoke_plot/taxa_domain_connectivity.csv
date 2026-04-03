@@ -1,0 +1,11 @@
+"taxon","node_id","Compounds","Genes","Proteins","Diseases","BiologicalProcesses","ProteinDomains","domains_connected"
+"Limosilactobacillus reuteri","30730378",0,0,10,0,0,0,1
+"Acinetobacter schindleri","30688585",0,0,8,0,0,0,1
+"Akkermansia muciniphila","30731315",0,0,10,0,0,0,1
+"Parabacteroides distasonis","30738601",0,0,8,2,0,0,2
+"Bacteroides fragilis","30736558",0,0,8,4,0,0,2
+"Lactobacillus","30709411",0,0,0,6,0,0,1
+"Lactobacillus iners","30708123",0,0,6,2,0,0,2
+"Bacteroides","30719406",0,0,0,4,0,0,1
+"Akkermansia","30706821",0,0,0,2,0,0,1
+"Ileibacterium valens","30775861",0,0,0,0,0,0,0

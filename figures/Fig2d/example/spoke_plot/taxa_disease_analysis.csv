@@ -1,0 +1,8 @@
+"taxon","n_diseases_direct","diseases_direct","n_diseases_2hop"
+"Akkermansia muciniphila",0,"",1
+"Parabacteroides distasonis",1,"liver cirrhosis",3
+"Bacteroides fragilis",2,"type 1 diabetes mellitus; tonsillitis",5
+"Lactobacillus",3,"type 2 diabetes mellitus; type 1 diabetes mellitus; liver cirrhosis",7
+"Lactobacillus iners",1,"bacterial vaginosis",3
+"Bacteroides",2,"liver cirrhosis; colorectal carcinoma",5
+"Akkermansia",1,"type 1 diabetes mellitus",3

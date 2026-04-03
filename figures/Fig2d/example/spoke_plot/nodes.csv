@@ -1,0 +1,285 @@
+node_id,identifier,node_type,name,human_name
+423007,inchikey:BHQCQFFYRZLCQQ-OELDTZBJSA-N,Compound,Cholic Acid,Cholic Acid
+423108,inchikey:KXGVEGMKQFWNSR-LLQZFEROSA-N,Compound,Deoxycholic Acid,Deoxycholic Acid
+556753,inchikey:GHCZAUBVMUEKKP-XROMFQGDSA-N,Compound,Glycoursodeoxycholic acid,Glycoursodeoxycholic acid
+26886199,P08684,Protein,CP3A4_HUMAN,CP3A4
+388647,inchikey:WBWWGRHZICKQGZ-HZAMXZRMSA-N,Compound,Taurocholic acid,Taurocholic acid
+390682,inchikey:RFDAIACWWDREDC-FRVQLJSFSA-N,Compound,Glycocholic acid,Glycocholic acid
+391913,inchikey:GHCZAUBVMUEKKP-GYPHWSFCSA-N,Compound,Glycochenodeoxycholic acid,Glycochenodeoxycholic acid
+396399,inchikey:RUDATBOHQWOJDD-UZVSRGJWSA-N,Compound,Ursodiol,Ursodiol
+27583284,Q9NZK7,Protein,PA2GE_HUMAN,PA2GE
+390598,inchikey:SMEROWZSTRWXGI-HVATVPOCSA-N,Compound,Lithocholic acid,Lithocholic acid
+417993,inchikey:SMEROWZSTRWXGI-WFVDQZAMSA-N,Compound,Isolithocholic acid,Isolithocholic acid
+411156,inchikey:HMXPOCDLAFAFNT-BHYUGXBJSA-N,Compound,Taurohyodeoxycholic acid,Taurohyodeoxycholic acid
+605358,inchikey:XSOLDPYUICCHJX-UZUDEGBHSA-N,Compound,Tauro-b-muricholic acid,Tauro-b-muricholic acid
+27544276,Q96RI1,Protein,NR1H4_HUMAN,NR1H4
+2472680,CHEBI:85234,Compound,human blood serum metabolite,Human Blood Serum Metabolite
+2025296,inchikey:AWDRATDZQPNJFN-VAYUFCLWSA-N,Compound,Taurodeoxycholic acid,Taurodeoxycholic acid
+2063755,inchikey:WVULKSPCQVQLCU-BUXLTGKBSA-N,Compound,Glycodeoxycholic acid,Glycodeoxycholic acid
+2373639,inchikey:BHTRKEVKTKCXOH-LBSADWJPSA-N,Compound,Tauroursodeoxycholic acid,Tauroursodeoxycholic acid
+2279734,inchikey:DGABKXLVXPYZII-SIBKNCMHSA-N,Compound,Hyodeoxycholic acid,Hyodeoxycholic acid
+26987197,Q12908,Protein,NTCP2_HUMAN,NTCP2
+26893757,P22680,Protein,CP7A1_HUMAN,CP7A1
+353959,inchikey:XSOLDPYUICCHJX-UHFFFAOYSA-N,Compound,Tauro-alpha-muricholic acid,Tauro-alpha-muricholic acid
+26896194,P35575,Protein,G6PC1_HUMAN,G6PC1
+2491959,2538,Gene,G6PC1,G6PC1
+26934366,Q07869,Protein,PPARA_HUMAN,PPARA
+26885968,P07602,Protein,SAP_HUMAN,SAP
+2491891,2308,Gene,FOXO1,FOXO1
+2492439,3172,Gene,HNF4A,HNF4A
+27592445,Q9UNU6,Protein,CP8B1_HUMAN,CP8B1
+2491386,1582,Gene,CYP8B1,CYP8B1
+26881286,O75881,Protein,CP7B1_HUMAN,CP7B1
+2496542,9420,Gene,CYP7B1,CYP7B1
+27514351,Q8TDU6,Protein,GPBAR_HUMAN,GPBAR
+2491395,1593,Gene,CYP27A1,CYP27A1
+27007851,Q14973,Protein,NTCP_HUMAN,NTCP
+2494734,6554,Gene,SLC10A1,SLC10A1
+2494757,6579,Gene,SLCO1A2,SLCO1A2
+11483,UBERON:0000082,Anatomy,adult mammalian kidney,Adult Mammalian Kidney
+2491789,2172,Gene,FABP6,FABP6
+2494735,6555,Gene,SLC10A2,SLC10A2
+2497003,9971,Gene,NR1H4,NR1H4
+27010356,Q15466,Protein,NR0B2_HUMAN,NR0B2
+2495821,8431,Gene,NR0B2,NR0B2
+2492077,2697,Gene,GJA1,GJA1
+2502435,64943,Gene,NT5DC2,NT5DC2
+163314,inchikey:BHTRKEVKTKCXOH-BJLOMENOSA-N,Compound,Taurochenodeoxycholic acid,Taurochenodeoxycholic acid
+27596853,Q9Y6L6,Protein,SO1B1_HUMAN,SO1B1
+26892069,P16220,Protein,CREB1_HUMAN,CREB1
+26884642,P02768,Protein,ALBU_HUMAN,ALBU
+26871142,O00716,Protein,E2F3_HUMAN,E2F3
+26899852,P46721,Protein,SO1A2_HUMAN,SO1A2
+2495986,8647,Gene,ABCB11,ABCB11
+26901050,P51161,Protein,FABP6_HUMAN,FABP6
+28017782,PF13561,ProteinDomain,Enoyl-(Acyl carrier protein) reductase,Enoyl-(Acyl carrier protein) reductase
+30730378,1598,Organism,Limosilactobacillus reuteri,Limosilactobacillus reuteri
+30688585,108981,Organism,Acinetobacter schindleri,Acinetobacter schindleri
+30731315,239935,Organism,Akkermansia muciniphila,Akkermansia muciniphila
+30738601,823,Organism,Parabacteroides distasonis,Parabacteroides distasonis
+30736558,817,Organism,Bacteroides fragilis,Bacteroides fragilis
+146592,DOID:10763,Disease,hypertension,Hypertension
+2493893,5373,Gene,PMM2,PMM2
+152911,DOID:9351,Disease,diabetes mellitus,Diabetes Mellitus
+151144,DOID:9352,Disease,type 2 diabetes mellitus,Type 2 Diabetes Mellitus
+145440,DOID:9970,Disease,obesity,Obesity
+146082,DOID:13580,Disease,cholestasis,Cholestasis
+26883798,O95342,Protein,ABCBB_HUMAN,ABCBB
+30629793,hsa-miR-6873-3p,MiRNA,,
+2501999,58478,Gene,ENOPH1,ENOPH1
+28023950,PF01663,ProteinDomain,Type I phosphodiesterase / nucleotide pyrophosphatase,Type I phosphodiesterase / nucleotide pyrophosphatase
+30709411,1578,Organism,Lactobacillus,Lactobacillus
+30708123,147802,Organism,Lactobacillus iners,Lactobacillus iners
+26894880,P28482,Protein,MK01_HUMAN,MK01
+26902119,P55055,Protein,NR1H2_HUMAN,NR1H2
+26994266,Q13133,Protein,NR1H3_HUMAN,NR1H3
+26876825,O43524,Protein,FOXO3_HUMAN,FOXO3
+26892946,P19793,Protein,RXRA_HUMAN,RXRA
+26892500,P17676,Protein,CEBPB_HUMAN,CEBPB
+26884341,P01100,Protein,FOS_HUMAN,FOS
+26897611,P42224,Protein,STAT1_HUMAN,STAT1
+26885805,P06850,Protein,CRF_HUMAN,CRF
+26894669,P27361,Protein,MK03_HUMAN,MK03
+2279755,inchikey:DKPMWHFRUGMUKF-CRKPLTDNSA-N,Compound,beta-Muricholic acid,Beta-Muricholic Acid
+411290,inchikey:DKPMWHFRUGMUKF-JDDNAIEOSA-N,Compound,Muricholic acid,Muricholic acid
+26986618,Q12772,Protein,SRBP2_HUMAN,SRBP2
+2491385,1581,Gene,CYP7A1,CYP7A1
+385407,inchikey:FPIPGXGPPPQFEQ-UHFFFAOYSA-N,Compound,"3,7-Dimethyl-9-(2,6,6-trimethylcyclohexen-1-yl)nona-2,4,6,8-tetraen-1-ol","3,7-Dimethyl-9-(2,6,6-trimethylcyclohexen-1-yl)nona-2,4,6,8-tetraen-1-ol"
+26883967,O95750,Protein,FGF19_HUMAN,FGF19
+2496997,9965,Gene,FGF19,FGF19
+2279753,inchikey:DKPMWHFRUGMUKF-NTPBNISXSA-N,Compound,omega-Muricholic acid,Omega-Muricholic Acid
+2279754,inchikey:DKPMWHFRUGMUKF-GDYCBZMLSA-N,Compound,alpha-Muricholic acid,Alpha-Muricholic Acid
+26885351,P04626,Protein,ERBB2_HUMAN,ERBB2
+143290,DOID:409,Disease,liver disease,Liver Disease
+26939262,Q08050,Protein,FOXM1_HUMAN,FOXM1
+27582042,Q9NPD5,Protein,SO1B3_HUMAN,SO1B3
+2493820,5290,Gene,PIK3CA,PIK3CA
+2493679,5105,Gene,PCK1,PCK1
+26897406,P41235,Protein,HNF4A_HUMAN,HNF4A
+147704,DOID:162,Disease,cancer,Cancer
+143548,DOID:3385,Disease,bacterial vaginosis,Bacterial Vaginosis
+142769,DOID:3571,Disease,liver cancer,Liver Cancer
+144506,DOID:576,Disease,proteinuria,Proteinuria
+2497839,11044,Gene,TENT4A,TENT4A
+27534015,Q92887,Protein,MRP2_HUMAN,MRP2
+26886068,P08047,Protein,SP1_HUMAN,SP1
+2496890,9842,Gene,PLEKHM1,PLEKHM1
+2494203,5796,Gene,PTPRK,PTPRK
+26890877,P10275,Protein,ANDR_HUMAN,ANDR
+518,UBERON:0002048,Anatomy,lung,Lung
+148120,DOID:12550,Disease,hepatic coma,Hepatic Coma
+151507,DOID:9744,Disease,type 1 diabetes mellitus,Type 1 Diabetes Mellitus
+396618,inchikey:AOJJSUZBOXZQNB-SNFLSGHGSA-N,Compound,"(7S,9S)-7-[(4-amino-5-hydroxy-6-methyl-2-oxanyl)oxy]-6,9,11-trihydroxy-9-(2-hydroxy-1-oxoethyl)-4-methoxy-8,10-dihydro-7H-tetracene-5,12-dione","(7S,9S)-7-[(4-amino-5-hydroxy-6-methyl-2-oxanyl)oxy]-6,9,11-trihydroxy-9-(2-hydroxy-1-oxoethyl)-4-methoxy-8,10-dihydro-7H-tetracene-5,12-dione"
+26872881,O15438,Protein,MRP3_HUMAN,MRP3
+2497444,10525,Gene,HYOU1,HYOU1
+26916138,Q01094,Protein,E2F1_HUMAN,E2F1
+2494960,6832,Gene,SUPV3L1,SUPV3L1
+26897936,P43220,Protein,GLP1R_HUMAN,GLP1R
+26885001,P03372,Protein,ESR1_HUMAN,ESR1
+148954,DOID:5082,Disease,liver cirrhosis,Liver Cirrhosis
+143983,DOID:4195,Disease,hyperglycemia,Hyperglycemia
+26995200,Q13485,Protein,SMAD4_HUMAN,SMAD4
+27005636,Q14032,Protein,BAAT_HUMAN,BAAT
+26910709,P84022,Protein,SMAD3_HUMAN,SMAD3
+145949,DOID:10211,Disease,cholelithiasis,Cholelithiasis
+26891109,P11473,Protein,VDR_HUMAN,VDR
+2506211,159963,Gene,SLC5A12,SLC5A12
+30630392,hsa-miR-330-5p,MiRNA,,
+26891174,P11926,Protein,DCOR_HUMAN,DCOR
+143017,DOID:1389,Disease,polyneuropathy,Polyneuropathy
+147998,DOID:0014667,Disease,disease of metabolism,Disease Of Metabolism
+143622,DOID:2383,Disease,neonatal jaundice,Neonatal Jaundice
+12597,UBERON:0000948,Anatomy,heart,Heart
+2500388,54512,Gene,EXOSC4,EXOSC4
+30631177,hsa-miR-1225-5p,MiRNA,,
+30630625,hsa-miR-4742-5p,MiRNA,,
+26885366,P04792,Protein,HSPB1_HUMAN,HSPB1
+144390,DOID:10456,Disease,tonsillitis,Tonsillitis
+26881078,O75376,Protein,NCOR1_HUMAN,NCOR1
+30719406,816,Organism,Bacteroides,Bacteroides
+30629385,hsa-miR-335-3p,MiRNA,,
+26929190,Q04828,Protein,AK1C1_HUMAN,AK1C1
+14140,UBERON:0002107,Anatomy,liver,Liver
+6923,UBERON:0000945,Anatomy,stomach,Stomach
+30631516,hsa-miR-3162-5p,MiRNA,,
+26939488,Q09472,Protein,EP300_HUMAN,EP300
+26897782,P42574,Protein,CASP3_HUMAN,CASP3
+149644,DOID:12236,Disease,primary biliary cholangitis,Primary Biliary Cholangitis
+2498672,23597,Gene,ACOT9,ACOT9
+26881124,O75469,Protein,NR1I2_HUMAN,NR1I2
+2497287,10320,Gene,IKZF1,IKZF1
+28005470,PF02275,ProteinDomain,"Linear amide C-N hydrolases, choloylglycine hydrolase family","Linear amide C-N hydrolases, choloylglycine hydrolase family"
+28012402,PF00664,ProteinDomain,ABC transporter transmembrane region,ABC transporter transmembrane region
+28016318,PF00009,ProteinDomain,Elongation factor Tu GTP binding domain,Elongation factor Tu GTP binding domain
+28014487,PF00194,ProteinDomain,Eukaryotic-type carbonic anhydrase,Eukaryotic-type carbonic anhydrase
+28022527,PF01758,ProteinDomain,Sodium Bile acid symporter family,Sodium Bile acid symporter family
+28017767,PF00115,ProteinDomain,Cytochrome C and Quinol oxidase polypeptide I,Cytochrome C and Quinol oxidase polypeptide I
+28011251,PF00762,ProteinDomain,Ferrochelatase,Ferrochelatase
+28020127,PF07690,ProteinDomain,Major Facilitator Superfamily,Major Facilitator Superfamily
+28007740,PF01058,ProteinDomain,"NADH ubiquinone oxidoreductase, 20 Kd subunit","NADH ubiquinone oxidoreductase, 20 Kd subunit"
+30706821,239934,Organism,Akkermansia,Akkermansia
+2467341,CHEBI:3098,Compound,bile acid,Bile Acid
+2481007,CHEBI:77746,Compound,human metabolite,Human Metabolite
+2473743,CHEBI:23219,Compound,bile acid taurine conjugate,Bile Acid Taurine Conjugate
+2485781,CHEBI:36255,Compound,bile acid glycine conjugate,Bile Acid Glycine Conjugate
+26893490,P21462,Protein,FPR1_HUMAN,FPR1
+29698996,CL:0000127,CellType,astrocyte,Astrocyte
+2492538,3312,Gene,HSPA8,HSPA8
+148189,DOID:1909,Disease,melanoma,Melanoma
+2495150,7088,Gene,TLE1,TLE1
+2503096,80204,Gene,FBXO11,FBXO11
+2500019,51382,Gene,ATP6V1D,ATP6V1D
+2490555,390,Gene,RND3,RND3
+2471879,CHEBI:75771,Compound,mouse metabolite,Mouse Metabolite
+43345996,CL:0000182,CellType,hepatocyte,Hepatocyte
+35036091,A0A2S1ERJ6,Protein,A0A2S1ERJ6_LACRE,A0A2S1ERJ6_LACRE
+11545570,A0A2S1FEQ5,Protein,A0A2S1FEQ5_9GAMM,A0A2S1FEQ5_9GAMM
+11218229,A0A2N8HAT5,Protein,A0A2N8HAT5_9BACT,A0A2N8HAT5_9BACT
+9214035,A0A1Y4IX08,Protein,A0A1Y4IX08_9BACT,A0A1Y4IX08_9BACT
+34865640,A0A2M9V329,Protein,A0A2M9V329_BACFG,A0A2M9V329_BACFG
+2483106,CHEBI:23775,Compound,dihydroxy-5beta-cholanic acid,Dihydroxy-5Beta-Cholanic Acid
+2471759,CHEBI:63726,Compound,neuroprotective agent,Neuroprotective Agent
+2494795,6622,Gene,SNCA,SNCA
+35025120,A0A2R7DUG3,Protein,A0A2R7DUG3_LACRE,A0A2R7DUG3_LACRE
+21069153,A0A6N2R1A6,Protein,A0A6N2R1A6_9BACT,A0A6N2R1A6_9BACT
+2477167,CHEBI:131620,Compound,C24-steroid,C24-steroid
+2487113,CHEBI:35349,Compound,7beta-hydroxy steroid,7Beta-Hydroxy Steroid
+26986623,Q12778,Protein,FOXO1_HUMAN,FOXO1
+2472241,CHEBI:36843,Compound,7alpha-hydroxy steroid,7Alpha-Hydroxy Steroid
+2480799,CHEBI:36851,Compound,6beta-hydroxy steroid,6Beta-Hydroxy Steroid
+28004717,WP710,Pathway,DNA damage response only ATM dependent ,DNA damage response only ATM dependent 
+27975012,GO:1901135,BiologicalProcess,carbohydrate derivative metabolic process,Carbohydrate Derivative Metabolic Process
+27985395,GO:0008202,BiologicalProcess,steroid metabolic process,Steroid Metabolic Process
+27977194,GO:0044283,BiologicalProcess,small molecule biosynthetic process,Small Molecule Biosynthetic Process
+27982617,GO:0055088,BiologicalProcess,lipid homeostasis,Lipid Homeostasis
+28004539,WP4172,Pathway,PI3K Akt signaling pathway,PI3K Akt signaling pathway
+23902,D003967,Symptom,Diarrhea,Diarrhea
+2497577,10682,Gene,EBP,EBP
+27985823,GO:0014070,BiologicalProcess,response to organic cyclic compound,Response To Organic Cyclic Compound
+27981673,GO:0009725,BiologicalProcess,response to hormone,Response To Hormone
+27976736,GO:0019752,BiologicalProcess,carboxylic acid metabolic process,Carboxylic Acid Metabolic Process
+27985636,GO:0009617,BiologicalProcess,response to bacterium,Response To Bacterium
+28003016,GO:0002684,BiologicalProcess,positive regulation of immune system process,Positive Regulation Of Immune System Process
+27986950,GO:0006066,BiologicalProcess,alcohol metabolic process,Alcohol Metabolic Process
+36877,D000138,Symptom,Acidosis,Acidosis
+2498028,11284,Gene,PNKP,PNKP
+27983774,GO:0042593,BiologicalProcess,glucose homeostasis,Glucose Homeostasis
+27982658,GO:0070482,BiologicalProcess,response to oxygen levels,Response To Oxygen Levels
+27983345,GO:0033993,BiologicalProcess,response to lipid,Response To Lipid
+27981084,GO:0046883,BiologicalProcess,regulation of hormone secretion,Regulation Of Hormone Secretion
+27983032,GO:0050796,BiologicalProcess,regulation of insulin secretion,Regulation Of Insulin Secretion
+27976114,GO:0007169,BiologicalProcess,transmembrane receptor protein tyrosine kinase signaling pathway,Transmembrane Receptor Protein Tyrosine Kinase Signaling Pathway
+2495179,7124,Gene,TNF,TNF
+2492125,2778,Gene,GNAS,GNAS
+2500942,55324,Gene,ABCF3,ABCF3
+2490741,670,Gene,BPHL,BPHL
+27982686,GO:0003006,BiologicalProcess,developmental process involved in reproduction,Developmental Process Involved In Reproduction
+27980703,GO:0071466,BiologicalProcess,cellular response to xenobiotic stimulus,Cellular Response To Xenobiotic Stimulus
+27982687,GO:0009410,BiologicalProcess,response to xenobiotic stimulus,Response To Xenobiotic Stimulus
+27979884,GO:0055091,BiologicalProcess,phospholipid homeostasis,Phospholipid Homeostasis
+29063648,GO:0018130,BiologicalProcess,heterocycle biosynthetic process,Heterocycle Biosynthetic Process
+27985092,GO:0019216,BiologicalProcess,regulation of lipid metabolic process,Regulation Of Lipid Metabolic Process
+2490437,229,Gene,ALDOB,ALDOB
+27986017,GO:0097306,BiologicalProcess,cellular response to alcohol,Cellular Response To Alcohol
+27984808,GO:0019725,BiologicalProcess,cellular homeostasis,Cellular Homeostasis
+27981429,GO:0015711,BiologicalProcess,organic anion transport,Organic Anion Transport
+27982290,GO:0006820,BiologicalProcess,monoatomic anion transport,Monoatomic Anion Transport
+27981923,GO:0019218,BiologicalProcess,regulation of steroid metabolic process,Regulation Of Steroid Metabolic Process
+27984171,GO:0046942,BiologicalProcess,carboxylic acid transport,Carboxylic Acid Transport
+27977782,GO:1904251,BiologicalProcess,regulation of bile acid metabolic process,Regulation Of Bile Acid Metabolic Process
+24077,D015430,Symptom,Weight Gain,Weight Gain
+2497767,10953,Gene,TOMM34,TOMM34
+27975702,GO:0097305,BiologicalProcess,response to alcohol,Response To Alcohol
+27985100,GO:0044057,BiologicalProcess,regulation of system process,Regulation Of System Process
+27977908,GO:0009991,BiologicalProcess,response to extracellular stimulus,Response To Extracellular Stimulus
+27986976,GO:0072330,BiologicalProcess,monocarboxylic acid biosynthetic process,Monocarboxylic Acid Biosynthetic Process
+27983834,GO:0032787,BiologicalProcess,monocarboxylic acid metabolic process,Monocarboxylic Acid Metabolic Process
+2500406,54541,Gene,DDIT4,DDIT4
+2498230,23029,Gene,RBM34,RBM34
+2506855,221895,Gene,JAZF1,JAZF1
+2496938,9897,Gene,WASHC5,WASHC5
+2506306,163486,Gene,DENND1B,DENND1B
+29063667,GO:0006811,BiologicalProcess,monoatomic ion transport,Monoatomic Ion Transport
+27981225,GO:0032890,BiologicalProcess,regulation of organic acid transport,Regulation Of Organic Acid Transport
+27981720,GO:0038183,BiologicalProcess,bile acid signaling pathway,Bile Acid Signaling Pathway
+27981895,GO:0010876,BiologicalProcess,lipid localization,Lipid Localization
+2490891,874,Gene,CBR3,CBR3
+2490401,178,Gene,AGL,AGL
+2497470,10557,Gene,RPP38,RPP38
+27983570,GO:1903825,BiologicalProcess,organic acid transmembrane transport,Organic Acid Transmembrane Transport
+2490713,641,Gene,BLM,BLM
+27985524,GO:1905039,BiologicalProcess,carboxylic acid transmembrane transport,Carboxylic Acid Transmembrane Transport
+2497669,10818,Gene,FRS2,FRS2
+153296,DOID:263,Disease,kidney cancer,Kidney Cancer
+27987980,GO:0043177,MolecularFunction,organic acid binding,Organic Acid Binding
+27977960,GO:0008285,BiologicalProcess,negative regulation of cell population proliferation,Negative Regulation Of Cell Population Proliferation
+27985753,GO:0015849,BiologicalProcess,organic acid transport,Organic Acid Transport
+2494660,6464,Gene,SHC1,SHC1
+2500014,51375,Gene,SNX7,SNX7
+2502587,79080,Gene,CCDC86,CCDC86
+27976074,GO:1901615,BiologicalProcess,organic hydroxy compound metabolic process,Organic Hydroxy Compound Metabolic Process
+27985405,GO:0032024,BiologicalProcess,positive regulation of insulin secretion,Positive Regulation Of Insulin Secretion
+2495919,8550,Gene,MAPKAPK5,MAPKAPK5
+35035895,A0A2S1EQX2,Protein,A0A2S1EQX2_LACRE,A0A2S1EQX2_LACRE
+35035562,A0A2S1EPS3,Protein,A0A2S1EPS3_LACRE,A0A2S1EPS3_LACRE
+35035775,A0A2S1EQI1,Protein,A0A2S1EQI1_LACRE,A0A2S1EQI1_LACRE
+8137050,A0A1P8PI72,Protein,A0A1P8PI72_9GAMM,A0A1P8PI72_9GAMM
+8137419,A0A1P8PJ98,Protein,A0A1P8PJ98_9GAMM,A0A1P8PJ98_9GAMM
+8137860,A0A1P8PKJ4,Protein,A0A1P8PKJ4_9GAMM,A0A1P8PKJ4_9GAMM
+20189992,A0A6G7B756,Protein,A0A6G7B756_9LACO,A0A6G7B756_9LACO
+20190352,A0A6G7B8N2,Protein,A0A6G7B8N2_9LACO,A0A6G7B8N2_9LACO
+20190744,A0A6G7B9Z8,Protein,A0A6G7B9Z8_9LACO,A0A6G7B9Z8_9LACO
+25239974,B2UPT6,Protein,NUOB_AKKM8,NUOB_AKKM8
+21070832,A0A6N2REZ9,Protein,A0A6N2REZ9_9BACT,A0A6N2REZ9_9BACT
+25239995,B2UQY9,Protein,EFTU_AKKM8,EFTU_AKKM8
+2493797,5261,Gene,PHKG2,PHKG2
+9211601,A0A1Y4I2E0,Protein,A0A1Y4I2E0_9BACT,A0A1Y4I2E0_9BACT
+6195731,A0A174XDW3,Protein,A0A174XDW3_9BACT,A0A174XDW3_9BACT
+6179386,A0A174TQR1,Protein,A0A174TQR1_9BACT,A0A174TQR1_9BACT
+34863748,A0A2M9UU94,Protein,A0A2M9UU94_BACFG,A0A2M9UU94_BACFG
+38671711,A0A5C6KV20,Protein,A0A5C6KV20_BACFG,A0A5C6KV20_BACFG
+34865436,A0A2M9V1Y4,Protein,A0A2M9V1Y4_BACFG,A0A2M9V1Y4_BACFG
+2493207,4313,Gene,MMP2,MMP2
+147806,DOID:0080199,Disease,colorectal carcinoma,Colorectal Carcinoma
+38516,inchikey:HBUJATCJXGLELF-UHFFFAOYSA-N,Compound,"1,2-Dimethoxy-4-[2-(3-methoxyphenyl)ethyl]benzene","1,2-Dimethoxy-4-[2-(3-methoxyphenyl)ethyl]benzene"
+30775861,1862668,Organism,Ileibacterium valens,Ileibacterium valens

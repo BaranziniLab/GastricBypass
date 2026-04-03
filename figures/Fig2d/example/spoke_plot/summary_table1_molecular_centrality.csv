@@ -1,0 +1,4 @@
+"Node","Type","Degree","Degree Rank","Betweenness Rank","Eigenvector Rank","PageRank"
+"CYP8B1 (Gene)","Gene",34,"19 (93.3%)","34 (88%)","42 (85.2%)","22 (92.3%)"
+"UDCA (Ursodiol)","Compound",40,"13 (95.4%)","15 (94.7%)","6 (97.9%)","13 (95.4%)"
+"TUDCA","Compound",44,"8 (97.2%)","7 (97.5%)","5 (98.2%)","10 (96.5%)"

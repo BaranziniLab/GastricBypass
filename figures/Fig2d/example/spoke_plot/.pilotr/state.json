@@ -1,0 +1,13 @@
+{
+  "workdir": "/Users/wgu/Desktop/GutLiverTRF/Manuscript/Figures/figure6/spoke_plot",
+  "primary_file": "agent.R",
+  "updated_at": "2026-01-12T15:42:18.101634",
+  "files": [
+    "plot_network.R",
+    "calc_centrality.R",
+    "analyse_taxa.R",
+    "calc_centrality_bile_acid.R",
+    "t2d_localization.R",
+    "integrated_summary_table.R"
+  ]
+}

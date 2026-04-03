@@ -1,0 +1,7 @@
+"Node","Biological Role","Network Position","Key Connections"
+"CYP8B1","12α-hydroxylase; determines CA:CDCA ratio","Hub gene (top 6.7% by degree)","HNF4A, FOXO1, NR1H4, bile acid transporters"
+"UDCA","Secondary BA; FXR modulator, hepatoprotective","Central metabolite (top 2.09999999999999% eigenvector)","FXR, TGR5, CP7A1, NTCP; T2D, PBC"
+"TUDCA","Taurine-conjugated UDCA; neuroprotective, anti-apoptotic","Most central BA (top 1.8% eigenvector)","FXR, TGR5, NTCP2; obesity, diabetes, cirrhosis"
+"P. distasonis","Bile salt hydrolase producer; BA deconjugation","Bridges to 3 metabolic genes","TUDCA via BSH domain; liver cirrhosis"
+"A. muciniphila","Mucin degrader; metabolic health association","Connects via 10 proteins","EF-Tu, NADH oxidoreductase domains"
+"B. fragilis","BSH+ commensal; BA metabolism","Links to 4 diseases directly","BSH, bile symporter; T1D, liver disease"

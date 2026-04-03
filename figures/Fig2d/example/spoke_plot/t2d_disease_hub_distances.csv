@@ -1,0 +1,24 @@
+"node_id","disease_name","mean_dist_to_hub","rank"
+"148954","liver cirrhosis",2.14814814814815,1
+"147704","cancer",2.33333333333333,2
+"151507","type 1 diabetes mellitus",2.33333333333333,3
+"151144","type 2 diabetes mellitus",2.40740740740741,4
+"143290","liver disease",2.40740740740741,5
+"145949","cholelithiasis",2.40740740740741,6
+"148189","melanoma",2.48148148148148,7
+"146082","cholestasis",2.51851851851852,8
+"145440","obesity",2.55555555555556,9
+"144506","proteinuria",2.62962962962963,10
+"142769","liver cancer",2.66666666666667,11
+"146592","hypertension",2.7037037037037,12
+"152911","diabetes mellitus",2.7037037037037,13
+"149644","primary biliary cholangitis",2.74074074074074,14
+"153296","kidney cancer",2.74074074074074,15
+"147806","colorectal carcinoma",2.81481481481481,16
+"148120","hepatic coma",2.88888888888889,17
+"143983","hyperglycemia",2.96296296296296,18
+"147998","disease of metabolism",2.96296296296296,19
+"143622","neonatal jaundice",3,20
+"143017","polyneuropathy",3.11111111111111,21
+"143548","bacterial vaginosis",3.55555555555556,22
+"144390","tonsillitis",4.14814814814815,23

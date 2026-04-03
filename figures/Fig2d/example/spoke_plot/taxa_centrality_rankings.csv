@@ -1,0 +1,11 @@
+"taxon","betweenness","rank","percentile"
+"Limosilactobacillus reuteri",0.00301086325999765,101,64.4
+"Acinetobacter schindleri",0.00179326705610665,130,54.2
+"Akkermansia muciniphila",0.00549677206321561,77,72.9
+"Parabacteroides distasonis",0.0157365422772357,45,84.2
+"Bacteroides fragilis",0.0187909256799982,42,85.2
+"Lactobacillus",0.010417595405881,55,80.6
+"Lactobacillus iners",0.008062008189576,64,77.5
+"Bacteroides",0.00396417237469156,89,68.7
+"Akkermansia",0.00596070881279747,70,75.4
+"Ileibacterium valens",0,283.5,0.2

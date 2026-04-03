@@ -6,7 +6,7 @@ This report presents a systematic network traversal of the SPOKE biomedical know
 
 The network reveals that the MetRS is not a random collection of metabolites; rather, it captures a coordinated snapshot of at least seven interlocking biological systems that are reshaped by bariatric surgery and whose dysregulation may predict weight regain.
 
----
+
 
 ## 1. Network Architecture Overview
 
@@ -23,7 +23,7 @@ The 14 MetRS metabolites connect to the broader SPOKE graph through the followin
 | Gut-microbiome interactions | 4-Hydroxyhippuric acid, 3-Ureidopropionic acid | SLC22A6, DPYD, UPB1 | Pyrimidine catabolism, OAT transport |
 | Lipid handling / PPAR signaling | 13-HODE, PC 34:2, 3-Methyladipic acid | ALOX15, PPARG, PPARA, SREBF1 | PPAR signaling, Eicosanoid/LOX metabolism, Adipogenesis |
 
----
+
 
 ## 2. Detailed Pathway Narratives
 
@@ -107,7 +107,7 @@ PC 34:2 (phosphatidylcholine 34:2) represents membrane phospholipid remodeling. 
 
 3-Methyladipic acid and pimelic acid are medium-chain dicarboxylic acids that arise from branched-chain and odd-chain fatty acid oxidation. Their presence in the MetRS captures the efficiency of peroxisomal and mitochondrial fatty acid oxidation pathways.
 
----
+
 
 ## 3. Convergence Points: Where Pathways Meet
 
@@ -123,7 +123,7 @@ Several genes and pathways emerge as critical convergence hubs where multiple Me
 
 **SIRT1:** Associated with obesity and T2DM, connects NAD metabolism (1-methylguanosine link), bile acid regulation, and NAFLD to the broader metabolic reset.
 
----
+
 
 ## 4. Disease Network
 
@@ -137,7 +137,7 @@ SPOKE disease associations confirm the clinical relevance of the MetRS network:
 | Cardiovascular Disease | Multiple | NOS3, CYP7A1, NR1H4 |
 | Atherosclerosis | Multiple | CYP7A1 |
 
----
+
 
 ## 5. Network Statistics
 
@@ -148,7 +148,7 @@ SPOKE disease associations confirm the clinical relevance of the MetRS network:
 - **Genes associated with obesity in SPOKE:** 18 out of 65 network genes
 - **Genes associated with T2DM:** 10 out of 65 network genes
 
----
+
 
 ## 6. Implications for Weight Regain Prediction
 
@@ -165,12 +165,6 @@ The MetRS network suggests that weight regain after RYGB is not driven by a sing
 
 Patients whose MetRS indicates failure in multiple axes simultaneously may be at highest risk for weight regain.
 
----
 
-## 7. Files Provided
 
-- **nodes.csv** — 166 nodes with node_id, node_type, name, functional_role, is_metrs flag, and metadata
-- **edges.csv** — 188 edges with source, target, relationship type, description, pathway_theme, and mechanism annotations
-- **MetRS_SPOKE_Enriched_Mapping.xlsx** — Compound-level mapping with protein/domain binding details
 
-All node/edge identifiers are SPOKE-compatible (InChIKey for compounds, Entrez IDs for genes, GO IDs for processes, WikiPathways IDs for pathways, DOID for diseases, Pfam IDs for protein domains).

@@ -1,0 +1,9 @@
+"Node","Degree %ile","Betweenness %ile","Closeness %ile","Eigenvector %ile","PageRank %ile","Mean %ile"
+"TUDCA",97.2,97.5,97.5,98.2,96.5,97.4
+"UDCA",95.4,94.7,95.1,97.9,95.4,95.7
+"CYP8B1",93.3,88,84.2,85.2,92.3,88.6
+"Lactobacillus",71.5,80.6,65.1,38.4,70.4,65.2
+"P. distasonis",77.8,84.2,48.6,15.1,80.3,61.2
+"B. fragilis",82.7,85.2,33.1,12,85.9,59.8
+"A. muciniphila",80.6,72.9,7,1.8,85.2,49.5
+"Akkermansia",53.9,75.4,14.8,10.6,44,39.7
