@@ -4,7 +4,7 @@ library(ggrepel)
 library(igraph)
 library(here)
 library(svglite)
-# setwd(here::here("figures/Fig2d"))
+setwd(here::here("figures/Fig2d"))
 
 nodes = read.csv("nodes.csv", stringsAsFactors = FALSE)
 edges = read.csv("edges.csv", stringsAsFactors = FALSE)
