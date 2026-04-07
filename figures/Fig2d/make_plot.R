@@ -3,7 +3,8 @@ library(dplyr)
 library(ggrepel)
 library(igraph)
 library(here)
-setwd(here::here("figures/Fig2d"))
+library(svglite)
+# setwd(here::here("figures/Fig2d"))
 
 nodes = read.csv("nodes.csv", stringsAsFactors = FALSE)
 edges = read.csv("edges.csv", stringsAsFactors = FALSE)
@@ -95,22 +96,27 @@ p = ggplot() +
              color = "black",
              stroke = 0.8,
              alpha = 0.8) +
-  geom_text_repel(data = nodes_labeled,
-                  aes(x = x, y = y, label = name, color = node_type, fontface = label_face),
-                  size = 3,
-                  max.overlaps = Inf,
-                  box.padding = 1.2,
-                  point.padding = 0.6,
-                  segment.color = "gray40",
-                  segment.size = 0.3,
-                  min.segment.length = 0,
-                  force = 8,
-                  force_pull = 0.3,
-                  max.iter = 50000,
-                  max.time = 10,
-                  seed = 42) +
+  geom_label_repel(data = nodes_labeled,
+                   aes(x = x, y = y, label = name, color = node_type, fontface = label_face),
+                   size = 3,
+                   fill = alpha("gray96", 0.78),
+                   label.size = 0,
+                   label.padding = unit(0.18, "lines"),
+                   label.r = unit(0.12, "lines"),
+                   max.overlaps = Inf,
+                   box.padding = 1.2,
+                   point.padding = 0.6,
+                   segment.color = "gray40",
+                   segment.size = 0.3,
+                   min.segment.length = 0,
+                   force = 8,
+                   force_pull = 0.3,
+                   max.iter = 50000,
+                   max.time = 10,
+                   seed = 42) +
   scale_size_identity() +
-  scale_fill_manual(name = "Node Type", values = color_map) +
+  scale_fill_manual(name = "Node Type", values = color_map,
+                    guide = guide_legend(override.aes = list(size = 6))) +
   scale_color_manual(name = "Node Type", values = dark_color_map, guide = "none") +
   theme_minimal() +
   theme(
@@ -128,4 +134,4 @@ p = ggplot() +
   ) +
   labs(title = "")
 
-ggsave("fig2d_network.png", p, width = 12, height = 9, dpi = 800, bg = "white")
+ggsave("fig2d_network.png", p, width = 10, height = 7, dpi = 800, bg = "white")

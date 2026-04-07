@@ -3,28 +3,31 @@ inchikey:SYEOWUNSTUDKGM-UHFFFAOYSA-N,Compound,3-Methyladipic acid,Fatty acids,Me
 inchikey:WLJVNTCWHIRURA-UHFFFAOYSA-N,Compound,Pimelic acid,Fatty acids,MetRS,HMDB00555,TRUE,,TRUE
 inchikey:HNICUWMFWZBIFP-KDFHGORWSA-N,Compound,13-HODE,Linoleic acid derivatives,MetRS,HMDB04667,TRUE,,TRUE
 inchikey:AEMOLEFTQBMNLQ-AQKNRBDQSA-N,Compound,D-Glucuronic Acid,Carbohydrates,MetRS,HMDB00127,TRUE,,TRUE
-inchikey:FUOOLUPWFVMBKG-UHFFFAOYSA-N,Compound,2-Aminoisobutyric acid (BAIBA),Amino acids,MetRS,HMDB01906,TRUE,,TRUE
+inchikey:FUOOLUPWFVMBKG-UHFFFAOYSA-N,Compound,"2-Aminoisobutyric
+acid (BAIBA)",Amino acids,MetRS,HMDB01906,TRUE,,TRUE
 inchikey:YGPSJZOEDVAXAB-QMMMGPOBSA-N,Compound,L-kynurenine,Carbonyl compounds,MetRS,HMDB00684,TRUE,,TRUE
 inchikey:QUOGESRFPZDMMT-YFKPBYRVSA-N,Compound,L-Homoarginine,Amino acids,MetRS,HMDB00670,TRUE,,TRUE
 inchikey:PMMYEEVYMWASQN-DMTCNVIQSA-N,Compound,Hydroxyproline,Amino acids,MetRS,HMDB00725,TRUE,,TRUE
 inchikey:OFOBLEOULBTSOW-UHFFFAOYSA-N,Compound,Malonic acid,Dicarboxylic acids,MetRS,HMDB00691,TRUE,,TRUE
 inchikey:UTAIYTHAJQNQDW-KQYNXXCUSA-N,Compound,1-Methylguanosine,Purine nucleosides,MetRS,HMDB01563,TRUE,,TRUE
-inchikey:ZMHLUFWWWPBTIU-UHFFFAOYSA-N,Compound,4-Hydroxyhippuric acid,Benzoic acid derivatives,MetRS,HMDB13678,TRUE,,TRUE
+inchikey:ZMHLUFWWWPBTIU-UHFFFAOYSA-N,Compound,"4-Hydroxyhippuric
+acid",Benzoic acid derivatives,MetRS,HMDB13678,TRUE,,TRUE
 inchikey:JJIHLJJYMXLCOY-BYPYZUCNSA-N,Compound,N-Acetylserine,Amino acids,MetRS,HMDB02931,TRUE,,TRUE
-inchikey:JSJWCHRYRHKBBW-UHFFFAOYSA-N,Compound,3-Ureidopropionic acid,Ureas,MetRS,HMDB00026,TRUE,,TRUE
+inchikey:JSJWCHRYRHKBBW-UHFFFAOYSA-N,Compound,"3-Ureidopropionic
+acid",Ureas,MetRS,HMDB00026,TRUE,,TRUE
 CHEBI:64516,Compound,PC 34:2,Glycerophosphocholines,MetRS,HMDB07973,TRUE,,TRUE
 inchikey:GLWRPXRMUUZNMD-UHFFFAOYSA-N,Compound,DMGV,Short-chain keto acids,MetRS,HMDB24021,TRUE,,TRUE
 3620,Gene,IDO1,,,,FALSE,Tryptophan/Kynurenine,TRUE
 169355,Gene,IDO2,,,,FALSE,Tryptophan/Kynurenine,FALSE
-6999,Gene,TDO2,,,,FALSE,Tryptophan/Kynurenine,TRUE
-8564,Gene,KMO,,,,FALSE,Tryptophan/Kynurenine,TRUE
+6999,Gene,TDO2,,,,FALSE,Tryptophan/Kynurenine,FALSE
+8564,Gene,KMO,,,,FALSE,Tryptophan/Kynurenine,FALSE
 8942,Gene,KYNU,,,,FALSE,Tryptophan/Kynurenine,FALSE
 883,Gene,KYAT1,,,,FALSE,Tryptophan/Kynurenine,FALSE
 56267,Gene,KYAT3,,,,FALSE,Tryptophan/Kynurenine,FALSE
 64577,Gene,ALDH8A1,,,,FALSE,Tryptophan/Kynurenine,FALSE
 125061,Gene,AFMID,,,,FALSE,Tryptophan/Kynurenine,FALSE
 51166,Gene,AADAT,,,,FALSE,Tryptophan/Kynurenine,FALSE
-2806,Gene,GOT2,,,,FALSE,Tryptophan/Kynurenine; Hydroxyproline catabolism,TRUE
+2806,Gene,GOT2,,,,FALSE,Tryptophan/Kynurenine; Hydroxyproline catabolism,FALSE
 4846,Gene,NOS3,,,,FALSE,Nitric oxide / Vascular,TRUE
 4842,Gene,NOS1,,,,FALSE,Nitric oxide / Neuronal,FALSE
 4843,Gene,NOS2,,,,FALSE,Nitric oxide / Inflammatory,FALSE
@@ -34,28 +37,27 @@ inchikey:GLWRPXRMUUZNMD-UHFFFAOYSA-N,Compound,DMGV,Short-chain keto acids,MetRS,
 233,Gene,ARG2,,,,FALSE,Arginine metabolism,FALSE
 33,Gene,ACADL,,,,FALSE,Fatty acid oxidation,FALSE
 37,Gene,ACADVL,,,,FALSE,Fatty acid oxidation,FALSE
-32,Gene,ACACB,,,,FALSE,Malonyl-CoA / FAO regulation,TRUE
+32,Gene,ACACB,,,,FALSE,Malonyl-CoA / FAO regulation,FALSE
 31,Gene,ACACA,,,,FALSE,Malonyl-CoA / FAO regulation,FALSE
 1374,Gene,CPT1A,,,,FALSE,Fatty acid oxidation,TRUE
 1375,Gene,CPT1B,,,,FALSE,Fatty acid oxidation,FALSE
 5465,Gene,PPARA,,,,FALSE,Lipid metabolism / Nuclear receptor,TRUE
-5468,Gene,PPARG,,,,FALSE,Adipogenesis / Nuclear receptor,TRUE
-5563,Gene,PRKAA1,,,,FALSE,AMPK / Energy sensing,TRUE
+5468,Gene,PPARG,,,,FALSE,Adipogenesis / Nuclear receptor,FALSE
+5563,Gene,PRKAA1,,,,FALSE,AMPK / Energy sensing,FALSE
 5564,Gene,PRKAA2,,,,FALSE,AMPK / Energy sensing,FALSE
-6389,Gene,SDHA,,,,FALSE,TCA cycle / ETC Complex II,TRUE
+6389,Gene,SDHA,,,,FALSE,TCA cycle / ETC Complex II,FALSE
 6390,Gene,SDHB,,,,FALSE,TCA cycle / ETC Complex II,FALSE
 6391,Gene,SDHC,,,,FALSE,TCA cycle / ETC Complex II,FALSE
 6392,Gene,SDHD,,,,FALSE,TCA cycle / ETC Complex II,FALSE
 1581,Gene,CYP7A1,,,,FALSE,Bile acid synthesis,TRUE
-9971,Gene,NR1H4,,,,FALSE,Bile acid signaling (FXR),TRUE
+9971,Gene,NR1H4,,,,FALSE,Bile acid signaling (FXR),FALSE
 9965,Gene,FGF19,,,,FALSE,Bile acid / Enterohepatic signaling,FALSE
 2641,Gene,GCG,,,,FALSE,GLP-1 / Glucagon,TRUE
 2740,Gene,GLP1R,,,,FALSE,GLP-1 receptor,TRUE
 1803,Gene,DPP4,,,,FALSE,Incretin degradation,FALSE
-7358,Gene,UGDH,,,,FALSE,UDP-glucuronate synthesis,FALSE
-54658,Gene,UGT1A1,,,,FALSE,Glucuronidation,FALSE
+54658,Gene,UGT1A1,,,,FALSE,Glucuronidation,TRUE
 54659,Gene,UGT1A3,,,,FALSE,Glucuronidation / Bile acid conjugation,FALSE
-5625,Gene,PRODH,,,,FALSE,Proline/Hydroxyproline catabolism,TRUE
+5625,Gene,PRODH,,,,FALSE,Proline/Hydroxyproline catabolism,FALSE
 8659,Gene,ALDH4A1,,,,FALSE,Hydroxyproline catabolism,FALSE
 112817,Gene,HOGA1,,,,FALSE,Hydroxyproline catabolism,FALSE
 5033,Gene,P4HA1,,,,FALSE,Collagen hydroxylation (HIF prolyl-hydroxylase related),FALSE
@@ -64,75 +66,82 @@ inchikey:GLWRPXRMUUZNMD-UHFFFAOYSA-N,Compound,DMGV,Short-chain keto acids,MetRS,
 1807,Gene,DPYS,,,,FALSE,Pyrimidine catabolism,FALSE
 51733,Gene,UPB1,,,,FALSE,Pyrimidine catabolism / beta-alanine,FALSE
 9356,Gene,SLC22A6,,,,FALSE,Organic anion transporter (gut-kidney axis),TRUE
-246,Gene,ALOX15,,,,FALSE,Lipoxygenase / 13-HODE production,TRUE
+246,Gene,ALOX15,,,,FALSE,Lipoxygenase / 13-HODE production,FALSE
 247,Gene,ALOX15B,,,,FALSE,Lipoxygenase,FALSE
 240,Gene,ALOX5,,,,FALSE,Lipoxygenase / Eicosanoid synthesis,FALSE
 2879,Gene,GPX4,,,,FALSE,Glutathione peroxidase / Ferroptosis,FALSE
 3952,Gene,LEP,,,,FALSE,Leptin / Energy homeostasis,TRUE
 4852,Gene,NPY,,,,FALSE,Neuropeptide Y / Appetite,FALSE
 9370,Gene,ADIPOQ,,,,FALSE,Adiponectin,TRUE
-7351,Gene,UCP2,,,,FALSE,Uncoupling protein / Thermogenesis,TRUE
-23411,Gene,SIRT1,,,,FALSE,Sirtuin / NAD metabolism,TRUE
+7351,Gene,UCP2,,,,FALSE,Uncoupling protein / Thermogenesis,FALSE
+23411,Gene,SIRT1,,,,FALSE,Sirtuin / NAD metabolism,FALSE
 6720,Gene,SREBF1,,,,FALSE,Lipogenesis transcription factor,FALSE
 1050,Gene,CEBPA,,,,FALSE,Adipocyte differentiation,FALSE
 3667,Gene,IRS1,,,,FALSE,Insulin signaling,FALSE
 1268,Gene,CNR1,,,,FALSE,Cannabinoid receptor / Appetite,FALSE
 6535,Gene,SLC6A8,,,,FALSE,Creatine transporter,FALSE
-GO:0070189,BiologicalProcess,kynurenine metabolic process,,,,FALSE,,TRUE
+GO:0070189,BiologicalProcess,"kynurenine
+metabolic process",,,,FALSE,,TRUE
 GO:0097052,BiologicalProcess,L-kynurenine metabolic process,,,,FALSE,,FALSE
 GO:0097053,BiologicalProcess,L-kynurenine catabolic process,,,,FALSE,,FALSE
 GO:0019441,BiologicalProcess,tryptophan catabolic process to kynurenine,,,,FALSE,,FALSE
-GO:0006809,BiologicalProcess,nitric oxide biosynthetic process,,,,FALSE,,TRUE
+GO:0006809,BiologicalProcess,"nitric oxide
+biosynthetic process",,,,FALSE,,TRUE
 GO:0046209,BiologicalProcess,nitric oxide metabolic process,,,,FALSE,,FALSE
 GO:0045429,BiologicalProcess,positive regulation of NO biosynthetic process,,,,FALSE,,FALSE
-GO:0032000,BiologicalProcess,positive regulation of fatty acid beta-oxidation,,,,FALSE,,TRUE
-GO:0046322,BiologicalProcess,negative regulation of fatty acid oxidation,,,,FALSE,,TRUE
+GO:0032000,BiologicalProcess,"positive regulation of
+fatty acid beta-oxidation",,,,FALSE,,TRUE
+GO:0046322,BiologicalProcess,negative regulation of fatty acid oxidation,,,,FALSE,,FALSE
 GO:0034440,BiologicalProcess,lipid oxidation,,,,FALSE,,FALSE
-GO:0070857,BiologicalProcess,regulation of bile acid biosynthetic process,,,,FALSE,,TRUE
+GO:0070857,BiologicalProcess,"regulation of bile acid
+biosynthetic process",,,,FALSE,,TRUE
 GO:1904251,BiologicalProcess,regulation of bile acid metabolic process,,,,FALSE,,FALSE
 GO:0052695,BiologicalProcess,cellular glucuronidation,,,,FALSE,,FALSE
-GO:0019470,BiologicalProcess,4-hydroxyproline catabolic process,,,,FALSE,,TRUE
+GO:0019470,BiologicalProcess,4-hydroxyproline catabolic process,,,,FALSE,,FALSE
 GO:0019471,BiologicalProcess,4-hydroxyproline metabolic process,,,,FALSE,,FALSE
 GO:0019482,BiologicalProcess,beta-alanine metabolic process,,,,FALSE,,FALSE
 GO:0006212,BiologicalProcess,uracil catabolic process,,,,FALSE,,FALSE
-GO:0019372,BiologicalProcess,lipoxygenase pathway,,,,FALSE,,TRUE
+GO:0019372,BiologicalProcess,lipoxygenase pathway,,,,FALSE,,FALSE
 GO:0006600,BiologicalProcess,creatine metabolic process,,,,FALSE,,FALSE
-GO:0006601,BiologicalProcess,creatine biosynthetic process,,,,FALSE,,TRUE
+GO:0006601,BiologicalProcess,creatine biosynthetic process,,,,FALSE,,FALSE
 GO:0006603,BiologicalProcess,phosphocreatine metabolic process,,,,FALSE,,FALSE
-GO:0046398,BiologicalProcess,UDP-glucuronate metabolic process,,,,FALSE,,FALSE
 WP465,Pathway,Tryptophan metabolism,,,,FALSE,,TRUE
-WP5044,Pathway,Kynurenine pathway and links to cell senescence,,,,FALSE,,TRUE
+WP5044,Pathway,Kynurenine pathway and links to cell senescence,,,,FALSE,,FALSE
 WP4210,Pathway,Tryptophan catabolism leading to NAD production,,,,FALSE,,FALSE
 WP5414,Pathway,IDO metabolic pathway,,,,FALSE,,FALSE
 WP2485,Pathway,NAD biosynthesis II from tryptophan,,,,FALSE,,FALSE
-WP1995,Pathway,Effects of nitric oxide,,,,FALSE,,TRUE
+WP1995,Pathway,Effects of nitric oxide,,,,FALSE,,FALSE
 WP2034,Pathway,Leptin signaling pathway,,,,FALSE,,TRUE
 WP3934,Pathway,Leptin and adiponectin,,,,FALSE,,FALSE
 WP3935,Pathway,Leptin insulin signaling overlap,,,,FALSE,,FALSE
 WP481,Pathway,Insulin signaling,,,,FALSE,,FALSE
-WP143,Pathway,Fatty acid beta oxidation,,,,FALSE,,TRUE
+WP143,Pathway,"Fatty acid
+beta oxidation",,,,FALSE,,TRUE
 WP368,Pathway,Mitochondrial long chain fatty acid beta oxidation,,,,FALSE,,FALSE
 WP357,Pathway,Fatty acid biosynthesis,,,,FALSE,,FALSE
-WP78,Pathway,TCA cycle,,,,FALSE,,TRUE
+WP78,Pathway,TCA cycle,,,,FALSE,,FALSE
 WP111,Pathway,Electron transport chain OXPHOS system in mitochondria,,,,FALSE,,FALSE
 WP4920,Pathway,Mitochondrial complex II assembly,,,,FALSE,,FALSE
-WP4396,Pathway,Nonalcoholic fatty liver disease,,,,FALSE,,TRUE
-WP1541,Pathway,Energy metabolism,,,,FALSE,,TRUE
+WP4396,Pathway,"Nonalcoholic fatty
+liver disease",,,,FALSE,,TRUE
+WP1541,Pathway,Energy metabolism,,,,FALSE,,FALSE
 WP3965,Pathway,Lipid metabolism pathway,,,,FALSE,,FALSE
 WP2011,Pathway,SREBF and miR33 in cholesterol and lipid homeostasis,,,,FALSE,,FALSE
 WP299,Pathway,Nuclear receptors in lipid metabolism and toxicity,,,,FALSE,,FALSE
-WP4313,Pathway,Ferroptosis,,,,FALSE,,TRUE
+WP4313,Pathway,Ferroptosis,,,,FALSE,,FALSE
 WP4721,Pathway,Eicosanoid metabolism via lipooxygenases (LOX),,,,FALSE,,FALSE
 WP167,Pathway,Eicosanoid synthesis,,,,FALSE,,FALSE
-WP3942,Pathway,PPAR signaling pathway,,,,FALSE,,TRUE
-WP2895,Pathway,Differentiation of white and brown adipocyte,,,,FALSE,,TRUE
-WP5452,Pathway,GLP-1 from intestine/pancreas and role in glucose homeostasis,,,,FALSE,,TRUE
+WP3942,Pathway,"PPAR signaling
+pathway",,,,FALSE,,TRUE
+WP2895,Pathway,Differentiation of white and brown adipocyte,,,,FALSE,,FALSE
+WP5452,Pathway,"GLP-1 from intestine/pancreas
+and role in glucose homeostasis",,,,FALSE,,TRUE
 WP5446,Pathway,GLP-1 secretion from intestine to portal vein,,,,FALSE,,FALSE
 WP5447,Pathway,GLP-1 in pancreatic islet cells,,,,FALSE,,FALSE
-WP5445,Pathway,Hunger and satiety,,,,FALSE,,TRUE
-WP4321,Pathway,Thermogenesis,,,,FALSE,,TRUE
+WP5445,Pathway,Hunger and satiety,,,,FALSE,,FALSE
+WP4321,Pathway,Thermogenesis,,,,FALSE,,FALSE
 WP4030,Pathway,SCFA and skeletal muscle substrate metabolism,,,,FALSE,,FALSE
-WP5190,Pathway,Creatine pathway,,,,FALSE,,TRUE
+WP5190,Pathway,Creatine pathway,,,,FALSE,,FALSE
 WP4595,Pathway,Urea cycle and associated pathways,,,,FALSE,,FALSE
 WP497,Pathway,Urea cycle and metabolism of amino groups,,,,FALSE,,FALSE
 WP4315,Pathway,Malate aspartate shuttle,,,,FALSE,,FALSE
