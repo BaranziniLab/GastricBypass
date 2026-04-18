@@ -1,0 +1,1 @@
+3-Methyladipic acid: 3-Methyladipic acid -> dicarboxylic fatty acid -> Pimelic acid  |  edges: ['ISA_CiC', 'ISA_CiC']
