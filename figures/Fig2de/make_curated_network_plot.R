@@ -5,7 +5,7 @@ library(igraph)
 library(here)
 library(patchwork)
 
-setwd(here::here("figures/Fig2d"))
+setwd(here::here("figures/Fig2de"))
 
 nodes = read.csv("data/curated_nodes_enriched.csv", stringsAsFactors = FALSE)
 edges = read.csv("data/curated_edges.csv",          stringsAsFactors = FALSE)
@@ -99,19 +99,16 @@ p_net = ggplot() +
   geom_point(data = nodes,
              aes(x = x, y = y, fill = node_type, size = node_size),
              shape = 21, color = "black", stroke = nodes$stroke_width, alpha = 0.92) +
-  geom_label_repel(data = nodes_labeled,
-                   aes(x = x, y = y, label = display_name,
-                       color = node_type, fontface = label_face),
-                   size = 3.3,
-                   fill = alpha("white", 0.88),
-                   label.size = 0,
-                   label.padding = unit(0.16, "lines"),
-                   max.overlaps = Inf,
-                   box.padding = 1.3, point.padding = 0.55,
-                   segment.color = "gray40", segment.size = 0.22,
-                   min.segment.length = 0,
-                   force = 10, force_pull = 0.25,
-                   max.iter = 80000, max.time = 20, seed = 42) +
+  geom_text_repel(data = nodes_labeled,
+                  aes(x = x, y = y, label = display_name,
+                      color = node_type, fontface = label_face),
+                  size = 3.3,
+                  max.overlaps = Inf,
+                  box.padding = 1.3, point.padding = 0.55,
+                  segment.color = "gray40", segment.size = 0.22,
+                  min.segment.length = 0,
+                  force = 10, force_pull = 0.25,
+                  max.iter = 80000, max.time = 20, seed = 42) +
   scale_size_identity() +
   scale_fill_manual(name = "",
                     values = color_map,
@@ -186,10 +183,12 @@ make_bar = function(tp, max_n = 5, show_x_title = FALSE) {
 }
 
 bar_plots = lapply(seq_along(type_order), function(i) {
-  make_bar(type_order[i], show_x_title = (i == length(type_order)))
+  make_bar(type_order[i], show_x_title = (i %in% c(3, length(type_order))))
 })
 
-bars = wrap_plots(bar_plots, ncol = 1)
+left_col  = wrap_plots(bar_plots[1:3], ncol = 1)
+right_col = wrap_plots(bar_plots[4:6], ncol = 1)
+bars = left_col | right_col
 
-ggsave("fig2d.1.png", p_net, width = 12, height = 10, dpi = 800, bg = "transparent")
-ggsave("fig2d.2.png", bars,  width =  5, height = 11, dpi = 800, bg = "white")
+ggsave("fig2d.1.png", p_net, width = 13, height = 9.5, dpi = 800, bg = "white")
+ggsave("fig2d.2.png", bars,  width =  8, height =  7, dpi = 800, bg = "white")

@@ -22,4 +22,4 @@ p = ggplot(df, aes(x = expected, y = observed)) +
   theme_classic(base_size = 15) +
   theme(axis.line = element_line(linewidth = 0.8))
 
-ggsave("figs_qq_plot.png", p, width = 4, height = 4, dpi = 800, bg = "white")
+ggsave("figs_qq_plot.png", p, width = 5.5, height = 4, dpi = 800, bg = "white")

@@ -38,7 +38,7 @@ p = ggplot(df, aes(x = time, fill = class, group = interaction(time, class))) +
   scale_fill_manual(values = colors, name = NULL,
                     labels = c("1" = "RGN", "2" = "SWL")) +
   labs(
-    x = "Follow-Up Time",
+    x = NULL,
     y = "Change in EBW (kg)"
   ) +
   theme_classic(base_size = 16) +

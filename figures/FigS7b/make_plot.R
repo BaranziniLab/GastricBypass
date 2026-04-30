@@ -28,3 +28,5 @@ p = ggplot(df, aes(x = xvar1, y = xvar2)) +
   )
 
 ggsave("figs7b.png", p, width = 5.5, height = 4, dpi = 800, bg = "white")
+ggsave("SupplementaryFigure7.pdf", p, width = 5.5, height = 4, dpi = 800, bg = "white")
+

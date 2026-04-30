@@ -15,11 +15,11 @@ p = ggplot(df, aes(x = bin_mid, y = count)) +
   scale_x_continuous(
     breaks = c(0.00, 0.25, 0.50, 0.75, 1.00),
     labels = c("0.00", "0.25", "0.50", "0.75", "1.00"),
-    expand = c(0.01, 0)
+    expand = c(0.05, 0.05)
   ) +
   scale_y_continuous(breaks = seq(0, 25, by = 5), expand = c(0, 0), limits = c(0, 27)) +
   labs(x = "P-Value", y = "Number of Metabolites") +
   theme_classic(base_size = 15) +
   theme(axis.line = element_line(linewidth = 0.8))
 
-ggsave("figs_pvalue_histogram.png", p, width = 5, height = 4, dpi = 800, bg = "white")
+ggsave("figs_pvalue_histogram.png", p, width = 5.5, height = 4, dpi = 800, bg = "white")

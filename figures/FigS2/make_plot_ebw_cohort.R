@@ -40,7 +40,7 @@ p = ggplot(df, aes(x = time_f, fill = class, group = interaction(time_f, class))
   scale_x_discrete(labels = c("3" = "Year 3", "4" = "Year 4", "5" = "Year 5")) +
   scale_y_continuous(breaks = c(0, 50, 100)) +
   labs(
-    x = "Follow-Up Time",
+    x = NULL,
     y = "EBW (kg)"
   ) +
   theme_classic(base_size = 16) +

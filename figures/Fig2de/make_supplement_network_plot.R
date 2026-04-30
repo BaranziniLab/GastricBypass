@@ -119,3 +119,6 @@ p_net = ggplot() +
 
 ggsave("fig2d.1_supplement.png",
        p_net, width = 18, height = 16, dpi = 800, bg = "white")
+
+ggsave("SupplementaryFigure8.pdf",
+       p_net, width = 18, height = 16, dpi = 800, bg = "white")

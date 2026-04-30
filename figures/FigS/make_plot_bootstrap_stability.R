@@ -14,7 +14,7 @@ p = ggplot(df, aes(x = selection_freq, y = metabolite, fill = in_metrs)) +
   scale_x_continuous(
     labels = scales::percent_format(accuracy = 1),
     breaks = c(0, 0.25, 0.50, 0.75, 1.00),
-    expand = c(0, 0)
+    expand = c(0.05, 0.05)
   ) +
   scale_fill_manual(values = bar_colors, name = NULL) +
   labs(
