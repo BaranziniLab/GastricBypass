@@ -76,4 +76,4 @@ p_d = ggplot(df, aes(x=time, y=ebw, group=id, color=site_lab)) +
 ggsave("figs3a_ebw_class.png", p_a, width=6, height=5, dpi=800, bg="white")
 ggsave("figs3b_pct_ebw_loss.png", p_b, width=6, height=5, dpi=800, bg="white")
 ggsave("figs3c_ebw_sex.png", p_c, width=6, height=5, dpi=800, bg="white")
-ggsave("figs3d_ebw_site.png", p_d, width=6, height=6, dpi=800, bg="white")
+ggsave("figs3d_ebw_site.png", p_d, width=6, height=5.8, dpi=800, bg="white")
