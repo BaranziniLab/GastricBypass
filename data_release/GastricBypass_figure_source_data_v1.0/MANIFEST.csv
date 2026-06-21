@@ -1,0 +1,40 @@
+file,data_rows,columns,column_names(first8)
+fhs_summary_tables/FHS_GWAS_significant_hits.xlsx,,,
+fhs_summary_tables/FHS_cohort_summary.xlsx,,,
+fhs_summary_tables/FHS_cohort_summary_reformatted.xlsx,,,
+fhs_summary_tables/Table1_FHS_demographics.csv,7,5,Characteristic; Overall; Male; Female; P_value
+fhs_summary_tables/Table1_FHS_demographics.xlsx,,,
+figure_source_data/Fig1a/data.csv,27,5,class; year; ebw_mean; ebw_lower; ebw_upper
+figure_source_data/Fig1c/data.csv,42,4,patient_id; series; time_months; ebw
+figure_source_data/Fig1d/data.csv,71,4,Time; EBW; Subject; Modality
+figure_source_data/Fig1e/data.csv,106,2,ebw_observed; ebw_predicted
+figure_source_data/Fig2b/data.csv,78,3,var1; var2; value
+figure_source_data/Fig2c/data.csv,169,3,var1; var2; value
+figure_source_data/Fig2de/data/curated_compound_centrality.csv,15,4,display_name; degree; betweenness; is_compound_hub
+figure_source_data/Fig2de/data/curated_edges.csv,235,5,source; target; edge_type; source_set; is_ontology
+figure_source_data/Fig2de/data/curated_nodes.csv,169,14,node_id; node_type; name; subclass; source; hmdb_id; is_metrs; functional_role
+figure_source_data/Fig2de/data/curated_nodes_enriched.csv,169,18,node_id; node_type; name; subclass; source; hmdb_id; is_metrs; functional_role
+figure_source_data/Fig3a/data.csv,2,6,group; median; q1; q3; whisker_low; whisker_high
+figure_source_data/Fig3b/data.csv,322,3,model; one_minus_specificity; sensitivity
+figure_source_data/Fig3c/data.csv,2,7,error_type; median; q1; q3; whisker_low; whisker_high; outlier
+figure_source_data/Fig3d/data.csv,10,5,model; variable; estimate; ci_low; ci_high
+figure_source_data/Fig4a/data.csv,2,6,group; ymin; lower; middle; upper; ymax
+figure_source_data/Fig4b/data.csv,2,6,group; ymin; lower; middle; upper; ymax
+figure_source_data/Fig4c/data.csv,126,3,group; MetRS; pct_regain
+figure_source_data/FigS/data_bootstrap_stability.csv,58,3,metabolite; selection_freq; in_metrs
+figure_source_data/FigS/data_pvalue_histogram.csv,50,2,bin_mid; count
+figure_source_data/FigS/data_qq_plot.csv,112,2,expected; observed
+figure_source_data/FigS1a/data.csv,5,7,class; ymin; lower; middle; upper; ymax; outlier
+figure_source_data/FigS1b/data.csv,6,7,class; ymin; lower; middle; upper; ymax; outlier
+figure_source_data/FigS1c/data.csv,3,7,class; ymin; lower; middle; upper; ymax; outlier
+figure_source_data/FigS2/data_delta_ebw.csv,6,8,time; class; ymin; lower; middle; upper; ymax; outliers
+figure_source_data/FigS2/data_ebw_cohort.csv,6,8,time; class; ymin; lower; middle; upper; ymax; outliers
+figure_source_data/FigS4/data_corr_long.csv,1891,5,met1; met2; corr; pretty_name1; pretty_name2
+figure_source_data/FigS4/data_corr_matrix.csv,62,63,; c34_3_pe_plasmalogen; c36_3_pe_plasmalogen; c36_2_pc_plasmalogen; c34_2_pc; c18_2_lpe; c18_2_lpc; c18_1_lpe
+figure_source_data/FigS6b/data.csv,196,4,sample_id; xvar1; xvar2; group
+figure_source_data/FigS7b/data.csv,36,4,sample_id; xvar1; xvar2; group
+figure_source_data/FigSx/data_metrs10_labs2.csv,2,6,group; ymin; lower; middle; upper; ymax
+figure_source_data/FigSx/data_metrs8_labs2.csv,2,6,group; ymin; lower; middle; upper; ymax
+figure_source_data/FigSx/data_metrs_density.csv,62,3,score; density; class
+figure_source_data/FigSx/data_predicted_vs_observed_rmse.csv,100,2,observed; predicted
+figure_source_data/FigSy/data.csv,925,4,subject_id; time_months; ebw_kg; group

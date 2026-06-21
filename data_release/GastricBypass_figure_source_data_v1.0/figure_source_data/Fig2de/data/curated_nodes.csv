@@ -1,0 +1,181 @@
+node_id,node_type,name,subclass,source,hmdb_id,is_metrs,functional_role,highlight,source_set,degree,betweenness,is_compound_hub,is_protein_hub
+inchikey:WLJVNTCWHIRURA-UHFFFAOYSA-N,Compound,Pimelic acid,Fatty acids,MetRS,HMDB00555,TRUE,,TRUE,fig2d;steiner,3,0.03543,FALSE,FALSE
+inchikey:HNICUWMFWZBIFP-KDFHGORWSA-N,Compound,13-HODE,Linoleic acid derivatives,MetRS,HMDB04667,TRUE,,TRUE,fig2d;steiner,8,0.17279,TRUE,FALSE
+inchikey:AEMOLEFTQBMNLQ-AQKNRBDQSA-N,Compound,D-Glucuronic Acid,Carbohydrates,MetRS,HMDB00127,TRUE,,TRUE,fig2d;steiner,7,0.12050,TRUE,FALSE
+inchikey:FUOOLUPWFVMBKG-UHFFFAOYSA-N,Compound,"2-Aminoisobutyric
+acid (BAIBA)",Amino acids,MetRS,HMDB01906,TRUE,,TRUE,fig2d;steiner,6,0.11205,TRUE,FALSE
+inchikey:YGPSJZOEDVAXAB-QMMMGPOBSA-N,Compound,L-kynurenine,Carbonyl compounds,MetRS,HMDB00684,TRUE,,TRUE,fig2d;steiner,8,0.16932,TRUE,FALSE
+inchikey:QUOGESRFPZDMMT-YFKPBYRVSA-N,Compound,L-Homoarginine,Amino acids,MetRS,HMDB00670,TRUE,,TRUE,fig2d;steiner,4,0.09344,TRUE,FALSE
+inchikey:PMMYEEVYMWASQN-DMTCNVIQSA-N,Compound,Hydroxyproline,Amino acids,MetRS,HMDB00725,TRUE,,TRUE,fig2d;steiner,7,0.11186,TRUE,FALSE
+inchikey:OFOBLEOULBTSOW-UHFFFAOYSA-N,Compound,Malonic acid,Dicarboxylic acids,MetRS,HMDB00691,TRUE,,TRUE,fig2d;steiner,9,0.26804,TRUE,FALSE
+inchikey:UTAIYTHAJQNQDW-KQYNXXCUSA-N,Compound,1-Methylguanosine,Purine nucleosides,MetRS,HMDB01563,TRUE,,TRUE,fig2d;steiner,1,0.00000,FALSE,FALSE
+inchikey:ZMHLUFWWWPBTIU-UHFFFAOYSA-N,Compound,"4-Hydroxyhippuric
+acid",Benzoic acid derivatives,MetRS,HMDB13678,TRUE,,TRUE,fig2d;steiner,2,0.00000,FALSE,FALSE
+inchikey:JJIHLJJYMXLCOY-BYPYZUCNSA-N,Compound,N-Acetylserine,Amino acids,MetRS,HMDB02931,TRUE,,TRUE,fig2d;steiner,3,0.01598,FALSE,FALSE
+inchikey:JSJWCHRYRHKBBW-UHFFFAOYSA-N,Compound,"3-Ureidopropionic
+acid",Ureas,MetRS,HMDB00026,TRUE,,TRUE,fig2d;steiner,5,0.07011,TRUE,FALSE
+CHEBI:64516,Compound,PC 34:2,Glycerophosphocholines,MetRS,HMDB07973,TRUE,,TRUE,fig2d;steiner,1,0.00000,FALSE,FALSE
+inchikey:GLWRPXRMUUZNMD-UHFFFAOYSA-N,Compound,DMGV,Short-chain keto acids,MetRS,HMDB24021,TRUE,,TRUE,fig2d;steiner,1,0.00000,FALSE,FALSE
+3620,Gene,IDO1,,,,FALSE,Tryptophan/Kynurenine,TRUE,fig2d,7,0.02722,FALSE,FALSE
+169355,Gene,IDO2,,,,FALSE,Tryptophan/Kynurenine,FALSE,fig2d,3,0.00394,FALSE,FALSE
+6999,Gene,TDO2,,,,FALSE,Tryptophan/Kynurenine,FALSE,fig2d,7,0.12283,FALSE,FALSE
+8564,Gene,KMO,,,,FALSE,Tryptophan/Kynurenine,FALSE,fig2d,4,0.00522,FALSE,FALSE
+8942,Gene,KYNU,,,,FALSE,Tryptophan/Kynurenine,FALSE,fig2d,5,0.03802,FALSE,FALSE
+883,Gene,KYAT1,,,,FALSE,Tryptophan/Kynurenine,FALSE,fig2d,1,0.00000,FALSE,FALSE
+56267,Gene,KYAT3,,,,FALSE,Tryptophan/Kynurenine,FALSE,fig2d,1,0.00000,FALSE,FALSE
+125061,Gene,AFMID,,,,FALSE,Tryptophan/Kynurenine,FALSE,fig2d,1,0.00000,FALSE,FALSE
+2806,Gene,GOT2,,,,FALSE,Tryptophan/Kynurenine; Hydroxyproline catabolism,FALSE,fig2d,5,0.04586,FALSE,FALSE
+4846,Gene,NOS3,,,,FALSE,Nitric oxide / Vascular,TRUE,fig2d,8,0.12650,FALSE,FALSE
+4842,Gene,NOS1,,,,FALSE,Nitric oxide / Neuronal,FALSE,fig2d,1,0.00000,FALSE,FALSE
+4843,Gene,NOS2,,,,FALSE,Nitric oxide / Inflammatory,FALSE,fig2d,4,0.01534,FALSE,FALSE
+2628,Gene,GATM,,,,FALSE,Creatine biosynthesis / Homoarginine,TRUE,fig2d,5,0.05874,FALSE,FALSE
+2593,Gene,GAMT,,,,FALSE,Creatine biosynthesis,FALSE,fig2d,1,0.00000,FALSE,FALSE
+233,Gene,ARG2,,,,FALSE,Arginine metabolism,FALSE,fig2d,1,0.00000,FALSE,FALSE
+32,Gene,ACACB,,,,FALSE,Malonyl-CoA / FAO regulation,FALSE,fig2d,3,0.01926,FALSE,FALSE
+31,Gene,ACACA,,,,FALSE,Malonyl-CoA / FAO regulation,FALSE,fig2d,3,0.00482,FALSE,FALSE
+1374,Gene,CPT1A,,,,FALSE,Fatty acid oxidation,TRUE,fig2d,6,0.04079,FALSE,FALSE
+5465,Gene,PPARA,,,,FALSE,Lipid metabolism / Nuclear receptor,TRUE,fig2d,10,0.10036,FALSE,FALSE
+5468,Gene,PPARG,,,,FALSE,Adipogenesis / Nuclear receptor,FALSE,fig2d,9,0.12490,FALSE,FALSE
+5563,Gene,PRKAA1,,,,FALSE,AMPK / Energy sensing,FALSE,fig2d,4,0.02185,FALSE,FALSE
+6389,Gene,SDHA,,,,FALSE,TCA cycle / ETC Complex II,FALSE,fig2d,4,0.03550,FALSE,FALSE
+1581,Gene,CYP7A1,,,,FALSE,Bile acid synthesis,TRUE,fig2d,9,0.06270,FALSE,FALSE
+9971,Gene,NR1H4,,,,FALSE,Bile acid signaling (FXR),FALSE,fig2d,9,0.06389,FALSE,FALSE
+9965,Gene,FGF19,,,,FALSE,Bile acid / Enterohepatic signaling,FALSE,fig2d,1,0.00000,FALSE,FALSE
+2641,Gene,GCG,,,,FALSE,GLP-1 / Glucagon,TRUE,fig2d,6,0.16464,FALSE,FALSE
+2740,Gene,GLP1R,,,,FALSE,GLP-1 receptor,TRUE,fig2d,2,0.01190,FALSE,FALSE
+1803,Gene,DPP4,,,,FALSE,Incretin degradation,FALSE,fig2d,1,0.00000,FALSE,FALSE
+54658,Gene,UGT1A1,,,,FALSE,Glucuronidation,TRUE,fig2d,2,0.00000,FALSE,FALSE
+54659,Gene,UGT1A3,,,,FALSE,Glucuronidation / Bile acid conjugation,FALSE,fig2d,1,0.00000,FALSE,FALSE
+5625,Gene,PRODH,,,,FALSE,Proline/Hydroxyproline catabolism,FALSE,fig2d,2,0.01496,FALSE,FALSE
+8659,Gene,ALDH4A1,,,,FALSE,Hydroxyproline catabolism,FALSE,fig2d,2,0.01496,FALSE,FALSE
+112817,Gene,HOGA1,,,,FALSE,Hydroxyproline catabolism,FALSE,fig2d,1,0.00000,FALSE,FALSE
+5033,Gene,P4HA1,,,,FALSE,Collagen hydroxylation (HIF prolyl-hydroxylase related),FALSE,fig2d,1,0.00000,FALSE,FALSE
+54583,Gene,EGLN1,,,,FALSE,HIF prolyl-hydroxylase / Oxygen sensing,FALSE,fig2d,2,0.02367,FALSE,FALSE
+1806,Gene,DPYD,,,,FALSE,Pyrimidine catabolism,TRUE,fig2d,2,0.02367,FALSE,FALSE
+1807,Gene,DPYS,,,,FALSE,Pyrimidine catabolism,FALSE,fig2d,1,0.00000,FALSE,FALSE
+51733,Gene,UPB1,,,,FALSE,Pyrimidine catabolism / beta-alanine,FALSE,fig2d,2,0.01190,FALSE,FALSE
+9356,Gene,SLC22A6,,,,FALSE,Organic anion transporter (gut-kidney axis),TRUE,fig2d,2,0.00000,FALSE,FALSE
+246,Gene,ALOX15,,,,FALSE,Lipoxygenase / 13-HODE production,FALSE,fig2d,5,0.08123,FALSE,FALSE
+247,Gene,ALOX15B,,,,FALSE,Lipoxygenase,FALSE,fig2d,1,0.00000,FALSE,FALSE
+240,Gene,ALOX5,,,,FALSE,Lipoxygenase / Eicosanoid synthesis,FALSE,fig2d,1,0.00000,FALSE,FALSE
+2879,Gene,GPX4,,,,FALSE,Glutathione peroxidase / Ferroptosis,FALSE,fig2d,2,0.00011,FALSE,FALSE
+3952,Gene,LEP,,,,FALSE,Leptin / Energy homeostasis,TRUE,fig2d,7,0.03816,FALSE,FALSE
+4852,Gene,NPY,,,,FALSE,Neuropeptide Y / Appetite,FALSE,fig2d,1,0.00000,FALSE,FALSE
+9370,Gene,ADIPOQ,,,,FALSE,Adiponectin,TRUE,fig2d,4,0.00533,FALSE,FALSE
+7351,Gene,UCP2,,,,FALSE,Uncoupling protein / Thermogenesis,FALSE,fig2d,3,0.02425,FALSE,FALSE
+23411,Gene,SIRT1,,,,FALSE,Sirtuin / NAD metabolism,FALSE,fig2d,5,0.01988,FALSE,FALSE
+6720,Gene,SREBF1,,,,FALSE,Lipogenesis transcription factor,FALSE,fig2d,3,0.00336,FALSE,FALSE
+1050,Gene,CEBPA,,,,FALSE,Adipocyte differentiation,FALSE,fig2d,2,0.01958,FALSE,FALSE
+3667,Gene,IRS1,,,,FALSE,Insulin signaling,FALSE,fig2d,3,0.00232,FALSE,FALSE
+1268,Gene,CNR1,,,,FALSE,Cannabinoid receptor / Appetite,FALSE,fig2d,1,0.00000,FALSE,FALSE
+GO:0070189,BiologicalProcess,"kynurenine
+metabolic process",,,,FALSE,,TRUE,fig2d,4,0.00388,FALSE,FALSE
+GO:0097052,BiologicalProcess,L-kynurenine metabolic process,,,,FALSE,,FALSE,fig2d,1,0.00000,FALSE,FALSE
+GO:0097053,BiologicalProcess,L-kynurenine catabolic process,,,,FALSE,,FALSE,fig2d,2,0.01190,FALSE,FALSE
+GO:0019441,BiologicalProcess,tryptophan catabolic process to kynurenine,,,,FALSE,,FALSE,fig2d,4,0.01482,FALSE,FALSE
+GO:0006809,BiologicalProcess,"nitric oxide
+biosynthetic process",,,,FALSE,,TRUE,fig2d,4,0.02728,FALSE,FALSE
+GO:0032000,BiologicalProcess,"positive regulation of
+fatty acid beta-oxidation",,,,FALSE,,TRUE,fig2d,3,0.00395,FALSE,FALSE
+GO:0046322,BiologicalProcess,negative regulation of fatty acid oxidation,,,,FALSE,,FALSE,fig2d,3,0.01352,FALSE,FALSE
+GO:0070857,BiologicalProcess,"regulation of bile acid
+biosynthetic process",,,,FALSE,,TRUE,fig2d,3,0.01248,FALSE,FALSE
+GO:0019470,BiologicalProcess,4-hydroxyproline catabolic process,,,,FALSE,,FALSE,fig2d,4,0.02915,FALSE,FALSE
+GO:0019471,BiologicalProcess,4-hydroxyproline metabolic process,,,,FALSE,,FALSE,fig2d,2,0.01190,FALSE,FALSE
+GO:0019482,BiologicalProcess,beta-alanine metabolic process,,,,FALSE,,FALSE,fig2d,1,0.00000,FALSE,FALSE
+GO:0006212,BiologicalProcess,uracil catabolic process,,,,FALSE,,FALSE,fig2d,2,0.01190,FALSE,FALSE
+GO:0019372,BiologicalProcess,lipoxygenase pathway,,,,FALSE,,FALSE,fig2d,4,0.02958,FALSE,FALSE
+GO:0006601,BiologicalProcess,creatine biosynthetic process,,,,FALSE,,FALSE,fig2d,2,0.01190,FALSE,FALSE
+WP465,Pathway,Tryptophan metabolism,,,,FALSE,,TRUE,fig2d,5,0.05017,FALSE,FALSE
+WP5044,Pathway,Kynurenine pathway and links to cell senescence,,,,FALSE,,FALSE,fig2d,3,0.00255,FALSE,FALSE
+WP4210,Pathway,Tryptophan catabolism leading to NAD production,,,,FALSE,,FALSE,fig2d,2,0.00027,FALSE,FALSE
+WP5414,Pathway,IDO metabolic pathway,,,,FALSE,,FALSE,fig2d,1,0.00000,FALSE,FALSE
+WP2485,Pathway,NAD biosynthesis II from tryptophan,,,,FALSE,,FALSE,fig2d,1,0.00000,FALSE,FALSE
+WP1995,Pathway,Effects of nitric oxide,,,,FALSE,,FALSE,fig2d,2,0.00354,FALSE,FALSE
+WP2034,Pathway,Leptin signaling pathway,,,,FALSE,,TRUE,fig2d,2,0.00186,FALSE,FALSE
+WP3934,Pathway,Leptin and adiponectin,,,,FALSE,,FALSE,fig2d,2,0.00009,FALSE,FALSE
+WP481,Pathway,Insulin signaling,,,,FALSE,,FALSE,fig2d,1,0.00000,FALSE,FALSE
+WP143,Pathway,"Fatty acid
+beta oxidation",,,,FALSE,,TRUE,fig2d,1,0.00000,FALSE,FALSE
+WP368,Pathway,Mitochondrial long chain fatty acid beta oxidation,,,,FALSE,,FALSE,fig2d,1,0.00000,FALSE,FALSE
+WP357,Pathway,Fatty acid biosynthesis,,,,FALSE,,FALSE,fig2d,2,0.00294,FALSE,FALSE
+WP78,Pathway,TCA cycle,,,,FALSE,,FALSE,fig2d,1,0.00000,FALSE,FALSE
+WP111,Pathway,Electron transport chain OXPHOS system in mitochondria,,,,FALSE,,FALSE,fig2d,1,0.00000,FALSE,FALSE
+WP4920,Pathway,Mitochondrial complex II assembly,,,,FALSE,,FALSE,fig2d,1,0.00000,FALSE,FALSE
+WP4396,Pathway,"Nonalcoholic fatty
+liver disease",,,,FALSE,,TRUE,fig2d,5,0.03589,FALSE,FALSE
+WP1541,Pathway,Energy metabolism,,,,FALSE,,FALSE,fig2d,3,0.01695,FALSE,FALSE
+WP3965,Pathway,Lipid metabolism pathway,,,,FALSE,,FALSE,fig2d,2,0.00172,FALSE,FALSE
+WP2011,Pathway,SREBF and miR33 in cholesterol and lipid homeostasis,,,,FALSE,,FALSE,fig2d,2,0.00040,FALSE,FALSE
+WP299,Pathway,Nuclear receptors in lipid metabolism and toxicity,,,,FALSE,,FALSE,fig2d,3,0.00685,FALSE,FALSE
+WP4313,Pathway,Ferroptosis,,,,FALSE,,FALSE,fig2d,2,0.00585,FALSE,FALSE
+WP4721,Pathway,Eicosanoid metabolism via lipooxygenases (LOX),,,,FALSE,,FALSE,fig2d,1,0.00000,FALSE,FALSE
+WP167,Pathway,Eicosanoid synthesis,,,,FALSE,,FALSE,fig2d,1,0.00000,FALSE,FALSE
+WP3942,Pathway,"PPAR signaling
+pathway",,,,FALSE,,TRUE,fig2d,2,0.00125,FALSE,FALSE
+WP2895,Pathway,Differentiation of white and brown adipocyte,,,,FALSE,,FALSE,fig2d,1,0.00000,FALSE,FALSE
+WP5452,Pathway,"GLP-1 from intestine/pancreas
+and role in glucose homeostasis",,,,FALSE,,TRUE,fig2d,2,0.02367,FALSE,FALSE
+WP5446,Pathway,GLP-1 secretion from intestine to portal vein,,,,FALSE,,FALSE,fig2d,1,0.00000,FALSE,FALSE
+WP5447,Pathway,GLP-1 in pancreatic islet cells,,,,FALSE,,FALSE,fig2d,1,0.00000,FALSE,FALSE
+WP5445,Pathway,Hunger and satiety,,,,FALSE,,FALSE,fig2d,2,0.11191,FALSE,FALSE
+WP4321,Pathway,Thermogenesis,,,,FALSE,,FALSE,fig2d,1,0.00000,FALSE,FALSE
+WP5190,Pathway,Creatine pathway,,,,FALSE,,FALSE,fig2d,1,0.00000,FALSE,FALSE
+WP4595,Pathway,Urea cycle and associated pathways,,,,FALSE,,FALSE,fig2d,1,0.00000,FALSE,FALSE
+WP497,Pathway,Urea cycle and metabolism of amino groups,,,,FALSE,,FALSE,fig2d,1,0.00000,FALSE,FALSE
+WP4315,Pathway,Malate aspartate shuttle,,,,FALSE,,FALSE,fig2d,1,0.00000,FALSE,FALSE
+WP3925,Pathway,Amino acid metabolism,,,,FALSE,,FALSE,fig2d,1,0.00000,FALSE,FALSE
+WP5123,Pathway,Mitochondrial fatty acid oxidation disorders,,,,FALSE,,FALSE,fig2d,1,0.00000,FALSE,FALSE
+WP5283,Pathway,Chronic hyperglycemia impairment of neuron function,,,,FALSE,,FALSE,fig2d,1,0.00000,FALSE,FALSE
+WP4172,Pathway,PI3K Akt signaling pathway,,,,FALSE,,FALSE,fig2d,1,0.00000,FALSE,FALSE
+DOID:9970,Disease,obesity,,,,FALSE,,TRUE,fig2d,16,0.36096,FALSE,FALSE
+DOID:9352,Disease,type 2 diabetes mellitus,,,,FALSE,,TRUE,fig2d,10,0.08469,FALSE,FALSE
+DOID:9452,Disease,steatotic liver disease,,,,FALSE,,TRUE,fig2d,9,0.03868,FALSE,FALSE
+DOID:0080208,Disease,metabolic dysfunction-associated steatotic liver disease (MASLD),,,,FALSE,,FALSE,fig2d,1,0.00000,FALSE,FALSE
+DOID:0080547,Disease,metabolic dysfunction-associated steatohepatitis (MASH),,,,FALSE,,FALSE,fig2d,1,0.00000,FALSE,FALSE
+DOID:1287,Disease,cardiovascular system disease,,,,FALSE,,FALSE,fig2d,1,0.00000,FALSE,FALSE
+DOID:1936,Disease,atherosclerosis,,,,FALSE,,FALSE,fig2d,1,0.00000,FALSE,FALSE
+DOID:13810,Disease,familial hypercholesterolemia,,,,FALSE,,FALSE,fig2d,1,0.00000,FALSE,FALSE
+DOID:1168,Disease,familial hyperlipidemia,,,,FALSE,,FALSE,fig2d,1,0.00000,FALSE,FALSE
+DOID:13580,Disease,cholestasis,,,,FALSE,,FALSE,fig2d,2,0.00057,FALSE,FALSE
+DOID:14219,Disease,renal tubular acidosis,,,,FALSE,,FALSE,fig2d,1,0.00000,FALSE,FALSE
+DOID:654,Disease,overnutrition,,,,FALSE,,FALSE,fig2d,1,0.00000,FALSE,FALSE
+O14531,Protein,DPYL4_HUMAN,,SPOKE_steiner,,FALSE,Steiner human protein,FALSE,steiner,2,0.03992,FALSE,FALSE
+O60244,Protein,MED14_HUMAN,,SPOKE_steiner,,FALSE,Steiner human protein,FALSE,steiner,1,0.00000,FALSE,FALSE
+O95402,Protein,MED26_HUMAN,,SPOKE_steiner,,FALSE,Steiner human protein,TRUE,steiner,2,0.04875,FALSE,FALSE
+P00734,Protein,THRB_HUMAN,,SPOKE_steiner,,FALSE,Steiner human protein,TRUE,steiner,5,0.12885,FALSE,TRUE
+P01137,Protein,TGFB1_HUMAN,,SPOKE_steiner,,FALSE,Steiner human protein,TRUE,steiner,1,0.00000,FALSE,FALSE
+P08514,Protein,ITA2B_HUMAN,,SPOKE_steiner,,FALSE,Steiner human protein,FALSE,steiner,2,0.02774,FALSE,FALSE
+P10646,Protein,TFPI1_HUMAN,,SPOKE_steiner,,FALSE,Steiner human protein,FALSE,steiner,1,0.00000,FALSE,FALSE
+P12074,Protein,CX6A1_HUMAN,,SPOKE_steiner,,FALSE,Steiner human protein,FALSE,steiner,2,0.00860,FALSE,FALSE
+P14854,Protein,CX6B1_HUMAN,,SPOKE_steiner,,FALSE,Steiner human protein,FALSE,steiner,3,0.03496,FALSE,TRUE
+P16070,Protein,CD44_HUMAN,,SPOKE_steiner,,FALSE,Steiner human protein,TRUE,steiner,1,0.00000,FALSE,FALSE
+P17174,Protein,AATC_HUMAN,,SPOKE_steiner,,FALSE,Steiner human protein,FALSE,steiner,2,0.05710,FALSE,TRUE
+P22309,Protein,UD11_HUMAN,,SPOKE_steiner,,FALSE,Steiner human protein,FALSE,steiner,3,0.01905,FALSE,TRUE
+P24311,Protein,COX7B_HUMAN,,SPOKE_steiner,,FALSE,Steiner human protein,FALSE,steiner,1,0.00000,FALSE,FALSE
+P27487,Protein,DPP4_HUMAN,,SPOKE_steiner,,FALSE,Steiner human protein,TRUE,steiner,2,0.01190,FALSE,FALSE
+P35030,Protein,TRY3_HUMAN,,SPOKE_steiner,,FALSE,Steiner human protein,FALSE,steiner,1,0.00000,FALSE,FALSE
+P35558,Protein,PCKGC_HUMAN,,SPOKE_steiner,,FALSE,Steiner human protein,FALSE,steiner,2,0.03824,FALSE,FALSE
+P36542,Protein,ATPG_HUMAN,,SPOKE_steiner,,FALSE,Steiner human protein,TRUE,steiner,2,0.01686,FALSE,FALSE
+P40926,Protein,MDHM_HUMAN,,SPOKE_steiner,,FALSE,Steiner human protein,FALSE,steiner,2,0.01877,FALSE,FALSE
+P41159,Protein,LEP_HUMAN,,SPOKE_steiner,,FALSE,Steiner human protein,TRUE,steiner,2,0.01008,FALSE,FALSE
+P49715,Protein,CEBPA_HUMAN,,SPOKE_steiner,,FALSE,Steiner human protein,FALSE,steiner,3,0.03727,FALSE,TRUE
+Q14623,Protein,IHH_HUMAN,,SPOKE_steiner,,FALSE,Steiner human protein,FALSE,steiner,2,0.04893,FALSE,FALSE
+Q16555,Protein,DPYL2_HUMAN,,SPOKE_steiner,,FALSE,Steiner human protein,TRUE,steiner,2,0.03992,FALSE,FALSE
+Q16719,Protein,KYNU_HUMAN,,SPOKE_steiner,,FALSE,Steiner human protein,TRUE,steiner,3,0.07340,FALSE,TRUE
+Q4U2R8,Protein,S22A6_HUMAN,,SPOKE_steiner,,FALSE,Steiner human protein,TRUE,steiner,4,0.03950,FALSE,TRUE
+Q53H96,Protein,P5CR3_HUMAN,,SPOKE_steiner,,FALSE,Steiner human protein,FALSE,steiner,1,0.00000,FALSE,FALSE
+Q6YP21,Protein,KAT3_HUMAN,,SPOKE_steiner,,FALSE,Steiner human protein,FALSE,steiner,3,0.08545,FALSE,TRUE
+Q86Y79,Protein,PTH_HUMAN,,SPOKE_steiner,,FALSE,Steiner human protein,TRUE,steiner,3,0.06138,FALSE,TRUE
+Q8N159,Protein,NAGS_HUMAN,,SPOKE_steiner,,FALSE,Steiner human protein,FALSE,steiner,1,0.00000,FALSE,FALSE
+Q9BQT8,Protein,ODC_HUMAN,,SPOKE_steiner,,FALSE,Steiner human protein,TRUE,steiner,1,0.00000,FALSE,FALSE
+Q9NUJ1,Protein,ABHDA_HUMAN,,SPOKE_steiner,,FALSE,Steiner human protein,FALSE,steiner,3,0.12944,FALSE,TRUE
+Q9NV66,Protein,TYW1_HUMAN,,SPOKE_steiner,,FALSE,Steiner human protein,FALSE,steiner,2,0.02195,FALSE,FALSE
+Q9UKP6,Protein,UR2R_HUMAN,,SPOKE_steiner,,FALSE,Steiner human protein,FALSE,steiner,1,0.00000,FALSE,FALSE
+inchikey:IAOZJIPTCAWIRG-QWRGUYRKSA-N,Compound,Aspartame,,SPOKE_steiner,,FALSE,Steiner intermediate compound,FALSE,steiner,1,0.00000,FALSE,FALSE
+inchikey:LCTONWCANYUPML-VMIGTVKRSA-N,Compound,Pyruvic-13C3 acid,,SPOKE_steiner,,FALSE,Steiner intermediate compound,FALSE,steiner,5,0.11497,FALSE,FALSE
+inchikey:QTBSBXVTEAMEQO-GUEYOVJQSA-N,Compound,(2H3)Acetic (2H)acid,,SPOKE_steiner,,FALSE,Steiner intermediate compound,FALSE,steiner,2,0.01835,FALSE,FALSE
+inchikey:QTBSBXVTEAMEQO-JVVVGQRLSA-N,Compound,Acetic acid C-11,,SPOKE_steiner,,FALSE,Steiner intermediate compound,FALSE,steiner,2,0.03980,FALSE,FALSE
+inchikey:XLYOFNOQVPJJNP-IGMARMGPSA-N,Compound,Oxygen-16 atom,,SPOKE_steiner,,FALSE,Steiner intermediate compound,FALSE,steiner,2,0.06330,FALSE,FALSE
+inchikey:SYEOWUNSTUDKGM-UHFFFAOYSA-N,Compound,3-Methyladipic acid,Fatty acids,MetRS,HMDB00555,TRUE,,TRUE,fig2d;steiner,1,0.00000,FALSE,FALSE
+CHEBI:189840,Compound,dicarboxylic fatty acid,,SPOKE_steiner,,FALSE,Steiner intermediate compound,FALSE,steiner,2,0.01190,FALSE,FALSE

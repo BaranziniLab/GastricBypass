@@ -1,0 +1,19 @@
+"display_name","degree","betweenness","is_compound_hub"
+"Malonic acid",9,0.26804,TRUE
+"13-HODE",8,0.17279,TRUE
+"L-kynurenine",8,0.16932,TRUE
+"D-Glucuronic Acid",7,0.1205,TRUE
+"Hydroxyproline",7,0.11186,TRUE
+"2-Aminoisobutyric
+acid (BAIBA)",6,0.11205,TRUE
+"3-Ureidopropionic
+acid",5,0.07011,TRUE
+"L-Homoarginine",4,0.09344,TRUE
+"Pimelic acid",3,0.03543,FALSE
+"N-Acetylserine",3,0.01598,FALSE
+"4-Hydroxyhippuric
+acid",2,0,FALSE
+"1-Methylguanosine",1,0,FALSE
+"PC 34:2",1,0,FALSE
+"DMGV",1,0,FALSE
+"3-Methyladipic acid",1,0,FALSE

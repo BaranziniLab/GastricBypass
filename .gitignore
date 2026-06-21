@@ -1,4 +1,6 @@
 .DS_Store
 **/.DS_Store
+# Microsoft Office temporary/lock files
+~$*
 figures/Fig4defg/data/
 submissions/med/archive/old figures/*.tiff

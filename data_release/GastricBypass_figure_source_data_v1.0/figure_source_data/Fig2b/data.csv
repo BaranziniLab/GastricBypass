@@ -1,0 +1,79 @@
+var1,var2,value
+Homoarginine,Malonate,-0.01
+2-Aminoisobutyric acid,Malonate,0.06
+2-Aminoisobutyric acid,Homoarginine,0.18
+13-HODE,Malonate,-0.32
+13-HODE,Homoarginine,0.09
+13-HODE,2-Aminoisobutyric acid,0.04
+C34:2 PC,Malonate,-0.14
+C34:2 PC,Homoarginine,-0.08
+C34:2 PC,2-Aminoisobutyric acid,-0.26
+C34:2 PC,13-HODE,0.14
+Kynurenine,Malonate,-0.18
+Kynurenine,Homoarginine,-0.22
+Kynurenine,2-Aminoisobutyric acid,-0.11
+Kynurenine,13-HODE,-0.15
+Kynurenine,C34:2 PC,0.06
+Hydroxyproline,Malonate,-0.01
+Hydroxyproline,Homoarginine,-0.04
+Hydroxyproline,2-Aminoisobutyric acid,-0.04
+Hydroxyproline,13-HODE,0.04
+Hydroxyproline,C34:2 PC,0.09
+Hydroxyproline,Kynurenine,0.16
+4-Hydroxyhippurate,Malonate,0.04
+4-Hydroxyhippurate,Homoarginine,0.02
+4-Hydroxyhippurate,2-Aminoisobutyric acid,-0.01
+4-Hydroxyhippurate,13-HODE,0.16
+4-Hydroxyhippurate,C34:2 PC,0.07
+4-Hydroxyhippurate,Kynurenine,0.18
+4-Hydroxyhippurate,Hydroxyproline,0.36
+3-Methyladipate/pimelate,Malonate,-0.04
+3-Methyladipate/pimelate,Homoarginine,-0.18
+3-Methyladipate/pimelate,2-Aminoisobutyric acid,-0.27
+3-Methyladipate/pimelate,13-HODE,0.07
+3-Methyladipate/pimelate,C34:2 PC,0.20
+3-Methyladipate/pimelate,Kynurenine,0.22
+3-Methyladipate/pimelate,Hydroxyproline,0.22
+3-Methyladipate/pimelate,4-Hydroxyhippurate,0.22
+Glucuronate,Malonate,-0.04
+Glucuronate,Homoarginine,-0.08
+Glucuronate,2-Aminoisobutyric acid,0.04
+Glucuronate,13-HODE,-0.01
+Glucuronate,C34:2 PC,-0.05
+Glucuronate,Kynurenine,-0.05
+Glucuronate,Hydroxyproline,0.12
+Glucuronate,4-Hydroxyhippurate,0.20
+Glucuronate,3-Methyladipate/pimelate,0.34
+N-Acetylserine,Malonate,0.06
+N-Acetylserine,Homoarginine,-0.32
+N-Acetylserine,2-Aminoisobutyric acid,0.02
+N-Acetylserine,13-HODE,0.04
+N-Acetylserine,C34:2 PC,-0.04
+N-Acetylserine,Kynurenine,0.09
+N-Acetylserine,Hydroxyproline,0.34
+N-Acetylserine,4-Hydroxyhippurate,0.34
+N-Acetylserine,3-Methyladipate/pimelate,0.40
+N-Acetylserine,Glucuronate,0.40
+1-Methylguanosine,Malonate,0.02
+1-Methylguanosine,Homoarginine,-0.04
+1-Methylguanosine,2-Aminoisobutyric acid,0.09
+1-Methylguanosine,13-HODE,0.12
+1-Methylguanosine,C34:2 PC,-0.15
+1-Methylguanosine,Kynurenine,0.06
+1-Methylguanosine,Hydroxyproline,0.07
+1-Methylguanosine,4-Hydroxyhippurate,0.14
+1-Methylguanosine,3-Methyladipate/pimelate,0.09
+1-Methylguanosine,Glucuronate,0.18
+1-Methylguanosine,N-Acetylserine,0.30
+N-Carbamoyl-beta-alanine,Malonate,0.02
+N-Carbamoyl-beta-alanine,Homoarginine,-0.09
+N-Carbamoyl-beta-alanine,2-Aminoisobutyric acid,0.06
+N-Carbamoyl-beta-alanine,13-HODE,0.07
+N-Carbamoyl-beta-alanine,C34:2 PC,-0.20
+N-Carbamoyl-beta-alanine,Kynurenine,0.20
+N-Carbamoyl-beta-alanine,Hydroxyproline,0.14
+N-Carbamoyl-beta-alanine,4-Hydroxyhippurate,0.34
+N-Carbamoyl-beta-alanine,3-Methyladipate/pimelate,0.20
+N-Carbamoyl-beta-alanine,Glucuronate,0.40
+N-Carbamoyl-beta-alanine,N-Acetylserine,0.32
+N-Carbamoyl-beta-alanine,1-Methylguanosine,0.26

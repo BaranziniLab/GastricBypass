@@ -1,0 +1,3 @@
+error_type,median,q1,q3,whisker_low,whisker_high,outlier
+MAE,17.6,17.2,17.9,16.2,18.6,14.9
+RMSE,21.2,20.6,22.0,18.5,24.0,25.8
