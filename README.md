@@ -109,7 +109,7 @@ Colorblind-friendly palette:
 
 - Individual-level LABS-2, post-RYGB, and Estonian Biobank data are subject to the respective studies' data-use agreements and are not redistributed here.
 - Framingham Heart Study genotype, phenotype, and metabolomics data are available through dbGaP under accession phs000007 (consent group HMB-IRB-MDS); component phenotype tables used here include pht000091 (HbA1c, fasting insulin), pht000202 (serum creatinine), pht002343 (case status), pht003099 (sex, age), and pht006027 (BMI). See `tables/README.md` for the full cohort-construction pipeline. (Accession details pending final author confirmation.)
-- Publication-level, de-identified source data behind the figures are deposited on Zenodo (DOI to be added on release).
+- Publication-level, de-identified source data behind the figures are deposited on Zenodo: doi:10.5281/zenodo.20779586 (concept DOI, resolves to the latest version).
 
 ## Manuscript and submissions
 
