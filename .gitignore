@@ -4,3 +4,6 @@
 ~$*
 figures/Fig4defg/data/
 submissions/med/archive/old figures/*.tiff
+
+# Local pilotr tool state
+.pilotr/
