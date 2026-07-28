@@ -1,0 +1,31 @@
+
+Tasks, 23April 2026
+Demographic details of the FHS cohort.
+Read the comments from Rany on the GWAS section - looks like it can be expanded some more. 
+
+Rany thinks Fig. 2 b should be removed - he is correct. 
+
+
+Supplemental Table 1. Demographic/laboratory details of the discovery cohort
+Supplemental Fig. 1: a) EBW at baseline, 1-yr, 3-yr and weight regain (entire RYGB LABS2 cohort)
+Supplemental Fig. 2: Longitudinal excess body weight (EBW) trajectories among matched RYGB subgroups, with table on the exact numbers
+
+Supplemental Fig. 3: Longitudinal weight trajectories and cohort characteristics in the LABS-2 metabolomics sub-study, 4 plots: a) EBW with spaghetti plots; b) % EBW; c) male and female; d) by center
+
+Supplemental Fig. 4: Heatmap of metabolites with univariate associations.
+
+Supplemental Fig. 5. Metrics of stability of MetRS: Bootstrap stability; p-value histogram; q-q plot
+
+Supplemental Fig. 6. Post-RYGB cohort; PLS-DA and cohort summary; Met-RS 10 box plot
+
+Supplemental Fig. 7. Estonia cohort: PLS-DA plot and cohort summary; Met-RS 8 box plot
+
+Supplemental Fig. 8: Completely annotated network plot
+
+Supplemental Fig. 9: GWAS related figures
+
+Table: All univariate metabolites
+Supplemental note: 3-methyl adipic acid and pimelate
+
+
+
